@@ -1,0 +1,9 @@
+$footer-top-margin: 20px;
+$footer-height: 37px + $footer-top-margin;
+
+.c-footer {
+    background-color: $color-wild-sand;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: $footer-top-margin;
+}

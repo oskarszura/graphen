@@ -1,0 +1,16 @@
+@keyframes c-loading {
+	to { transform: rotate(360deg); }
+}
+
+.c-loader {
+    margin: 0 auto;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: transparent;
+	border-top: 4px solid $color-white;
+	border-right: 4px solid $color-white;
+	border-bottom: 4px solid $color-boulder;
+	border-left: 4px solid $color-boulder;
+	animation: c-loading 1.2s infinite linear;
+}
