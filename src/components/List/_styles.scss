@@ -1,4 +1,4 @@
-%t-list {
+@mixin c-list() {
     @extend .list-group;
 
     &__item {
