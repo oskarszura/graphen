@@ -1,0 +1,8 @@
+%t-list {
+    @extend .list-group;
+
+    &__item {
+        @extend .list-group-item;
+        border-radius: 0px !important;
+    }
+}

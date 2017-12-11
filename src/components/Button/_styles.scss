@@ -4,24 +4,13 @@
     height: 34px;
 }
 
-%c-btn-add {
-    @extend %c-btn;
-    background-color: $color-persian-green;
-    color: $color-white;
+@mixin c-btn($bg-color, $color) {
+    background-color: $bg-color;
+    color: $color;
 
     &:hover {
-        background-color: darken($color-persian-green, 10%);
-        color: $color-white;
+        background-color: darken($bg-color, 10%);
+        color: $color;
     }
 }
 
-%c-btn-edit {
-    @extend %c-btn;
-    background-color: $color-viking;
-    color: $color-white;
-
-    &:hover {
-        background-color: darken($color-viking, 10%);
-        color: $color-white;
-    }
-}
