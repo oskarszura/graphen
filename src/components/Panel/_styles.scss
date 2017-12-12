@@ -1,0 +1,12 @@
+@mixin c-panel {
+    padding: 10px;
+
+    &__title {
+        font-size: 20px;
+        margin: 5px 0px 5px 0px;
+    }
+
+    &__content {
+        margin: 5px 0px 5px 0px;
+    }
+}

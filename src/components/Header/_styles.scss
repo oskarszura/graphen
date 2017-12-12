@@ -1,0 +1,39 @@
+@mixin c-header($header-height, $archor-padding) {
+    display: flex;
+    background-color: $color-wild-sand;
+    border-bottom: 1px solid $color-mercury;
+
+    &__logo {
+        flex-basis: 10%;
+        flex-grow: 1;
+        display: block;
+        padding: $archor-padding;
+    }
+
+    &__navigation {
+        flex-basis: 90%;
+        flex-grow: 9;
+    }
+
+    &__navigation-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__navigation-option {
+        display: inline-block;
+
+        a {
+            display: block;
+            color: $color-mine-shaft;
+            padding: $archor-padding;
+            font-weight: 600;
+
+            &:hover {
+                color: $color-persian-green;
+                text-decoration: none;
+            }
+        }
+    }
+}
