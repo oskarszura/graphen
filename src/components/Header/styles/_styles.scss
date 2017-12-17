@@ -1,10 +1,6 @@
-$header-archor-padding: 15px 10px;
 $header-height: 50px;
 
 .c-header {
-    @include cg-header($header-height, $header-archor-padding);
-
-    &--default {
-        @include cg-header--colored($brand-component-bg-color, $brand-component-outline-color);
-    }
+    @include c-header($header-height);
+    @include c-header--colored($brand-component-bg-color, $brand-component-outline-color);
 }

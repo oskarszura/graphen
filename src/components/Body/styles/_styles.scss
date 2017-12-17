@@ -1,5 +1,5 @@
 .c-body {
-    @include cg-body($brand-font);
+    @include c-body($brand-font);
 
     &--default {
         background-color: $color-white;

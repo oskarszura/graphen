@@ -1,10 +1,10 @@
-@mixin cg-footer($top-margin) {
+@mixin c-footer($top-margin) {
     padding: 10px;
     font-size: 12px;
     margin-top: $top-margin;
 }
 
-@mixin cg-footer--colored($bg-color) {
+@mixin c-footer--colored($bg-color) {
     background-color: $bg-color;
 }
 

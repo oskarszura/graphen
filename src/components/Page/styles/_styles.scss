@@ -1,6 +1,5 @@
-@mixin c-page($padding) {
-    padding: $padding;
-    width: 100vw;
+.c-page {
+    @include c-page(15px 5% 0);
 }
 
 .main-content {

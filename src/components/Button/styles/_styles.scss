@@ -1,15 +1,15 @@
 .c-btn {
-    @include cg-btn();
+    @include c-btn();
 
     &--accept {
-        @include cg-btn--hover($brand-color-accept, $color-white);
+        @include c-btn--hover($brand-color-accept, $color-white);
     }
 
     &--edit {
-        @include cg-btn--hover($brand-color-edit, $color-white);
+        @include c-btn--hover($brand-color-edit, $color-white);
     }
 
     &--remove {
-        @include cg-btn--hover($brand-color-remove, $color-white);
+        @include c-btn--hover($brand-color-remove, $color-white);
     }
 }

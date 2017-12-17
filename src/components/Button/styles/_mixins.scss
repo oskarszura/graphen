@@ -1,10 +1,10 @@
-@mixin cg-btn() {
+@mixin c-btn() {
     @extend .btn;
     border-radius: 0px !important;
     height: 34px;
 }
 
-@mixin cg-btn--hover($bg-color, $color) {
+@mixin c-btn--hover($bg-color, $color) {
     background-color: $bg-color;
     color: $color;
 

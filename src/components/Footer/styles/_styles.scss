@@ -2,10 +2,7 @@ $footer-top-margin: 20px;
 $footer-height: 37px + $footer-top-margin;
 
 .c-footer {
-    @include cg-footer($footer-top-margin);
-
-    &--default {
-        @include cg-footer--colored($brand-component-bg-color);
-    }
+    @include c-footer($footer-top-margin);
+    @include c-footer--colored($brand-component-bg-color);
 }
 
