@@ -1,7 +1,5 @@
-@mixin c-header($header-height, $archor-padding) {
+@mixin cg-header($header-height, $archor-padding) {
     display: flex;
-    background-color: $color-wild-sand;
-    border-bottom: 1px solid $color-mercury;
 
     &__logo {
         flex-basis: 10%;
@@ -36,4 +34,9 @@
             }
         }
     }
+}
+
+@mixin cg-header--colored($bg-color, $outline-color) {
+    background-color: $bg-color;
+    border-bottom: 1px solid $outline-color;
 }
