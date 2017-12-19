@@ -1,3 +1,7 @@
 .c-panel {
     @include c-panel();
+
+    &--separator {
+        border-bottom: 1px dashed $brand-color-separator;
+    }
 }

@@ -6,3 +6,39 @@
     background-color: $bg-color;
     border-bottom: 1px solid $outline-color;
 }
+
+@mixin c-header--navigation($archor-padding) {
+    &__logo {
+        flex-basis: 10%;
+        flex-grow: 1;
+        display: block;
+        padding: $archor-padding;
+    }
+
+    &__navigation {
+        flex-basis: 90%;
+        flex-grow: 9;
+    }
+
+    &__navigation-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__navigation-option {
+        display: inline-block;
+
+        a {
+            display: block;
+            padding: $archor-padding;
+            font-weight: 600;
+            color: $color-mine-shaft;
+
+            &:hover {
+                color: $color-persian-green;
+                text-decoration: none;
+            }
+        }
+    }
+}
