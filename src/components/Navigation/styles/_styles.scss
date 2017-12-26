@@ -1,0 +1,4 @@
+.c-navigation {
+    @include c-navigation(15px 10px);
+    @include c-navigation--hover($brand-color-primary);
+}

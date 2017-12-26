@@ -1,0 +1,11 @@
+@mixin c-sample($size) {
+    display: inline-block;
+    vertical-align: middle;
+    height: $size;
+    width: $size;
+    border-radius: $size;
+}
+
+@mixin c-sample--color($color) {
+    background-color: $color;
+}
