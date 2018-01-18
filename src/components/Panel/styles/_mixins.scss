@@ -1,12 +1,12 @@
 @mixin c-panel {
-    padding: 10px;
+    background-color: $brand-bg-color;
 
     &__title {
         font-size: 20px;
-        margin: 5px 0px 5px 0px;
+        padding: 5px;
     }
 
     &__content {
-        margin: 5px 0px 5px 0px;
+        padding: 5px;
     }
 }

@@ -1,8 +1,9 @@
-@import "variables/bootstrap";
 @import "variables/colors";
 @import "variables/typography";
 @import "variables/z-index";
 @import "variables/brand";
+
+@import "mixes/pull-right";
 
 @import "components/Body/styles/mixins";
 @import "components/Body/styles/styles";
@@ -12,10 +13,18 @@
 @import "components/Footer/styles/styles";
 @import "components/Header/styles/mixins";
 @import "components/Header/styles/styles";
+@import "components/Input/styles/mixins";
+@import "components/Input/styles/styles";
 @import "components/List/styles/mixins";
 @import "components/List/styles/styles";
 @import "components/Loader/styles/styles";
+@import "components/Navigation/styles/mixins";
+@import "components/Navigation/styles/styles";
 @import "components/Page/styles/mixins";
 @import "components/Page/styles/styles";
 @import "components/Panel/styles/mixins";
 @import "components/Panel/styles/styles";
+@import "components/Sample/styles/mixins";
+@import "components/Sample/styles/styles";
+@import "components/Textarea/styles/mixins";
+@import "components/Textarea/styles/styles";

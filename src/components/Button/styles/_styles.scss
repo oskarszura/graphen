@@ -1,5 +1,10 @@
 .c-btn {
     @include c-btn();
+    @include c-btn--size(34px);
+
+    &--small {
+        @include c-btn--size(20px);
+    }
 
     &--accept {
         @include c-btn--hover($brand-color-accept, $color-white);

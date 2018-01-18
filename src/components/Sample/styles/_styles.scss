@@ -1,0 +1,19 @@
+.c-sample {
+    @include c-sample(40px);
+
+    &--brand-primary {
+        @include c-sample--color($brand-color-primary);
+    }
+
+    &--brand-text {
+        @include c-sample--color($brand-text-color);
+    }
+
+    &--brand-link {
+        @include c-sample--color($brand-link-color);
+    }
+
+    &--brand-component {
+        @include c-sample--color($brand-component-bg-color);
+    }
+}

@@ -21,3 +21,6 @@ In a standard use case, ready skins might be used directly.
 
 ### Customised approach
 If a project requires more customised styles, generators (prefixed with `g`) should be used.
+
+## Others
+* Name of colors are taken from [here](http://chir.ag/projects/name-that-color/)
