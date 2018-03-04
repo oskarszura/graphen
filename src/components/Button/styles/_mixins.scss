@@ -1,9 +1,10 @@
 @mixin c-btn() {
+    box-sizing: border-box;
     display: inline-block;
+    vertical-align: middle;
     margin-bottom: 0;
     font-weight: normal;
     text-align: center;
-    //vertical-align: middle;
     touch-action: manipulation;
     cursor: pointer;
     background-image: none;
@@ -17,7 +18,7 @@
     height: $height;
     padding: 6px ($height / 3);
     font-size: ($height / 3 + 2);
-    line-height: 1;
+    line-height: ($height - 2 * 6px);
 }
 
 @mixin c-btn--hover($bg-color, $color) {
