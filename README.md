@@ -1,28 +1,27 @@
 # Graphen UI library
+[Documentation](https://oskarszura.github.io/graphen/)
 
-Documentation: https://oskarszura.github.io/graphen/
+## Principles
 
-## Principles standing behind the structure
+Principles standing behind the project.
 
-### Block Element Modifier
-* Specificity should be flat
+#### Block Element Modifier
+* Specificity should be flat (to avoid specificity issues)
 * Naming in BEM convention
 
-### Object Oriented CSS
-* Separate structure from skin
-* Separate container from content
+#### Object Oriented CSS
+* Separate structure from skin (higher code reusability)
+* Separate container from content (higher code reusability)
 
-### Modified Atomic BEM
-* Simple atomic blocks should be composed into complex ones (prefixes describe the group to which blocks belong) 
-* Instead of atoms, modules and organisms - like in the standard Atomic pattern - atoms, components and modules are present (the reason behind this change is it reflects more business like approach) 
+#### Naming convention
+* `c-*` - stands for **component** (context free block)
+* `m-*` - stands for **mix** (generic modifier not assigned to a particular block or element)  
 
-## How to use
+## Usage
 
-### Out of the box approach
-In a standard use case, ready skins might be used directly. 
-
-### Customised approach
-If a project requires more customised styles, generators (prefixed with `g`) should be used.
+#### Installation
+1. Install as npm package (for now only from `github.com` directly)
+2. Import `style.scss`into your project
 
 ## Others
 * Name of colors are taken from [here](http://chir.ag/projects/name-that-color/)
