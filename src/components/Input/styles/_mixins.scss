@@ -1,4 +1,5 @@
 @mixin c-input() {
+    display: inline-block;
     margin-bottom: 5px;
 
     &__label {
@@ -6,6 +7,7 @@
     }
 
     &__field {
+        box-sizing: border-box;
         display: block;
         width: 100%;
         height: 34px;

@@ -1,4 +1,13 @@
 .c-input {
     @include c-input();
+
+    &--full {
+        display: block;
+        width: 100%;
+    }
+
+    &__field:disabled {
+        border: 0;
+    }
 }
 
