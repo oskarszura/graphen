@@ -6,6 +6,11 @@
         @include c-btn--size(20px);
     }
 
+    &--full {
+        width: 100%;
+        display: block;
+    }
+
     &--accept {
         @include c-btn--hover($brand-color-accept, $color-white);
     }
