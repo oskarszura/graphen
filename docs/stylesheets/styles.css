@@ -39,6 +39,9 @@
     padding: 6px 6.66667px;
     font-size: 8.66667px;
     line-height: 8px; }
+  .c-btn--full {
+    width: 100%;
+    display: block; }
   .c-btn--accept {
     background-color: #00AF87;
     color: #FFFFFF; }
@@ -78,10 +81,12 @@
     flex-grow: 9; }
 
 .c-input {
+  display: inline-block;
   margin-bottom: 5px; }
   .c-input__label {
     font-weight: bold; }
   .c-input__field {
+    box-sizing: border-box;
     display: block;
     width: 100%;
     height: 34px;
@@ -89,6 +94,11 @@
     font-size: 14px;
     line-height: 1.42857;
     border: 1px solid #E5E5E5; }
+  .c-input--full {
+    display: block;
+    width: 100%; }
+  .c-input__field:disabled {
+    border: 0; }
 
 .c-list {
   margin-bottom: 20px;
@@ -177,4 +187,4 @@
   line-height: 1.42857;
   border: 1px solid #E5E5E5; }
 
-/*# sourceMappingURL=styles.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
