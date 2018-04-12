@@ -178,20 +178,20 @@
   .c-sample--brand-component {
     background-color: #F5F5F5; }
 
-.c-switchzc {
+.c-switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px; }
-  .c-switchzc__input {
+  .c-switch__input {
     display: none; }
-    .c-switchzc__input:checked + .c-switchzc__slider {
+    .c-switch__input:checked + .c-switch__slider {
       background-color: #00AF87; }
-    .c-switchzc__input:checked + .c-switchzc__slider::before {
+    .c-switch__input:checked + .c-switch__slider::before {
       transform: translateX(26px); }
-    .c-switchzc__input:focus + .c-switchzc__slider {
+    .c-switch__input:focus + .c-switch__slider {
       box-shadow: 0 0 1px #00AF87; }
-  .c-switchzc__slider {
+  .c-switch__slider {
     position: absolute;
     top: 0;
     left: 0;
@@ -200,7 +200,7 @@
     cursor: pointer;
     background-color: #F5F5F5;
     transition: .4s; }
-    .c-switchzc__slider::before {
+    .c-switch__slider::before {
       position: absolute;
       content: "";
       height: 26px;
