@@ -178,6 +178,38 @@
   .c-sample--brand-component {
     background-color: #F5F5F5; }
 
+.c-switchzc {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+  .c-switchzc__input {
+    display: none; }
+    .c-switchzc__input:checked + .c-switchzc__slider {
+      background-color: #00AF87; }
+    .c-switchzc__input:checked + .c-switchzc__slider::before {
+      transform: translateX(26px); }
+    .c-switchzc__input:focus + .c-switchzc__slider {
+      box-shadow: 0 0 1px #00AF87; }
+  .c-switchzc__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #F5F5F5;
+    transition: .4s; }
+    .c-switchzc__slider::before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s; }
+
 .c-textarea {
   display: block;
   width: 100%;
