@@ -1,9 +1,20 @@
+$c-switch-width: 60px;
+$c-switch-height: 34px;
+$c-switch-btn-size: 26px;
+$c-switch-btn-padding: 4px;
+$c-switch-phone-ratio: 1.5;
+
 @mixin c-switch($active-color) {
     $parent-selector: &;
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: $c-switch-width;
+    height: $c-switch-height;
+
+    @include phone {
+        width: $c-switch-width * $c-switch-phone-ratio;
+        height: $c-switch-height * $c-switch-phone-ratio;
+    }
 
     &__input {
         display:none;
@@ -14,7 +25,11 @@
             }
 
             & + #{$parent-selector}__slider::before {
-                transform: translateX(26px);
+                transform: translateX($c-switch-btn-size);
+
+                @include phone {
+                    transform: translateX($c-switch-btn-size * $c-switch-phone-ratio);
+                }
             }
         }
 
@@ -36,12 +51,19 @@
         &::before {
             position: absolute;
             content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
+            height: $c-switch-btn-size;
+            width: $c-switch-btn-size;
+            left: $c-switch-btn-padding;
+            bottom: $c-switch-btn-padding;
             background-color: white;
             transition: .4s;
+
+            @include phone {
+                height: $c-switch-btn-size * $c-switch-phone-ratio;
+                width: $c-switch-btn-size * $c-switch-phone-ratio;
+                left: $c-switch-btn-padding * $c-switch-phone-ratio;
+                bottom: $c-switch-btn-padding * $c-switch-phone-ratio;
+            }
         }
     }
 }
