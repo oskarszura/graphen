@@ -1,0 +1,21 @@
+@include c-led-blink (c-led-red-blink, #F00, #A00, #441313, rgba(255, 0, 0, 0.5))
+.c-led-red {
+    @include c-led(#F00, rgba(255, 0, 0, 0.5));
+    animation: c-led-red-blink 0.5s infinite;
+}
+
+.c-led-green {
+    @include c-led(#ABFF00, #89FF00);
+}
+
+.c-led-blue {
+    @include c-led(#24E0FF, #3F8CFF);
+}
+
+@include c-led-blink (c-led-yellow-blink, #FF0, #AA0, #808002, #FF0)
+.c-led-yellow {
+    @include c-led(#FF0, #FF0);
+    animation: c-led-yellow-blink 0.5s infinite;
+}
+
+
