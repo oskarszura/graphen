@@ -8,6 +8,7 @@
 .c-body {
     @include c-body($brand-font);
     display: flex;
+    flex-direction: column;
 
     &--default {
         background-color: $color-white;
