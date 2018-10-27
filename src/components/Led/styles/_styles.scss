@@ -18,4 +18,7 @@
     animation: c-led-yellow-blink 0.5s infinite;
 }
 
+/*.c-led-disabled {
+    @include c-led(#ABABAA, #ABABAA);
+}*/
 

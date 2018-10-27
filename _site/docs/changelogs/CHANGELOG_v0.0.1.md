@@ -1,0 +1,17 @@
+# Changelog from v0.0.1
+### Commits
+* [[`801f116`](http://github.com/oskarszura/graphen/commit/801f1166ddaf218baeecf7199c466cb1d2d4d20a)] - GRAPHN-2 - General code cleanup (Oskar Szura)
+* [[`0e8be1b`](http://github.com/oskarszura/graphen/commit/0e8be1be656e82651d96934feccb1f47c65791fb)] - Merge pull request #1 from oskarszura/GRAPHN-2 (Oskar Szura)
+* [[`dbbab78`](http://github.com/oskarszura/graphen/commit/dbbab783db92b999594ae578e8a595904e7a5231)] - GRAPHN-2 - General code cleanup (Oskar Szura)
+* [[`9d4fa57`](http://github.com/oskarszura/graphen/commit/9d4fa57f4541b04fe58faa99637ce21db72137cc)] - GRAPHN-2 - General code cleanup (Oskar Szura)
+* [[`502c0f2`](http://github.com/oskarszura/graphen/commit/502c0f261d05035f559c8748504b7e4ac3a7519f)] - Create PULL_REQUEST_TEMPLATE.md (Oskar Szura)
+* [[`671fb48`](http://github.com/oskarszura/graphen/commit/671fb48b8c57abc5ffd48d54d48f8441c04612b0)] - GRAPHN-2 - General code cleanup (Oskar Szura)
+* [[`cd2ad1d`](http://github.com/oskarszura/graphen/commit/cd2ad1d79fe12d333275d8b953c91be0f53f1a6f)] - Codebase cleanup (Oskar Szura)
+* [[`7a52bb8`](http://github.com/oskarszura/graphen/commit/7a52bb8c29f17be4140356a6c0689b5d445b82f8)] - Codebase cleanup (Oskar Szura)
+* [[`d75c4d6`](http://github.com/oskarszura/graphen/commit/d75c4d6358b2d4819dddbb6941ddfc5aade98a46)] - Codebase cleanup (Oskar Szura)
+* [[`e5c444c`](http://github.com/oskarszura/graphen/commit/e5c444c6d7d856c7bd9cd7123734b7f8277dce69)] - Add Readme (Oskar Szura)
+* [[`4af0bee`](http://github.com/oskarszura/graphen/commit/4af0bee4ed408eb07aa5b4f242829befa86e1f31)] - Componentize remaining files (Oskar Szura)
+* [[`47b8eba`](http://github.com/oskarszura/graphen/commit/47b8eba743127241aaec19d0b36a60f537c5d9aa)] - Move components to graphen (Oskar Szura)
+* [[`13887a2`](http://github.com/oskarszura/graphen/commit/13887a28bd9330e53522ad27d005ab9d79c3818e)] - Code cleanup (Oskar Szura)
+* [[`2ab385d`](http://github.com/oskarszura/graphen/commit/2ab385d5508b1d2c3c09d502ad8ae1e59442679e)] - Code cleanup (Oskar)
+* [[`618cb9d`](http://github.com/oskarszura/graphen/commit/618cb9d93bd3a9c26feae6cd940d32108adc3dbf)] - Initial commit (Oskar)

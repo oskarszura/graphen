@@ -61,16 +61,6 @@
       background-color: #ce2f2b;
       color: #FFFFFF; }
 
-.c-cards {
-  display: flex; }
-
-.c-card {
-  background-color: #F5F5F5;
-  border: 1px solid #E5E5E5;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 2px; }
-
 .c-footer {
   padding: 10px;
   font-size: 12px;
@@ -166,9 +156,6 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #FF0 0 2px 14px;
   animation: c-led-yellow-blink 0.5s infinite; }
 
-/*.c-led-disabled {
-    @include c-led(#ABABAA, #ABABAA);
-}*/
 .c-list {
   margin-bottom: 20px;
   padding-left: 0; }
@@ -288,4 +275,4 @@
   line-height: 1.42857;
   border: 1px solid #E5E5E5; }
 
-/*# sourceMappingURL=styles.css.map*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
