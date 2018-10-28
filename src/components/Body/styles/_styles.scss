@@ -1,5 +1,14 @@
+@import "../Header/styles/mixins";
+@import "../Header/styles/styles";
+@import "../Page/styles/mixins";
+@import "../Page/styles/styles";
+@import "../Footer/styles/mixins";
+@import "../Footer/styles/styles";
+
 .c-body {
     @include c-body($brand-font);
+    display: flex;
+    flex-direction: column;
 
     &--default {
         background-color: $color-white;

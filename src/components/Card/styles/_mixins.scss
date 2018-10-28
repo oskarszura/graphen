@@ -1,0 +1,8 @@
+@mixin c-card() {
+    background-color: $brand-component-bg-color;
+    border: 1px solid $brand-component-outline-color;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+}
+

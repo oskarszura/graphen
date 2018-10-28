@@ -1,0 +1,7 @@
+.c-cards {
+    display: flex;
+}
+
+.c-card {
+    @include c-card();
+}
