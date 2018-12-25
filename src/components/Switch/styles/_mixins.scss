@@ -1,6 +1,6 @@
 $c-switch-btn-size: 26px;
 
-@mixin c-switch($active-color) {;
+@mixin c-switch($active-color) {
     $parent-selector: &;
     border: none;
     position: relative;
