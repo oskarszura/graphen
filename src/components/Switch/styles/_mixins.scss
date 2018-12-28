@@ -2,7 +2,7 @@ $c-switch-btn-size: 26px;
 
 @mixin c-switch($active-color) {
     $parent-selector: &;
-    border: none;
+    border: 1px solid $brand-color-separator;
     position: relative;
     display: inline-block;
     width: 60px;
