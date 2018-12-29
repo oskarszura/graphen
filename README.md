@@ -1,6 +1,6 @@
 # Graphen UI library
 [[Documentation]](https://oskarszura.github.io/graphen/)
-[[Tasks board]](https://trello.com/b/cZaBcQzz/project-graphen)
+[[Tasks board]](https://trello.com/b/vhEpkIJr/project-coda-it)
 
 ## Principles
 
