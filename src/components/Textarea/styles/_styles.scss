@@ -1,3 +1,6 @@
 .c-textarea {
     @include c-textarea();
+    border: 1px solid $brand-component-outline-color;
+    font-size: $brand-normal-font-size;
+    line-height: $brand-normal-line-height;
 }

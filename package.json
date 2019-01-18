@@ -8,7 +8,9 @@
     "build:dev": "webpack --mode=development --config webpack.dev.config.js",
     "build:prod": "webpack --mode=production --config webpack.prod.config.js",
     "lint": "eslint --ext .js .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "csslint": "stylelint ./src/**/*.scss",
+    "csslint:fix": "stylelint ./src/**/*.scss --fix"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
