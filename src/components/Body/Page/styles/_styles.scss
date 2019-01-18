@@ -1,9 +1,9 @@
 .c-page {
-    @include c-page(15px 5% 0);
+    @include c-page(1.5 * $padding-large 5% 0);
     flex: 1;
 }
 
 .main-content {
-    padding: 15px 5% 0;
+    padding: 1.5 * $padding-large 5% 0;
     width: 100vw;
 }

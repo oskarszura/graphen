@@ -5,7 +5,7 @@
     &__item {
         position: relative;
         display: block;
-        padding: 10px 15px;
+        padding: $padding-large 1.5 * $padding-large;
         margin-bottom: -1px;
         background-color: $color-white;
         border: 1px solid $brand-component-outline-color;

@@ -1,6 +1,6 @@
 @mixin c-footer($top-margin) {
-    padding: 10px;
-    font-size: 12px;
+    padding: $padding-large;
+    font-size: $font-size-large;
     margin-top: $top-margin;
 }
 
