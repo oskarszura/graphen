@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/coda-it/graphen.svg?branch=master)](https://travis-ci.org/coda-it/graphen)
+
 # Graphen UI library
 [[Documentation]](https://oskarszura.github.io/graphen/)
 [[Tasks board]](https://trello.com/b/vhEpkIJr/project-coda-it)
