@@ -1,4 +1,5 @@
 NPM=npm
+mode=prod
 
 .PHONY: version
 version:
@@ -12,6 +13,10 @@ version:
 .PHONY: install
 install:
 	$(NPM) install
+
+.PHONY: all
+all:
+	$(NPM) run build:$(mode)
 
 .PHONY: lint
 lint:
