@@ -1,3 +1,6 @@
+NPM=npm
+mode=prod
+
 .PHONY: version
 version:
 	git tag $(V)
@@ -7,9 +10,29 @@ version:
 	git tag --delete $(V)
 	git tag $(V)
 
+.PHONY: install
+install:
+	$(NPM) install
+
+.PHONY: all
+all:
+	$(NPM) run build:$(mode)
+
+.PHONY: lint
+lint:
+	$(NPM) run lint
+	$(NPM) run csslint
+
 .PHONY: help
 help:
+	@echo  '=================================='
 	@echo  'Available tasks:'
+	@echo  '=================================='
+	@echo  '* Installation:'
+	@echo  '- install         - Phony task that installs all required dependencies'
+	@echo  ''
+	@echo  '* Quality:'
+	@echo  '- lint            - Phony task that runs all linting tasks'
 	@echo  ''
 	@echo  '* Release:'
 	@echo  '- version         - Phony task. Creates changelog from latest'
