@@ -12,7 +12,7 @@
     }
 
     &--accept {
-        @include c-btn--hover($brand-color-accept, $color-white);
+        @include c-btn--hover($brand-color-success, $color-white);
     }
 
     &--edit {
