@@ -16,10 +16,10 @@
     }
 
     &--edit {
-        @include c-btn--hover($brand-color-edit, $color-white);
+        @include c-btn--hover($brand-color-info, $color-white);
     }
 
     &--remove {
-        @include c-btn--hover($brand-color-remove, $color-white);
+        @include c-btn--hover($brand-color-danger, $color-white);
     }
 }

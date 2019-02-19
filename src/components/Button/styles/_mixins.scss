@@ -16,7 +16,7 @@
 
 @mixin c-btn--size($height) {
     height: $height;
-    padding: $padding-medium ($height / 3);
+    padding: $spacing-medium ($height / 3);
     font-size: ($height / 3 + 2);
     line-height: ($height - 2 * 6px);
 }
