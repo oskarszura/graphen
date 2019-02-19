@@ -1,0 +1,17 @@
+.c-alert {
+    border-width: 1px;
+    border-style: solid;
+    padding: $spacing-large $spacing-medium;
+
+    &--danger {
+        color: $brand-color-danger;
+        border-color: $brand-color-danger;
+        background-color: $brand-color-danger-soft;
+    }
+
+    &--success {
+        color: $brand-color-success;
+        border-color: $brand-color-success;
+        background-color: $brand-color-success-soft;
+    }
+}

@@ -1,6 +1,6 @@
 @mixin c-textarea() {
     display: block;
     min-height: 35px;
-    padding: $padding-medium 2 * $padding-medium;
+    padding: $spacing-medium 2 * $spacing-medium;
     width: 100%;
 }

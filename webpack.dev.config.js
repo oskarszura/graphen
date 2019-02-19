@@ -1,7 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const devMode = process.env.NODE_ENV !== 'production';
-
 module.exports = {
   context: `${__dirname}/src`,
   output: {
@@ -25,7 +23,7 @@ module.exports = {
     }, {
       test: /\.scss$/,
       use: [
-        devMode ? 'style-loader' : {
+        {
           loader: MiniCssExtractPlugin.loader,
         },
         'css-loader',

@@ -3,5 +3,5 @@ $header-height: 50px;
 .c-header {
     @include c-header($header-height);
     @include c-header--colored($brand-component-bg-color, $brand-component-outline-color);
-    @include c-header--navigation(1.5 * $padding-large $padding-large);
+    @include c-header--navigation(1.5 * $spacing-large $spacing-large);
 }
