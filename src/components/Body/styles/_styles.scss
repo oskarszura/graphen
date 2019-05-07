@@ -1,14 +1,20 @@
-@import "../Header/styles/mixins";
 @import "../Header/styles/styles";
-@import "../Page/styles/mixins";
 @import "../Page/styles/styles";
-@import "../Footer/styles/mixins";
 @import "../Footer/styles/styles";
 
 .c-body {
-    @include c-body($brand-font);
     display: flex;
     flex-direction: column;
+    margin: 0;
+    font-family: $brand-font;
+    font-weight: 100;
+    font-size: $font-size-very-large;
+    color: $brand-text-color;
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
 
     &--default {
         background-color: $color-white;
