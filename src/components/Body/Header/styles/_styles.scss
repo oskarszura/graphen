@@ -1,8 +1,5 @@
-$header-height: 50px;
-
 .c-header {
     display: flex;
-    @include c-header--navigation(1.5 * $spacing-large $spacing-large);
 
     &--default {
         background-color:$brand-component-bg-color;
@@ -13,7 +10,7 @@ $header-height: 50px;
         flex-basis: 10%;
         flex-grow: 1;
         display: block;
-        padding: $archor-padding;
+        padding: 1.5 * $spacing-large $spacing-large;
     }
 
     &__navigation {
