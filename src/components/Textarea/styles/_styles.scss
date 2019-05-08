@@ -1,5 +1,8 @@
 .c-textarea {
-    @include c-textarea();
+    display: block;
+    min-height: 35px;
+    padding: $spacing-medium 2 * $spacing-medium;
+    width: 100%;
     border: 1px solid $brand-component-outline-color;
     font-size: $font-size-large;
     line-height: $font-line-height-normal;
