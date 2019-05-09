@@ -23,6 +23,10 @@ lint:
 	$(NPM) run lint
 	$(NPM) run csslint
 
+.PHONY: fix
+fix:
+	$(NPM) run csslint:fix
+
 .PHONY: help
 help:
 	@echo  '=================================='
@@ -33,6 +37,7 @@ help:
 	@echo  ''
 	@echo  '* Quality:'
 	@echo  '- lint            - Phony task that runs all linting tasks'
+	@echo  '- fix             - Fixes some linting errors
 	@echo  ''
 	@echo  '* Release:'
 	@echo  '- version         - Phony task. Creates changelog from latest'
