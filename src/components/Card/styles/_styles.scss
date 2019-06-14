@@ -3,5 +3,14 @@
 }
 
 .c-card {
-    @include c-card();
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: $spacing-large;
+    margin: 2px;
+
+    &--default {
+        background-color: $brand-component-bg-color;
+        border-color: $brand-component-outline-color;
+    }
 }

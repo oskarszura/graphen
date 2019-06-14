@@ -1,5 +1,5 @@
 .c-panel {
-    @include c-panel();
+    background-color: $brand-bg-color;
 
     &--separator {
         border-bottom: 1px dashed $brand-color-separator;
@@ -7,5 +7,14 @@
 
     &--bordered {
         border: 1px solid $brand-color-separator;
+    }
+
+    &__title {
+        font-size: 20px;
+        padding: $spacing-medium;
+    }
+
+    &__content {
+        padding: $spacing-medium;
     }
 }

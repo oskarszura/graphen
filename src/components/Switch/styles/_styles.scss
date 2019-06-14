@@ -1,3 +1,16 @@
 .c-switch {
-    @include c-switch($brand-color-success);
+    $root-selector: &;
+    @include c-switch();
+
+    &--success {
+        @include c-switch--color($root-selector, $brand-color-success);
+    }
+
+    &--info {
+        @include c-switch--color($root-selector, $brand-color-info);
+    }
+
+    &--danger {
+        @include c-switch--color($root-selector, $brand-color-danger);
+    }
 }

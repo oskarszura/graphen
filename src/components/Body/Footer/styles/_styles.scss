@@ -1,8 +1,11 @@
-$footer-top-margin: 20px;
-$footer-height: 37px + $footer-top-margin;
-
 .c-footer {
-    @include c-footer($footer-top-margin);
-    @include c-footer--colored($brand-component-bg-color);
+    padding: $spacing-large;
+    font-size: $font-size-large;
+    margin-top: 20px;
+
+    &--default {
+        background-color: $brand-component-bg-color;
+    }
 }
+
 

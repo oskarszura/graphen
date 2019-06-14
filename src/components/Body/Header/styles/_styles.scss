@@ -1,7 +1,20 @@
-$header-height: 50px;
-
 .c-header {
-    @include c-header($header-height);
-    @include c-header--colored($brand-component-bg-color, $brand-component-outline-color);
-    @include c-header--navigation(1.5 * $spacing-large $spacing-large);
+    display: flex;
+
+    &--default {
+        background-color:$brand-component-bg-color;
+        border-bottom: 1px solid $brand-component-outline-color;
+    }
+
+    &__logo {
+        flex-basis: 10%;
+        flex-grow: 1;
+        display: block;
+        padding: 1.5 * $spacing-large $spacing-large;
+    }
+
+    &__navigation {
+        flex-basis: 90%;
+        flex-grow: 9;
+    }
 }
