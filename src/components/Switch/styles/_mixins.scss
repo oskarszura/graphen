@@ -1,6 +1,6 @@
 $c-switch-btn-size: 26px;
 
-@mixin c-switch($active-color) {
+@mixin c-switch() {
     $parent-selector: &;
     border: 1px solid $brand-color-separator;
     position: relative;
@@ -13,7 +13,7 @@ $c-switch-btn-size: 26px;
 
         &:checked {
             & + #{$parent-selector}__slider {
-                background-color: $active-color;
+                background-color: $brand-component-bg-color;
             }
 
             & + #{$parent-selector}__slider::before {
@@ -22,7 +22,7 @@ $c-switch-btn-size: 26px;
         }
 
         &:focus + #{$parent-selector}__slider {
-            box-shadow: 0 0 1px $active-color;
+            box-shadow: 0 0 1px $brand-component-bg-color;
         }
     }
 
@@ -49,4 +49,23 @@ $c-switch-btn-size: 26px;
     }
 }
 
+@mixin c-switch--color($root-selector, $active-color) {
+    $modifier-selector: &;
+    @at-root #{$modifier-selector} {
+        #{$root-selector}__input {
+            &:checked {
+                & + #{$root-selector}__slider {
+                    background-color: $active-color;
+                }
 
+                & + #{$root-selector}__slider::before {
+                    transform: translateX($c-switch-btn-size);
+                }
+            }
+
+            &:focus + #{$root-selector}__slider {
+                box-shadow: 0 0 1px $active-color;
+            }
+        }
+    }
+}

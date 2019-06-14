@@ -1,6 +1,10 @@
 NPM=npm
 mode=prod
 
+.PHONY: all
+all:
+	$(NPM) run build:$(mode)
+
 .PHONY: version
 version:
 	git tag $(V)
@@ -13,10 +17,6 @@ version:
 .PHONY: install
 install:
 	$(NPM) install
-
-.PHONY: all
-all:
-	$(NPM) run build:$(mode)
 
 .PHONY: lint
 lint:
