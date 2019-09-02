@@ -1,8 +1,4 @@
-import Loader from './components/Loader';
-import Scroller from './components/Scroller';
+import Loader from "./components/Loader";
+import Scroller from "./components/Scroller";
 
-export {
-  Loader,
-  Scroller,
-};
-
+export { Loader, Scroller };
