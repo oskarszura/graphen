@@ -7,7 +7,7 @@ module.exports = {
     filename: '[name].js',
   },
   entry: {
-    scripts: './index.js',
+    scripts: './example.jsx',
     css: './style.scss',
   },
   module: {

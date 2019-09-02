@@ -1,7 +1,8 @@
 import Loader from './components/Loader';
+import Scroller from './components/Scroller';
 
-/* eslint-disable import/prefer-default-export */
 export {
   Loader,
+  Scroller,
 };
-/* eslint-enable import/prefer-default-export */
+

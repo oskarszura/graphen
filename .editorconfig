@@ -14,7 +14,7 @@ indent_style = space
 indent_size = 4
 
 # Indentation override for all JS
-[*.js,*.jsx]
+[*.{js,jsx}]
 indent_style = space
 indent_size = 2
 

@@ -10,7 +10,7 @@ module.exports = {
     filename: '[name].js',
   },
   entry: {
-    scripts: './index.js',
+    scripts: './example.jss',
     css: './style.scss',
   },
   module: {
