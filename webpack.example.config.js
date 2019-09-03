@@ -8,7 +8,6 @@ module.exports = {
   output: {
     path: `${__dirname}/dist`,
     filename: '[name].js',
-    libraryTarget: 'commonjs2',
   },
   entry: {
     example: './example.jsx',

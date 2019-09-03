@@ -2,7 +2,7 @@
 import _ from "lodash";
 import React from "react";
 import { render } from "react-dom";
-import { Loader, Scroller } from "./index";
+import { Loader, Scroller, Joystick } from "./index";
 
 const appContainer = document.querySelector(".js-example");
 
@@ -196,18 +196,6 @@ if (appContainer) {
         </div>
       </article>
       <article className="c-panel">
-        <header className="c-panel__title">Loader</header>
-        <div className="c-panel__content">
-          <Loader />
-        </div>
-      </article>
-      <article className="c-panel">
-        <header className="c-panel__title">Scroller</header>
-        <div className="c-panel__content">
-          <Scroller onScrollChange={_.noop} min={10} max={100} />
-        </div>
-      </article>
-      <article className="c-panel">
         <header className="c-panel__title">LED</header>
         <div className="c-panel__content">
           <div className="c-led-green" />
@@ -231,6 +219,24 @@ if (appContainer) {
           <div className="c-alert">Alert</div>
           <div className="c-alert c-alert--danger">Alert + danger</div>
           <div className="c-alert c-alert--success">Alert + success</div>
+        </div>
+      </article>
+      <article className="c-panel">
+        <header className="c-panel__title">Loader</header>
+        <div className="c-panel__content">
+          <Loader />
+        </div>
+      </article>
+      <article className="c-panel">
+        <header className="c-panel__title">Scroller</header>
+        <div className="c-panel__content">
+          <Scroller onScrollChange={_.noop} min={10} max={100} />
+        </div>
+      </article>
+      <article className="c-panel">
+        <header className="c-panel__title">Joystick</header>
+        <div className="c-panel__content">
+          <Joystick onPositionChange={_.noop} isEnabled />
         </div>
       </article>
     </section>,
