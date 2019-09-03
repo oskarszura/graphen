@@ -8,7 +8,7 @@
 [lints]
 
 [options]
-module.name_mapper='^client\(.*\)$' -> '<PROJECT_ROOT>/client\1'
+module.name_mapper='^client\(.*\)$' -> '<PROJECT_ROOT>/src\1'
 
 [strict]
 
