@@ -14,17 +14,17 @@ if (appContainer) {
         <div className="c-panel__content">
           <ul className="c-list">
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-primary"></div>- Brand
+              <div className="c-sample c-sample--brand-primary" />- Brand
               primary
             </li>
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-text"></div>- Brand text
+              <div className="c-sample c-sample--brand-text" />- Brand text
             </li>
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-link"></div>- Brand link
+              <div className="c-sample c-sample--brand-link" />- Brand link
             </li>
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-component"></div>- Brand
+              <div className="c-sample c-sample--brand-component" />- Brand
               component
             </li>
           </ul>
@@ -37,13 +37,13 @@ if (appContainer) {
             <a className="c-header__logo" href="/">
               Header
             </a>
-            <nav className="c-header__navigation"></nav>
+            <nav className="c-header__navigation" />
           </header>
           <header className="c-header c-header--default">
             <a className="c-header__logo" href="/">
               Header + default
             </a>
-            <nav className="c-header__navigation"></nav>
+            <nav className="c-header__navigation" />
           </header>
         </div>
       </article>
