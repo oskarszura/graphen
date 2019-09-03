@@ -145,6 +145,28 @@
     line-height: 1.42857;
     border: 1px solid #e5e5e5; }
 
+.c-joystick {
+  position: relative;
+  background-color: #f2f2f2;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  cursor: pointer; }
+  .c-joystick__knob {
+    position: absolute;
+    background-color: #bebfc1;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px; }
+    .c-joystick--inactive .c-joystick__knob {
+      opacity: 0.2; }
+  .c-joystick__drag {
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px; }
+
 @keyframes c-led-red-blink {
   from {
     background-color: #F00; }
@@ -273,6 +295,28 @@
     background-color: #337ab7; }
   .c-sample--brand-component {
     background-color: #f5f5f5; }
+
+.c-scroller {
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e5e5;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  height: 12px; }
+  .c-scroller__knob {
+    position: absolute;
+    border-radius: 2px;
+    background-color: #e5e5e5;
+    height: 12px;
+    width: 12px; }
+  .c-scroller__drag {
+    position: absolute;
+    opacity: 0;
+    border-radius: 2px;
+    background-color: #e5e5e5;
+    height: 12px;
+    width: 12px; }
 
 .c-switch {
   border: 1px solid #e5e5e5;

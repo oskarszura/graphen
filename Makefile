@@ -20,11 +20,14 @@ install:
 
 .PHONY: lint
 lint:
+	$(NPM) run flow
 	$(NPM) run lint
 	$(NPM) run csslint
 
 .PHONY: fix
 fix:
+	$(NPM) run prettify
+	$(NPM) run lint:fix
 	$(NPM) run csslint:fix
 
 .PHONY: help

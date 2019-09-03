@@ -1,7 +1,5 @@
-import Loader from './components/Loader';
+import Joystick from "./components/Joystick";
+import Loader from "./components/Loader";
+import Scroller from "./components/Scroller";
 
-/* eslint-disable import/prefer-default-export */
-export {
-  Loader,
-};
-/* eslint-enable import/prefer-default-export */
+export { Joystick, Loader, Scroller };
