@@ -3,7 +3,7 @@
   "version": "1.2.4",
   "description": "",
   "main": "dist/scripts.js",
-  "files": ["dist/**/*"],
+  "files": ["dist/**/*", "README.md"],
   "scripts": {
     "prepare": "webpack --mode=production --config webpack.prod.config.js",
     "build:dev": "webpack --mode=development --config webpack.dev.config.js",
