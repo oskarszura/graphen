@@ -1,9 +1,13 @@
 {
   "name": "graphen",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "",
   "main": "dist/scripts.js",
-  "files": ["dist/**/*", "src/**/*", "README.md"],
+  "files": [
+    "dist/**/*",
+    "src/**/*",
+    "README.md"
+  ],
   "scripts": {
     "prepare": "webpack --mode=production --config webpack.prod.config.js",
     "build:dev": "webpack --mode=development --config webpack.dev.config.js",
