@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "main": "dist/scripts.js",
+  "files": ["dist/**/*"],
   "scripts": {
     "prepare": "webpack --mode=production --config webpack.prod.config.js",
     "build:dev": "webpack --mode=development --config webpack.dev.config.js",
