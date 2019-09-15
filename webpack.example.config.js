@@ -9,6 +9,7 @@ module.exports = {
   },
   entry: {
     example: './example.jsx',
+    css: './style.scss',
   },
   module: {
     rules: [{
