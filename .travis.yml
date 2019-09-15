@@ -10,3 +10,6 @@ install:
 
 before_script:
   - make lint
+
+after_success:
+  - make integration-test
