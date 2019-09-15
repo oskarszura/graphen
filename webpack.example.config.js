@@ -1,8 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-const devMode = process.env.NODE_ENV !== 'production';
-
 module.exports = {
   context: `${__dirname}/src`,
   output: {
