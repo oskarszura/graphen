@@ -1,12 +1,15 @@
 language: node_js
 
 node_js:
-  - 6.1.0
+  - 12.10.0
 
 install:
   - . $HOME/.nvm/nvm.sh
   - nvm install
   - make install
+
+script:
+  - make env=example
 
 before_script:
   - make lint
