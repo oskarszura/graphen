@@ -9,7 +9,7 @@ install:
   - make install
 
 script:
-  - make env=example
+  - make mode=example
 
 before_script:
   - make lint
