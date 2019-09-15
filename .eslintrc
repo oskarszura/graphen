@@ -10,11 +10,15 @@
     "plugin:flowtype/recommended"
   ],
   "globals": {
-    "document": true
+    "document": true,
+    "cy": true,
+    "Cypress": true,
+    "describe": true,
+    "it": true
   },
   "rules": {
     "no-underscore-dangle": "off",
     "no-param-reassign": "off",
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
   }
 }

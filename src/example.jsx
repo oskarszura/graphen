@@ -9,7 +9,7 @@ const appContainer = document.querySelector(".js-example");
 if (appContainer) {
   render(
     <section className="c-page">
-      <article className="c-panel c-panel--separator">
+      <article className="tst-colors c-panel c-panel--separator">
         <header className="c-panel__title">Colors</header>
         <div className="c-panel__content">
           <ul className="c-list">
