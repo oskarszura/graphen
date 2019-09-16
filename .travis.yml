@@ -9,12 +9,9 @@ install:
   - . $HOME/.nvm/nvm.sh
   - nvm install
   - make install
+  - make mode=example
 
 before_script:
   - make lint
-
-script:
-  - make mode=example
-
-after_script:
   - make integration-test
+
