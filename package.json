@@ -18,7 +18,10 @@
     "csslint": "stylelint ./src/**/*.scss",
     "csslint:fix": "stylelint ./src/**/*.scss --fix",
     "flow": "flow",
-    "prettify": "prettier --write \"./src/**/*.{js,jsx}\""
+    "prettify": "prettier --write \"./src/**/*.{js,jsx}\" && prettier --write \"./example-server/**/*.{js,jsx}\"",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "example-run": "node ./example-server/index.js"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
@@ -39,6 +42,9 @@
     "eslint-plugin-react": "^6.4.1",
     "file-loader": "^0.11.2",
     "flow-bin": "^0.94.0",
+    "koa": "^2.8.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.9.4",
     "postcss-loader": "^3.0.0",
@@ -51,6 +57,7 @@
     "webpack": "^4.20.2"
   },
   "devDependencies": {
+    "cypress": "^3.4.1",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0",
     "webpack-cli": "^3.1.2"

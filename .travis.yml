@@ -1,12 +1,20 @@
 language: node_js
 
 node_js:
-  - 6.1.0
+  - 12.10.0
 
 install:
+  - sudo apt-get update
+  - sudo apt-get install libgconf-2-4 # required by Cypress
   - . $HOME/.nvm/nvm.sh
   - nvm install
   - make install
 
 before_script:
   - make lint
+
+script:
+  - make mode=example
+
+after_script:
+  - make integration-test

@@ -1,8 +1,11 @@
 .idea/
 .env
 .DS_Store
+npm-debug.log
 
 node_modules/
 
 dist/
+public/example.js
+public/styles.css
 docs/_site/changelogs

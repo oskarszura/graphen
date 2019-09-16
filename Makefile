@@ -20,6 +20,13 @@ version:
 install:
 	$(NPM) install
 
+.PHONY: integration-test
+integration-test:
+	cp ./dist/styles.css ./public
+	cp ./dist/example.js ./public
+	$(NPM) run example-run &
+	$(NPM) run cypress:run
+
 .PHONY: lint
 lint:
 	$(NPM) run flow
