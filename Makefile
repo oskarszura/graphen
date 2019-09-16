@@ -26,6 +26,8 @@ integration-test:
 	cp ./dist/example.js ./public
 	$(NPM) run example-run &
 	$(NPM) run cypress:run
+	rm ./public/styles.css
+	rm ./public/example.js
 
 .PHONY: lint
 lint:

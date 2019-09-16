@@ -14,17 +14,20 @@ if (appContainer) {
         <div className="c-panel__content">
           <ul className="c-list">
             <li className="c-list__item">
-              <div className="tst-colors-primary c-sample c-sample--brand-primary" /> - Brand
-              primary
+              <div className="tst-colors-primary c-sample c-sample--brand-primary" />{" "}
+              - Brand primary
             </li>
             <li className="c-list__item">
-              <div className="tst-colors-text c-sample c-sample--brand-text" /> - Brand text
+              <div className="tst-colors-text c-sample c-sample--brand-text" />{" "}
+              - Brand text
             </li>
             <li className="c-list__item">
-              <div className="tst-colors-link c-sample c-sample--brand-link" /> - Brand link
+              <div className="tst-colors-link c-sample c-sample--brand-link" />{" "}
+              - Brand link
             </li>
             <li className="c-list__item">
-              <div className="tst-colors-component c-sample c-sample--brand-component" /> - Brand component
+              <div className="tst-colors-component c-sample c-sample--brand-component" />{" "}
+              - Brand component
             </li>
           </ul>
         </div>

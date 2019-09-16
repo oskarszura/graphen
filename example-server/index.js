@@ -1,14 +1,14 @@
-const fs = require('fs');
-const Koa = require('koa');
-const Router = require('koa-router');
-const serve = require('koa-static');
+const fs = require("fs");
+const Koa = require("koa");
+const Router = require("koa-router");
+const serve = require("koa-static");
 
 const app = new Koa();
 const router = new Router();
-const template = fs.readFileSync('./public/module.html');
+const template = fs.readFileSync("./public/module.html");
 
 router.get("/", ctx => {
-  ctx.type = 'html';
+  ctx.type = "html";
   ctx.body = template;
 });
 

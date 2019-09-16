@@ -1,5 +1,5 @@
 describe('Colors', () => {
-  before(function() {
+  before(() => {
     cy.visit('localhost:3000');
   });
 
@@ -11,7 +11,7 @@ describe('Colors', () => {
     it('should have proper styles', () => {
       cy.get('.tst-colors-primary')
         .should('have.class', 'c-sample')
-        .should('have.class', 'c-sample c-sample--brand-primary')
+        .should('have.class', 'c-sample c-sample--brand-primar');
     });
   });
 
@@ -19,7 +19,7 @@ describe('Colors', () => {
     it('should have proper styles', () => {
       cy.get('.tst-colors-text')
         .should('have.class', 'c-sample')
-        .should('have.class', 'c-sample c-sample--brand-text')
+        .should('have.class', 'c-sample c-sample--brand-text');
     });
   });
 
@@ -27,7 +27,7 @@ describe('Colors', () => {
     it('should have proper styles', () => {
       cy.get('.tst-colors-link')
         .should('have.class', 'c-sample')
-        .should('have.class', 'c-sample c-sample--brand-link')
+        .should('have.class', 'c-sample c-sample--brand-link');
     });
   });
 
@@ -35,7 +35,7 @@ describe('Colors', () => {
     it('should have proper styles', () => {
       cy.get('.tst-colors-component')
         .should('have.class', 'c-sample')
-        .should('have.class', 'c-sample c-sample--brand-component')
+        .should('have.class', 'c-sample c-sample--brand-component');
     });
   });
 });
