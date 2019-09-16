@@ -163,7 +163,7 @@ if (appContainer) {
       <article className="c-panel">
         <header className="c-panel__title">Textarea</header>
         <div className="c-panel__content">
-          <textarea className="c-textarea"></textarea>
+          <textarea className="c-textarea" />
         </div>
       </article>
       <article className="c-panel">
