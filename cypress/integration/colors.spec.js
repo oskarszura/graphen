@@ -11,7 +11,7 @@ describe('Colors', () => {
     it('should have proper styles', () => {
       cy.get('.tst-colors-primary')
         .should('have.class', 'c-sample')
-        .should('have.class', 'c-sample c-sample--brand-primar');
+        .should('have.class', 'c-sample c-sample--brand-primary');
     });
   });
 

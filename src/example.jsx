@@ -144,15 +144,15 @@ if (appContainer) {
             <label className="c-switch">
               <input className="c-switch__input" type="checkbox" />
               <span className="c-switch__slider" />
-            </label>
+            </label>{" "}
             <label className="c-switch c-switch--success">
               <input className="c-switch__input" type="checkbox" />
               <span className="c-switch__slider" />
-            </label>
+            </label>{" "}
             <label className="c-switch c-switch--info">
               <input className="c-switch__input" type="checkbox" />
               <span className="c-switch__slider" />
-            </label>
+            </label>{" "}
             <label className="c-switch c-switch--danger">
               <input className="c-switch__input" type="checkbox" />
               <span className="c-switch__slider" />
@@ -173,7 +173,7 @@ if (appContainer) {
             <div className="c-input">
               <label className="c-input__label">Input</label>
               <input className="c-input__field" />
-            </div>
+            </div>{" "}
             <div className="c-input">
               <label className="c-input__label">Inline</label>
               <input className="c-input__field" />
