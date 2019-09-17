@@ -14,18 +14,20 @@ if (appContainer) {
         <div className="c-panel__content">
           <ul className="c-list">
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-primary" />- Brand
-              primary
+              <div className="tst-colors-primary c-sample c-sample--brand-primary" />{" "}
+              - Brand primary
             </li>
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-text" />- Brand text
+              <div className="tst-colors-text c-sample c-sample--brand-text" />{" "}
+              - Brand text
             </li>
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-link" />- Brand link
+              <div className="tst-colors-link c-sample c-sample--brand-link" />{" "}
+              - Brand link
             </li>
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-component" />- Brand
-              component
+              <div className="tst-colors-component c-sample c-sample--brand-component" />{" "}
+              - Brand component
             </li>
           </ul>
         </div>
@@ -142,15 +144,15 @@ if (appContainer) {
             <label className="c-switch">
               <input className="c-switch__input" type="checkbox" />
               <span className="c-switch__slider" />
-            </label>
+            </label>{" "}
             <label className="c-switch c-switch--success">
               <input className="c-switch__input" type="checkbox" />
               <span className="c-switch__slider" />
-            </label>
+            </label>{" "}
             <label className="c-switch c-switch--info">
               <input className="c-switch__input" type="checkbox" />
               <span className="c-switch__slider" />
-            </label>
+            </label>{" "}
             <label className="c-switch c-switch--danger">
               <input className="c-switch__input" type="checkbox" />
               <span className="c-switch__slider" />
@@ -161,7 +163,7 @@ if (appContainer) {
       <article className="c-panel">
         <header className="c-panel__title">Textarea</header>
         <div className="c-panel__content">
-          <textarea className="c-textarea"></textarea>
+          <textarea className="c-textarea" />
         </div>
       </article>
       <article className="c-panel">
@@ -171,7 +173,7 @@ if (appContainer) {
             <div className="c-input">
               <label className="c-input__label">Input</label>
               <input className="c-input__field" />
-            </div>
+            </div>{" "}
             <div className="c-input">
               <label className="c-input__label">Inline</label>
               <input className="c-input__field" />
