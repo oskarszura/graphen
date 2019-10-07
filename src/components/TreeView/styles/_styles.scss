@@ -1,0 +1,16 @@
+.c-tree-view {
+    &__node {
+        margin-left: 15px;
+        line-height: 20px;
+    }
+
+    &__link {
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      border-left: 1px dotted black;
+      border-bottom: 1px dotted black;
+      margin-bottom: 3px;
+      margin-right: 3px;
+    }
+}

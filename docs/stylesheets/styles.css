@@ -378,3 +378,16 @@
   font-size: 12px;
   line-height: 1.42857; }
 
+.c-tree-view__node {
+  margin-left: 15px;
+  line-height: 20px; }
+
+.c-tree-view__link {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-left: 1px dotted black;
+  border-bottom: 1px dotted black;
+  margin-bottom: 3px;
+  margin-right: 3px; }
+

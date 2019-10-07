@@ -2,7 +2,7 @@
 import _ from "lodash";
 import React from "react";
 import { render } from "react-dom";
-import { Loader, Scroller, Joystick } from "./index";
+import { Loader, Scroller, Joystick, TreeView } from "./index";
 
 const appContainer = document.querySelector(".js-example");
 
@@ -125,12 +125,18 @@ if (appContainer) {
           </p>
           <p>
             <button className="c-btn c-btn--full">Button + full</button>
+          </p>
+          <p>
             <button className="c-btn c-btn--full c-btn--accept">
               Button + full + accept
             </button>
+          </p>
+          <p>
             <button className="c-btn c-btn--full c-btn--edit">
               Button + full + edit
             </button>
+          </p>
+          <p>
             <button className="c-btn c-btn--full c-btn--remove">
               Button + full + remove
             </button>
@@ -218,9 +224,15 @@ if (appContainer) {
       <article className="c-panel">
         <header className="c-panel__title">Alerts</header>
         <div className="c-panel__content">
-          <div className="c-alert">Alert</div>
-          <div className="c-alert c-alert--danger">Alert + danger</div>
-          <div className="c-alert c-alert--success">Alert + success</div>
+          <p>
+            <div className="c-alert">Alert</div>
+          </p>
+          <p>
+            <div className="c-alert c-alert--danger">Alert + danger</div>
+          </p>
+          <p>
+            <div className="c-alert c-alert--success">Alert + success</div>
+          </p>
         </div>
       </article>
       <article className="c-panel">
@@ -239,6 +251,37 @@ if (appContainer) {
         <header className="c-panel__title">Joystick</header>
         <div className="c-panel__content">
           <Joystick onPositionChange={_.noop} isEnabled />
+        </div>
+      </article>
+      <article className="c-panel">
+        <header className="c-panel__title">Tree View</header>
+        <div className="c-panel__content">
+          <TreeView
+            node={{
+              name: 'Sheet',
+              children: [{
+                id: '1',
+                name: 'SheetHeader',
+                children: [{
+                  id: '4',
+                  name: 'p',
+                  children: [],
+                }],
+              }, {
+                id: '2',
+                name: 'SheetBody',
+                children: [{
+                  id: '5',
+                  name: 'span',
+                  children: [],
+                }],
+              }, {
+                id: '3',
+                name: 'SheetFooter',
+                children: [],
+              }],
+            }}
+          />
         </div>
       </article>
     </section>,

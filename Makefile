@@ -41,6 +41,10 @@ fix:
 	$(NPM) run lint:fix
 	$(NPM) run csslint:fix
 
+.PHONY: run-example
+run-example:
+	cd docs; jekyll serve
+
 .PHONY: help
 help:
 	@echo  '=================================='
