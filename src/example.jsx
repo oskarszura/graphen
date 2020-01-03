@@ -2,7 +2,7 @@
 import _ from "lodash";
 import React from "react";
 import { render } from "react-dom";
-import { Link, Loader, Scroller, Joystick, Accordeon } from "./index";
+import { Link, Loader, Scroller, Joystick, Accordion } from "./index";
 
 const appContainer = document.querySelector(".js-example");
 
@@ -248,16 +248,16 @@ if (appContainer) {
         </div>
       </article>
       <article className="c-panel">
-        <header className="c-panel__title">Accordeon</header>
+        <header className="c-panel__title">Accordion</header>
         <div className="c-panel__content">
-          <Accordeon title='Accordeon title'>
+          <Accordion title='Accordion title'>
             <p>
               Some content <span>here</span>
             </p>
             <p>
               Multiple elements are allowed
             </p>
-          </Accordeon>
+          </Accordion>
         </div>
       </article>
     </section>,

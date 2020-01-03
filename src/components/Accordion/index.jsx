@@ -11,7 +11,7 @@ type State = {
   isCollapsed: boolean,
 };
 
-class Accordeon extends React.PureComponent<Props, State> {
+class Accordion extends React.PureComponent<Props, State> {
   constructor() {
     super();
     this.state = {
@@ -29,15 +29,15 @@ class Accordeon extends React.PureComponent<Props, State> {
     const { title, children } = this.props;
     const { isCollapsed } = this.state;
 
-    const contentClasses = classNames('c-accordeon__content', {
-      'c-accordeon__content--collapsed': isCollapsed,
+    const contentClasses = classNames('c-accordion__content', {
+      'c-accordion__content--collapsed': isCollapsed,
     });
     const indicator = isCollapsed ? '+' : '-';
 
     return (
-      <article className='c-accordeon'>
+      <article className='c-accordion'>
         <header
-          className='c-accordeon__title'
+          className='c-accordion__title'
           onClick={() => { this.handleClick(); }}
         >
           {title} ({indicator})
@@ -50,4 +50,4 @@ class Accordeon extends React.PureComponent<Props, State> {
   }
 }
 
-export default Accordeon;
+export default Accordion;
