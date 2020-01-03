@@ -2,7 +2,7 @@
 import _ from "lodash";
 import React from "react";
 import { render } from "react-dom";
-import { Loader, Scroller, Joystick } from "./index";
+import { Link, Loader, Scroller, Joystick, Accordeon } from "./index";
 
 const appContainer = document.querySelector(".js-example");
 
@@ -32,19 +32,25 @@ if (appContainer) {
           </ul>
         </div>
       </article>
+      <article className="c-panel">
+        <header className="c-panel__title">Link</header>
+        <div className="c-panel__content">
+          <Link link='http://some-url'>Link Name</Link>
+        </div>
+      </article>
       <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Header</header>
         <div className="c-panel__content">
           <header className="c-header">
-            <a className="c-header__logo" href="/">
+            <Link className="c-header__logo" link='/'>
               Header
-            </a>
+            </Link>
             <nav className="c-header__navigation" />
           </header>
           <header className="c-header c-header--default">
-            <a className="c-header__logo" href="/">
+            <Link className="c-header__logo" link='/'>
               Header + default
-            </a>
+            </Link>
             <nav className="c-header__navigation" />
           </header>
         </div>
@@ -63,29 +69,29 @@ if (appContainer) {
         <div className="c-panel__content">
           <ul className="c-navigation">
             <li className="c-navigation__option">
-              <a className="c-navigation__link" href="/">
+              <Link className="c-navigation__link" link='/'>
                 Item 1
-              </a>
+              </Link>
             </li>
             <li className="c-navigation__option">
-              <a className="c-navigation__link" href="/">
+              <Link className="c-navigation__link" link='/'>
                 Item 2
-              </a>
+              </Link>
             </li>
             <li className="c-navigation__option">
-              <a className="c-navigation__link" href="/">
+              <Link className="c-navigation__link" link='/'>
                 Item 3
-              </a>
+              </Link>
             </li>
             <li className="c-navigation__option">
-              <a className="c-navigation__link" href="/">
+              <Link className="c-navigation__link" link='/'>
                 Item 4
-              </a>
+              </Link>
             </li>
             <li className="c-navigation__option">
-              <a className="c-navigation__link" href="/">
+              <Link className="c-navigation__link" link='/'>
                 Item 5
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -239,6 +245,19 @@ if (appContainer) {
         <header className="c-panel__title">Joystick</header>
         <div className="c-panel__content">
           <Joystick onPositionChange={_.noop} isEnabled />
+        </div>
+      </article>
+      <article className="c-panel">
+        <header className="c-panel__title">Accordeon</header>
+        <div className="c-panel__content">
+          <Accordeon title='Accordeon title'>
+            <p>
+              Some content <span>here</span>
+            </p>
+            <p>
+              Multiple elements are allowed
+            </p>
+          </Accordeon>
         </div>
       </article>
     </section>,
