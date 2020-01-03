@@ -1,9 +1,23 @@
 NPM=npm
 mode=prod
+MAKE=make
 
 .PHONY: all
 all:
 	$(NPM) run build:$(mode)
+
+.PHONY: example
+example:
+	$(NPM) run build:example
+	cp dist/styles.css public/
+	cp dist/example.js public/
+
+.PHONY: ghpages
+ghpages:
+	$(MAKE) mode=example
+	cp dist/styles.css docs/stylesheets/
+	cp dist/example.js docs/scripts/
+	cd docs && jekyll build
 
 .PHONY: version
 version:
@@ -11,7 +25,10 @@ version:
 	./scripts/changelog.sh
 	$(NPM) version $(V) --no-git-tag-version
 	git add package.json
+	git add package-lock.json
 	git add ./docs/changelogs/CHANGELOG_$(V).md
+	$(MAKE) ghpages
+	git add docs
 	git commit --allow-empty -m "Build $(V)"
 	git tag --delete $(V)
 	git tag $(V)
