@@ -4,6 +4,17 @@
 .m-pull-right {
   float: right !important; }
 
+.c-accordion__title {
+  cursor: pointer; }
+
+.c-accordion__content {
+  max-height: 1000px;
+  transition: max-height 1s; }
+  .c-accordion__content--collapsed {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s; }
+
 .c-alert {
   border-width: 1px;
   border-style: solid;
@@ -269,16 +280,16 @@
       color: #00af87;
       text-decoration: none; }
 
-.c-panel {
+.c-panel, .c-accordion {
   background-color: #fff; }
-  .c-panel--separator {
+  .c-panel--separator, .c-accordion {
     border-bottom: 1px dashed #e5e5e5; }
   .c-panel--bordered {
     border: 1px solid #e5e5e5; }
-  .c-panel__title {
+  .c-panel__title, .c-accordion__title {
     font-size: 20px;
     padding: 6px; }
-  .c-panel__content {
+  .c-panel__content, .c-accordion__content {
     padding: 6px; }
 
 .c-sample {
