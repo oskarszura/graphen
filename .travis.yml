@@ -15,3 +15,12 @@ before_script:
   - make lint
   - make integration-test
 
+script:
+  - make all
+
+deploy:
+  provider: npm
+  api_key: $NPM_TOKEN
+  on:
+    branch: master
+    condition: $TRAVIS_COMMIT_MESSAGE =~ ^Build.*
