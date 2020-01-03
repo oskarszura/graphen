@@ -61,7 +61,7 @@
   "devDependencies": {
     "cypress": "^3.4.1",
     "stylelint": "^9.6.0",
-    "stylelint-config-standard": "^18.2.0",
+    "stylelint-config-standard": "^18.2.0"
   },
   "author": "",
   "license": "ISC"
