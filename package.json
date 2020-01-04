@@ -2,7 +2,7 @@
   "name": "graphen",
   "version": "1.3.3",
   "description": "Graphen is a small library, that keeps reusable blocks of UI and helps making application design consistent across multiple projects.",
-  "main": "src",
+  "main": "dist/scripts.js",
   "files": [
     "dist/**/*",
     "src/**/*",
