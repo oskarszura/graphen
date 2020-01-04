@@ -10,12 +10,17 @@
     &__content {
         @extend .c-panel__content;
         max-height: 1000px;
-        transition: max-height 1s;
+        opacity: 1;
+        transition: all 1s ease;
+        transition-property: max-height, opacity, padding;
 
         &--collapsed {
             max-height: 0px;
+            opacity: 0;
+            padding: 0px;
             overflow: hidden;
-            transition: max-height 1s;
+            transition: all 1s ease;
+            transition-property: max-height, opacity, padding;
         }
     }
 }
