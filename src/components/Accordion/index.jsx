@@ -5,6 +5,7 @@ import classNames from "classnames";
 type Props = {
   title: string,
   children?: React$Element<any>,
+  isCollapsed?: boolean,
 };
 
 type State = {
@@ -12,10 +13,12 @@ type State = {
 };
 
 class Accordion extends React.PureComponent<Props, State> {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    const { isCollapsed } = props;
     this.state = {
-      isCollapsed: false,
+      isCollapsed,
     };
   }
 
