@@ -35,20 +35,20 @@ if (appContainer) {
       <article className="c-panel">
         <header className="c-panel__title">Link</header>
         <div className="c-panel__content">
-          <Link link='http://some-url'>Link Name</Link>
+          <Link link="http://some-url">Link Name</Link>
         </div>
       </article>
       <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Header</header>
         <div className="c-panel__content">
           <header className="c-header">
-            <Link className="c-header__logo" link='/'>
+            <Link className="c-header__logo" link="/">
               Header
             </Link>
             <nav className="c-header__navigation" />
           </header>
           <header className="c-header c-header--default">
-            <Link className="c-header__logo" link='/'>
+            <Link className="c-header__logo" link="/">
               Header + default
             </Link>
             <nav className="c-header__navigation" />
@@ -69,27 +69,27 @@ if (appContainer) {
         <div className="c-panel__content">
           <ul className="c-navigation">
             <li className="c-navigation__option">
-              <Link className="c-navigation__link" link='/'>
+              <Link className="c-navigation__link" link="/">
                 Item 1
               </Link>
             </li>
             <li className="c-navigation__option">
-              <Link className="c-navigation__link" link='/'>
+              <Link className="c-navigation__link" link="/">
                 Item 2
               </Link>
             </li>
             <li className="c-navigation__option">
-              <Link className="c-navigation__link" link='/'>
+              <Link className="c-navigation__link" link="/">
                 Item 3
               </Link>
             </li>
             <li className="c-navigation__option">
-              <Link className="c-navigation__link" link='/'>
+              <Link className="c-navigation__link" link="/">
                 Item 4
               </Link>
             </li>
             <li className="c-navigation__option">
-              <Link className="c-navigation__link" link='/'>
+              <Link className="c-navigation__link" link="/">
                 Item 5
               </Link>
             </li>
@@ -250,13 +250,11 @@ if (appContainer) {
       <article className="c-panel">
         <header className="c-panel__title">Accordion</header>
         <div className="c-panel__content">
-          <Accordion title='Accordion title'>
+          <Accordion title="Accordion title">
             <p>
               Some content <span>here</span>
             </p>
-            <p>
-              Multiple elements are allowed
-            </p>
+            <p>Multiple elements are allowed</p>
           </Accordion>
         </div>
       </article>
