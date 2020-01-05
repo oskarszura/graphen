@@ -3,6 +3,7 @@ import React from "react";
 import classNames from "classnames";
 
 type Props = {
+  className?: string,
   title: string,
   children?: React$Element<any>,
   isCollapsed?: boolean
@@ -29,16 +30,17 @@ class Accordion extends React.PureComponent<Props, State> {
   }
 
   render() {
-    const { title, children } = this.props;
+    const { title, children, className } = this.props;
     const { isCollapsed } = this.state;
 
+    const accordionClasses = classNames(className, "c-accordion");
     const contentClasses = classNames("c-accordion__content", {
       "c-accordion__content--collapsed": isCollapsed
     });
     const indicator = isCollapsed ? "+" : "-";
 
     return (
-      <article className="c-accordion">
+      <article className={accordionClasses}>
         <header
           className="c-accordion__title"
           onClick={() => {
