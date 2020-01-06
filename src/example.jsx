@@ -33,6 +33,13 @@ if (appContainer) {
         </div>
       </article>
       <article className="c-panel">
+        <header className="c-panel__title">Fonts</header>
+        <div className="c-panel__content">
+          <i className="c-icon-menu c-icon-large" />{" "}
+          <i className="c-icon-menu1 c-icon-large" />
+        </div>
+      </article>
+      <article className="c-panel">
         <header className="c-panel__title">Link</header>
         <div className="c-panel__content">
           <Link link="http://some-url">Link Name</Link>
@@ -131,12 +138,18 @@ if (appContainer) {
           </p>
           <p>
             <button className="c-btn c-btn--full">Button + full</button>
+          </p>
+          <p>
             <button className="c-btn c-btn--full c-btn--accept">
               Button + full + accept
             </button>
+          </p>
+          <p>
             <button className="c-btn c-btn--full c-btn--edit">
               Button + full + edit
             </button>
+          </p>
+          <p>
             <button className="c-btn c-btn--full c-btn--remove">
               Button + full + remove
             </button>
@@ -206,10 +219,8 @@ if (appContainer) {
       <article className="c-panel">
         <header className="c-panel__title">LED</header>
         <div className="c-panel__content">
-          <div className="c-led-green" />
-          <div className="c-led-red" />
-          <div className="c-led-blue" />
-          <div className="c-led-yellow" />
+          <div className="c-led-green" /> <div className="c-led-red" />{" "}
+          <div className="c-led-blue" /> <div className="c-led-yellow" />
         </div>
       </article>
       <article className="c-panel">
@@ -224,9 +235,15 @@ if (appContainer) {
       <article className="c-panel">
         <header className="c-panel__title">Alerts</header>
         <div className="c-panel__content">
-          <div className="c-alert">Alert</div>
-          <div className="c-alert c-alert--danger">Alert + danger</div>
-          <div className="c-alert c-alert--success">Alert + success</div>
+          <p>
+            <div className="c-alert">Alert</div>
+          </p>
+          <p>
+            <div className="c-alert c-alert--danger">Alert + danger</div>
+          </p>
+          <p>
+            <div className="c-alert c-alert--success">Alert + success</div>
+          </p>
         </div>
       </article>
       <article className="c-panel">

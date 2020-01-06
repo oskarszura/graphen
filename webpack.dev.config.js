@@ -33,6 +33,9 @@ module.exports = {
     }, {
       test: /\.jpg|.png/,
       loader: 'file-loader',
+    }, {
+      test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+      use: 'base64-inline-loader?limit=1000&name=[name].[ext]'
     }],
   },
   plugins: [
