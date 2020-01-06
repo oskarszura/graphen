@@ -33,6 +33,9 @@ module.exports = {
     }, {
       test: /\.jpg|.png/,
       loader: 'file-loader',
+    }, {
+      test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+      use: 'url-loader',
     }],
   },
   plugins: [

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'graphen-icons';
+  src: url('./assets/font/icomoon.eot?9wkth6');
+  src:
+    url('./assets/font/icomoon.eot?9wkth6#iefix') format('embedded-opentype'),
+    url('./assets/font/icomoon.ttf?9wkth6') format('truetype'),
+    url('./assets/font/icomoon.woff?9wkth6') format('woff'),
+    url('./assets/font/icomoon.svg?9wkth6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="c-icon-"],
+[class*=" c-icon-"] {
+  /* stylelint-disable */
+  font-family: 'graphen-icons Arial' !important;
+  /* stylelint-enable */
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c-icon-menu::before {
+  content: "\e9bd";
+}
+
+.c-icon-menu1::before {
+  content: "\e9bf";
+}
+
+.c-icon-small {
+  font-size: 12px;
+}
+
+.c-icon-medium {
+  font-size: 16px;
+}
+
+.c-icon-large {
+  font-size: 20px;
+}
