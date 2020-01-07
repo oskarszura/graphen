@@ -5,12 +5,11 @@
 @import "variables/responsiveness";
 @import "variables/brand";
 
-@import "typography/icons";
-
 @import "mixins/responsiveness";
 
 @import "mixes/pull-right";
 
+@import "components/Icon/styles/styles";
 @import "components/Alert/styles/styles";
 @import "components/Body/styles/styles";
 @import "components/Button/styles/mixins";
