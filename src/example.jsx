@@ -40,7 +40,8 @@ if (appContainer) {
           <Icon type="menu" className="c-icon--large" />{" "}
           <Icon type="menu2" className="c-icon--large" />{" "}
           <Icon type="menu3" className="c-icon--large" />{" "}
-          <Icon type="menu4" className="c-icon--large" />
+          <Icon type="menu4" className="c-icon--large" />{" "}
+          <Icon type="thermometer-half" className="c-icon--large" />
         </div>
       </article>
       <article className="c-panel">

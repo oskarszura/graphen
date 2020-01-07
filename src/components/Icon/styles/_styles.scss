@@ -50,6 +50,10 @@ $c-icon-font-url: './assets/font' !default;
         content: "\e9c0";
     }
 
+    &--thermometer-half::before {
+        content: "\e900";
+    }
+
     &--small {
         font-size: 12px;
     }
