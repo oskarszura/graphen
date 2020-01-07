@@ -1,0 +1,68 @@
+$c-icon-font-url: './assets/font' !default;
+
+@font-face {
+  font-family: 'graphen-icons';
+  src: url($c-icon-font-url + '/icomoon.eot?9wkth6');
+  src:
+    url($c-icon-font-url + '/icomoon.eot?9wkth6#iefix') format('embedded-opentype'),
+    url($c-icon-font-url + '/icomoon.ttf?9wkth6') format('truetype'),
+    url($c-icon-font-url + '/icomoon.woff?9wkth6') format('woff'),
+    url($c-icon-font-url + '/icomoon.svg?9wkth6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.c-icon {
+    /* stylelint-disable */
+    font-family: 'graphen-icons' !important;
+    /* stylelint-enable */
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &--fire::before {
+        content: "\e9a9";
+    }
+
+    &--man::before {
+        content: "\e9dc";
+    }
+
+    &--menu::before {
+        content: "\e9bd";
+    }
+
+    &--menu2::before {
+        content: "\e9be";
+    }
+
+    &--menu3::before {
+        content: "\e9bf";
+    }
+
+    &--menu4::before {
+        content: "\e9c0";
+    }
+
+    &--thermometer-half::before {
+        content: "\e900";
+    }
+
+    &--small {
+        font-size: 12px;
+    }
+
+    &--medium {
+        font-size: 16px;
+    }
+
+    &--large {
+        font-size: 20px;
+    }
+}

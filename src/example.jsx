@@ -2,7 +2,7 @@
 import _ from "lodash";
 import React from "react";
 import { render } from "react-dom";
-import { Link, Loader, Scroller, Joystick, Accordion } from "./index";
+import { Icon, Link, Loader, Scroller, Joystick, Accordion } from "./index";
 
 const appContainer = document.querySelector(".js-example");
 
@@ -33,10 +33,15 @@ if (appContainer) {
         </div>
       </article>
       <article className="c-panel">
-        <header className="c-panel__title">Fonts</header>
+        <header className="c-panel__title">Icons</header>
         <div className="c-panel__content">
-          <i className="c-icon-menu c-icon-large" />{" "}
-          <i className="c-icon-menu1 c-icon-large" />
+          <Icon type="fire" className="c-icon--large" />{" "}
+          <Icon type="man" className="c-icon--large" />{" "}
+          <Icon type="menu" className="c-icon--large" />{" "}
+          <Icon type="menu2" className="c-icon--large" />{" "}
+          <Icon type="menu3" className="c-icon--large" />{" "}
+          <Icon type="menu4" className="c-icon--large" />{" "}
+          <Icon type="thermometer-half" className="c-icon--large" />
         </div>
       </article>
       <article className="c-panel">
