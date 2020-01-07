@@ -53,9 +53,7 @@ class Accordion extends React.PureComponent<Props, State> {
         >
           {indicator} {title}
         </header>
-        <div className={contentClasses}>
-          {children}
-        </div>
+        <div className={contentClasses}>{children}</div>
       </article>
     );
   }

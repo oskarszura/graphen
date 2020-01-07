@@ -35,13 +35,20 @@ if (appContainer) {
       <article className="c-panel">
         <header className="c-panel__title">Icons</header>
         <div className="c-panel__content">
+          <Icon type="circle-up" className="c-icon--large" />{" "}
+          <Icon type="circle-right" className="c-icon--large" />{" "}
+          <Icon type="circle-down" className="c-icon--large" />{" "}
+          <Icon type="circle-left" className="c-icon--large" />{" "}
           <Icon type="fire" className="c-icon--large" />{" "}
           <Icon type="man" className="c-icon--large" />{" "}
           <Icon type="menu" className="c-icon--large" />{" "}
           <Icon type="menu2" className="c-icon--large" />{" "}
           <Icon type="menu3" className="c-icon--large" />{" "}
           <Icon type="menu4" className="c-icon--large" />{" "}
-          <Icon type="thermometer-half" className="c-icon--large" />
+          <Icon type="thermometer-half" className="c-icon--large" />{" "}
+          <Icon type="radio-checked" className="c-icon--large" />{" "}
+          <Icon type="radio-checked2" className="c-icon--large" />{" "}
+          <Icon type="radio-unchecked" className="c-icon--large" />
         </div>
       </article>
       <article className="c-panel">
