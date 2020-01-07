@@ -38,9 +38,9 @@ class Accordion extends React.PureComponent<Props, State> {
       "c-accordion__content--collapsed": isCollapsed
     });
     const indicator = isCollapsed ? (
-      <i className="c-icon c-icon--menu c-icon--large" />
+      <i className="c-icon c-icon--circle-right c-icon--large" />
     ) : (
-      <i className="c-icon c-icon--menu3 c-icon--large" />
+      <i className="c-icon c-icon--circle-down c-icon--large" />
     );
 
     return (
@@ -53,9 +53,7 @@ class Accordion extends React.PureComponent<Props, State> {
         >
           {indicator} {title}
         </header>
-        <div style={{ height: 100 }} className={contentClasses}>
-          {children}
-        </div>
+        <div className={contentClasses}>{children}</div>
       </article>
     );
   }

@@ -26,6 +26,22 @@ $c-icon-font-url: './assets/font' !default;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    &--circle-up::before {
+        content: "\ea41";
+    }
+
+    &--circle-right::before {
+        content: "\ea42";
+    }
+
+    &--circle-down::before {
+        content: "\ea43";
+    }
+
+    &--circle-left::before {
+        content: "\ea44";
+    }
+
     &--fire::before {
         content: "\e9a9";
     }
@@ -52,6 +68,18 @@ $c-icon-font-url: './assets/font' !default;
 
     &--thermometer-half::before {
         content: "\e900";
+    }
+
+    &--radio-checked::before {
+        content: "\ea54";
+    }
+
+    &--radio-checked2::before {
+        content: "\ea55";
+    }
+
+    &--radio-unchecked::before {
+        content: "\ea56";
     }
 
     &--small {

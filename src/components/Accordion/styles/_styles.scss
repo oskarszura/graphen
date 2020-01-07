@@ -17,7 +17,7 @@
         &--collapsed {
             max-height: 0px;
             opacity: 0;
-            padding: 0px;
+            padding: 0px $spacing-medium;
             overflow: hidden;
             transition: all 1s ease;
             transition-property: max-height, opacity, padding;
