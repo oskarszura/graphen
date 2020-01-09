@@ -1,17 +1,17 @@
-@mixin phone {
-  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+@mixin gx-phone {
+  @media (max-width: #{$g-tablet-width - 1px}) {
     @content;
   }
 }
 
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+@mixin gx-tablet {
+  @media (min-width: #{$g-tablet-width}) and (max-width: #{$g-desktop-width - 1px}) {
     @content;
   }
 }
 
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
+@mixin gx-desktop {
+  @media (min-width: #{$g-desktop-width}) {
     @content;
   }
 }
