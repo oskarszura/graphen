@@ -32,7 +32,7 @@ if (appContainer) {
           </ul>
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Icons</header>
         <div className="c-panel__content">
           <Icon type="circle-up" className="c-icon--large" />{" "}
@@ -51,7 +51,7 @@ if (appContainer) {
           <Icon type="radio-unchecked" className="c-icon--large" />
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Link</header>
         <div className="c-panel__content">
           <Link link="http://some-url">Link Name</Link>
@@ -74,7 +74,7 @@ if (appContainer) {
           </header>
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Footer</header>
         <div className="c-panel__content">
           <footer className="c-footer">Footer</footer>
@@ -131,19 +131,19 @@ if (appContainer) {
         <header className="c-panel__title">Buttons</header>
         <div className="c-panel__content">
           <p>
-            <button className="c-btn">Button</button>
-            <button className="c-btn c-btn--accept">Button + accept</button>
-            <button className="c-btn c-btn--edit">Button + edit</button>
+            <button className="c-btn">Button</button>{" "}
+            <button className="c-btn c-btn--accept">Button + accept</button>{" "}
+            <button className="c-btn c-btn--edit">Button + edit</button>{" "}
             <button className="c-btn c-btn--remove">Button + remove</button>
           </p>
           <p>
-            <button className="c-btn c-btn--small">Button + small</button>
+            <button className="c-btn c-btn--small">Button + small</button>{" "}
             <button className="c-btn c-btn--small c-btn--accept">
               Button + small + accept
-            </button>
+            </button>{" "}
             <button className="c-btn c-btn--small c-btn--edit">
               Button + small + edit
-            </button>
+            </button>{" "}
             <button className="c-btn c-btn--small c-btn--remove">
               Button + small + remove
             </button>
@@ -191,13 +191,13 @@ if (appContainer) {
           </p>
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Textarea</header>
         <div className="c-panel__content">
           <textarea className="c-textarea" />
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Input</header>
         <div className="c-panel__content">
           <p>
@@ -228,14 +228,14 @@ if (appContainer) {
           </p>
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">LED</header>
         <div className="c-panel__content">
           <div className="c-led-green" /> <div className="c-led-red" />{" "}
           <div className="c-led-blue" /> <div className="c-led-yellow" />
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Card</header>
         <div className="c-panel__content">
           <div className="c-cards">
@@ -244,7 +244,7 @@ if (appContainer) {
           </div>
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Alerts</header>
         <div className="c-panel__content">
           <p>
@@ -258,25 +258,25 @@ if (appContainer) {
           </p>
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Loader</header>
         <div className="c-panel__content">
           <Loader />
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Scroller</header>
         <div className="c-panel__content">
           <Scroller onScrollChange={_.noop} min={10} max={100} />
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Joystick</header>
         <div className="c-panel__content">
           <Joystick onPositionChange={_.noop} isEnabled />
         </div>
       </article>
-      <article className="c-panel">
+      <article className="c-panel c-panel--separator">
         <header className="c-panel__title">Accordion</header>
         <div className="c-panel__content">
           <Accordion title="Accordion title">
