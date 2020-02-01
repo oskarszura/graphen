@@ -7,6 +7,7 @@ $c-switch-btn-size: 26px;
     display: inline-block;
     width: 60px;
     height: 34px;
+    border-radius: $radius-medium;
 
     &__input {
         display:none;
@@ -34,6 +35,7 @@ $c-switch-btn-size: 26px;
         bottom: 0;
         cursor: pointer;
         background-color: $brand-component-bg-color;
+        border-radius: $radius-medium;
         transition: .4s;
 
         &::before {
@@ -45,6 +47,7 @@ $c-switch-btn-size: 26px;
             bottom: 4px;
             background-color: white;
             transition: .4s;
+            border-radius: $radius-small;
         }
     }
 }
