@@ -15,19 +15,31 @@ if (appContainer) {
           <ul className="c-list">
             <li className="c-list__item">
               <div className="tst-colors-primary c-sample c-sample--brand-primary" />{" "}
-              - Brand primary
+              - Brand primary / $brand-color-primary
             </li>
             <li className="c-list__item">
               <div className="tst-colors-text c-sample c-sample--brand-text" />{" "}
-              - Brand text
+              - Brand text / $brand-text-color
             </li>
             <li className="c-list__item">
               <div className="tst-colors-link c-sample c-sample--brand-link" />{" "}
-              - Brand link
+              - Brand link / $brand-link-color
             </li>
             <li className="c-list__item">
               <div className="tst-colors-component c-sample c-sample--brand-component" />{" "}
-              - Brand component
+              - Brand component / $brand-component-bg-color
+            </li>
+            <li className="c-list__item">
+              <div className="c-sample c-sample--brand-success" /> - Brand
+              success / $brand-color-success
+            </li>
+            <li className="c-list__item">
+              <div className="c-sample c-sample--brand-info" /> - Brand info /
+              $brand-color-info
+            </li>
+            <li className="c-list__item">
+              <div className="c-sample c-sample--brand-danger" /> - Brand danger
+              / $brand-color-danger
             </li>
           </ul>
         </div>
@@ -231,8 +243,18 @@ if (appContainer) {
       <article className="c-panel c-panel--separator">
         <header className="c-panel__title">LED</header>
         <div className="c-panel__content">
-          <div className="c-led-green" /> <div className="c-led-red" />{" "}
-          <div className="c-led-blue" /> <div className="c-led-yellow" />
+          <p>
+            <div className="c-led c-led--red" />{" "}
+            <div className="c-led c-led--red c-led--blink" />
+          </p>
+          <p>
+            <div className="c-led c-led--green" />{" "}
+            <div className="c-led c-led--green c-led--blink" />
+          </p>
+          <p>
+            <div className="c-led c-led--blue" />{" "}
+            <div className="c-led c-led--blue c-led--blink" />
+          </p>
         </div>
       </article>
       <article className="c-panel c-panel--separator">
@@ -255,6 +277,9 @@ if (appContainer) {
           </p>
           <p>
             <div className="c-alert c-alert--success">Alert + success</div>
+          </p>
+          <p>
+            <div className="c-alert c-alert--info">Alert + info</div>
           </p>
         </div>
       </article>

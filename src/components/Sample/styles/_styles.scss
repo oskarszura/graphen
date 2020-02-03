@@ -1,4 +1,4 @@
-.c-sample {
+ .c-sample {
     @include c-sample(40px);
 
     &--brand-primary {
@@ -15,5 +15,17 @@
 
     &--brand-component {
         @include c-sample--color($brand-component-bg-color);
+    }
+
+    &--brand-success {
+        @include c-sample--color($brand-color-success);
+    }
+
+    &--brand-info {
+     @include c-sample--color($brand-color-info);
+    }
+
+    &--brand-danger {
+     @include c-sample--color($brand-color-danger);
     }
 }

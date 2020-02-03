@@ -14,4 +14,10 @@
         border-color: $brand-color-success;
         background-color: $brand-color-success-soft;
     }
+
+    &--info {
+        color: $brand-color-info;
+        border-color: $brand-color-info;
+        background-color: $brand-color-info-soft;
+    }
 }
