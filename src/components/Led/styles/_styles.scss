@@ -1,24 +1,39 @@
-@include c-led-blink (c-led-red-blink, #F00, #A00, #441313, rgba(255, 0, 0, 0.5))
-.c-led-red {
-    @include c-led(#F00, rgba(255, 0, 0, 0.5));
-    animation: c-led-red-blink 0.5s infinite;
+$c-led-red-center: #f00;
+$c-led-green-center: #0f0;
+$c-led-blue-center: #b5f2e4;
+
+@include c-led-blink (c-led-red-blink, $c-led-red-center, $brand-color-danger, $brand-color-danger, rgba(255, 0, 0, 0.5))
+@include c-led-blink (c-led-green-blink, $c-led-green-center, $brand-color-success, $brand-color-success, rgba(0, 255, 0, 0.5))
+@include c-led-blink (c-led-blue-blink, $c-led-blue-center, $brand-color-info, $brand-color-info, rgba(0, 0, 255, 0.5))
+
+.c-led {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+
+    &--red {
+        @include c-led($c-led-red-center, $brand-color-danger);
+
+        &.c-led--blink {
+            animation: c-led-red-blink 0.5s infinite;
+        }
+    }
+
+    &--green {
+        @include c-led($c-led-green-center, $brand-color-success);
+
+        &.c-led--blink {
+            animation: c-led-green-blink 0.5s infinite;
+        }
+    }
+
+    &--blue {
+        @include c-led($c-led-blue-center, $brand-color-info);
+
+        &.c-led--blink {
+            animation: c-led-blue-blink 0.5s infinite;
+        }
+    }
 }
-
-.c-led-green {
-    @include c-led(#ABFF00, #89FF00);
-}
-
-.c-led-blue {
-    @include c-led(#24E0FF, #3F8CFF);
-}
-
-@include c-led-blink (c-led-yellow-blink, #FF0, #AA0, #808002, #FF0)
-.c-led-yellow {
-    @include c-led(#FF0, #FF0);
-    animation: c-led-yellow-blink 0.5s infinite;
-}
-
-/*.c-led-disabled {
-    @include c-led(#ABABAA, #ABABAA);
-}*/
-

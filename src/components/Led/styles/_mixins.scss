@@ -1,11 +1,6 @@
 @mixin c-led($color-center, $color-border) {
-    display: inline-block;
-    vertical-align: middle;
-    width: 24px;
-    height: 24px;
     background-color: $color-center;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, $color-border 0 2px 14px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #aaa 0 -1px 9px, $color-border 0 2px 14px;
 }
 
 @mixin c-led-blink ($name, $color-active, $color-inactive-center, $color-inactive-border, $color-inactive-out) {
