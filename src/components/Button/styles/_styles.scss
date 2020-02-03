@@ -10,6 +10,7 @@
     white-space: nowrap;
     border-radius: $radius-medium;
     user-select: none;
+    vertical-align: middle;
 
     &--medium {
         @include c-btn--size(34px);
