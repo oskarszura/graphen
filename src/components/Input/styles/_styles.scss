@@ -12,7 +12,10 @@
     }
 
     &__label {
+        color: $color-boulder;
+        font-size: $font-size-very-large;
         font-weight: bold;
+        padding-left: $spacing-small;
     }
 
     &__field {
@@ -21,7 +24,7 @@
         border-radius: $radius-medium;
         width: 100%;
         height: 34px;
-        padding: 0px 2 * $spacing-medium;
+        padding: 0px $spacing-medium;
         font-size: $font-size-very-large;
         line-height: $font-line-height-normal;
         border: 1px solid $brand-component-outline-color;
