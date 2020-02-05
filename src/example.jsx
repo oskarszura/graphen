@@ -15,30 +15,34 @@ if (appContainer) {
           <ul className="c-list">
             <li className="c-list__item">
               <div className="tst-colors-primary c-sample c-sample--brand-primary" />{" "}
-              - Brand primary / $brand-color-primary
+              - Brand color primary / $brand-color-primary
             </li>
             <li className="c-list__item">
               <div className="tst-colors-text c-sample c-sample--brand-text" />{" "}
-              - Brand text / $brand-text-color
+              - Brand color text / $brand-color-text
             </li>
             <li className="c-list__item">
               <div className="tst-colors-link c-sample c-sample--brand-link" />{" "}
-              - Brand link / $brand-link-color
+              - Brand color link / $brand-color-link
             </li>
             <li className="c-list__item">
               <div className="tst-colors-component c-sample c-sample--brand-component" />{" "}
-              - Brand component / $brand-component-bg-color
+              - Brand color component / $brand-color-component
+            </li>
+            <li className="c-list__item">
+              <div className="tst-colors-component c-sample c-sample--brand-component-dark" />{" "}
+              - Brand color component dark / $brand-color-component-dark
             </li>
             <li className="c-list__item">
               <div className="c-sample c-sample--brand-success" /> - Brand
-              success / $brand-color-success
+              color success / $brand-color-success
             </li>
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-info" /> - Brand info /
+              <div className="c-sample c-sample--brand-info" /> - Brand color info /
               $brand-color-info
             </li>
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-danger" /> - Brand danger
+              <div className="c-sample c-sample--brand-danger" /> - Brand color danger
               / $brand-color-danger
             </li>
           </ul>
@@ -144,12 +148,16 @@ if (appContainer) {
         <div className="c-panel__content">
           <p>
             <button className="c-btn">Button</button>{" "}
+            <button className="c-btn c-btn--default">Button + default</button>{" "}
             <button className="c-btn c-btn--accept">Button + accept</button>{" "}
             <button className="c-btn c-btn--edit">Button + edit</button>{" "}
             <button className="c-btn c-btn--remove">Button + remove</button>
           </p>
           <p>
             <button className="c-btn c-btn--small">Button + small</button>{" "}
+            <button className="c-btn c-btn--small c-btn--default">
+              Button + small + default
+            </button>{" "}
             <button className="c-btn c-btn--small c-btn--accept">
               Button + small + accept
             </button>{" "}
@@ -162,6 +170,11 @@ if (appContainer) {
           </p>
           <p>
             <button className="c-btn c-btn--full">Button + full</button>
+          </p>
+          <p>
+            <button className="c-btn c-btn--full c-btn--default">
+              Button + full + default
+            </button>
           </p>
           <p>
             <button className="c-btn c-btn--full c-btn--accept">

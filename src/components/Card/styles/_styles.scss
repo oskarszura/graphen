@@ -10,7 +10,7 @@
     margin: 2px;
 
     &--default {
-        background-color: $brand-component-bg-color;
-        border-color: $brand-component-outline-color;
+        background-color: $brand-color-component;
+        border-color: $brand-color-component-dark;
     }
 }

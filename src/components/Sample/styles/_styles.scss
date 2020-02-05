@@ -6,15 +6,19 @@
     }
 
     &--brand-text {
-        @include c-sample--color($brand-text-color);
+        @include c-sample--color($brand-color-text);
     }
 
     &--brand-link {
-        @include c-sample--color($brand-link-color);
+        @include c-sample--color($brand-color-link);
     }
 
     &--brand-component {
-        @include c-sample--color($brand-component-bg-color);
+        @include c-sample--color($brand-color-component);
+    }
+
+    &--brand-component-dark {
+     @include c-sample--color($brand-color-component-dark);
     }
 
     &--brand-success {

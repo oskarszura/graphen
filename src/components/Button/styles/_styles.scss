@@ -25,6 +25,10 @@
         display: block;
     }
 
+    &--default {
+        @include c-btn--hover($brand-color-component, $brand-color-text);
+    }
+
     &--accept {
         @include c-btn--hover($brand-color-success, $color-white);
     }
