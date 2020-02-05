@@ -1,13 +1,15 @@
+/* Colors */
+
 /* Brand role */
 $brand-bg-color: $color-white;
 $brand-color-primary: $color-persian-green;
-$brand-text-color: $color-mine-shaft;
-$brand-link-color: $color-astral;
+$brand-color-text: $color-mine-shaft;
+$brand-color-link: $color-astral;
 
 /* Structural role */
 $brand-color-separator: $color-mercury;
-$brand-component-bg-color: $color-wild-sand;
-$brand-component-outline-color: $color-mercury;
+$brand-color-component: $color-wild-sand;
+$brand-color-component-dark: $color-mercury;
 
 /* Functional role */
 $brand-color-success: $color-persian-green;
@@ -17,4 +19,5 @@ $brand-color-info-soft: $color-link-water;
 $brand-color-danger: $color-roman;
 $brand-color-danger-soft: $color-beauty-bush;
 
+/* Fonts */
 $brand-font: Arial;

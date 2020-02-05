@@ -1,9 +1,9 @@
 .c-link {
-    color: $brand-link-color;
+    color: $brand-color-link;
     cursor: pointer;
     text-decoration: none;
 
     &:hover {
-        color: lighten($brand-link-color, 20%);
+        color: lighten($brand-color-link, 20%);
     }
 }

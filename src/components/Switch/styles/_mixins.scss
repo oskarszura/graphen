@@ -14,7 +14,7 @@ $c-switch-btn-size: 26px;
 
         &:checked {
             & + #{$parent-selector}__slider {
-                background-color: $brand-component-bg-color;
+                background-color: $brand-color-component;
             }
 
             & + #{$parent-selector}__slider::before {
@@ -23,7 +23,7 @@ $c-switch-btn-size: 26px;
         }
 
         &:focus + #{$parent-selector}__slider {
-            box-shadow: 0 0 1px $brand-component-bg-color;
+            box-shadow: 0 0 1px $brand-color-component;
         }
     }
 
@@ -34,7 +34,7 @@ $c-switch-btn-size: 26px;
         right: 0;
         bottom: 0;
         cursor: pointer;
-        background-color: $brand-component-bg-color;
+        background-color: $brand-color-component;
         border-radius: $radius-medium;
         transition: .4s;
 
