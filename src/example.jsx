@@ -34,16 +34,16 @@ if (appContainer) {
               - Brand color component dark / $brand-color-component-dark
             </li>
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-success" /> - Brand
-              color success / $brand-color-success
+              <div className="c-sample c-sample--brand-success" /> - Brand color
+              success / $brand-color-success
             </li>
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-info" /> - Brand color info /
-              $brand-color-info
+              <div className="c-sample c-sample--brand-info" /> - Brand color
+              info / $brand-color-info
             </li>
             <li className="c-list__item">
-              <div className="c-sample c-sample--brand-danger" /> - Brand color danger
-              / $brand-color-danger
+              <div className="c-sample c-sample--brand-danger" /> - Brand color
+              danger / $brand-color-danger
             </li>
           </ul>
         </div>
