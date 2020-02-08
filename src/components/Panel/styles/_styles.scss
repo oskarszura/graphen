@@ -1,12 +1,12 @@
-.c-panel {
-    background-color: $brand-color-background;
+.gc-panel {
+    background-color: $gb-brand-color-background;
 
     &--separator {
-        border-bottom: 1px dashed $brand-color-separator;
+        border-bottom: 1px dashed $gb-brand-color-separator;
     }
 
     &--bordered {
-        border: 1px solid $brand-color-separator;
+        border: 1px solid $gb-brand-color-separator;
     }
 
     &__title {

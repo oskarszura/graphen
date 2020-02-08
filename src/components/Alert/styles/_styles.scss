@@ -1,23 +1,23 @@
-.c-alert {
+.gc-alert {
     border-width: 1px;
     border-style: solid;
     padding: $spacing-large $spacing-medium;
 
     &--danger {
-        color: $brand-color-danger;
-        border-color: $brand-color-danger;
-        background-color: $brand-color-danger-soft;
+        color: $gb-brand-color-danger;
+        border-color: $gb-brand-color-danger;
+        background-color: $gb-brand-color-danger-soft;
     }
 
     &--success {
-        color: $brand-color-success;
-        border-color: $brand-color-success;
-        background-color: $brand-color-success-soft;
+        color: $gb-brand-color-success;
+        border-color: $gb-brand-color-success;
+        background-color: $gb-brand-color-success-soft;
     }
 
     &--info {
-        color: $brand-color-info;
-        border-color: $brand-color-info;
-        background-color: $brand-color-info-soft;
+        color: $gb-brand-color-info;
+        border-color: $gb-brand-color-info;
+        background-color: $gb-brand-color-info-soft;
     }
 }

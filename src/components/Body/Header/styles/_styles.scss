@@ -1,9 +1,9 @@
-.c-header {
+.gc-header {
     display: flex;
 
     &--default {
-        background-color:$brand-color-component;
-        border-bottom: 1px solid $brand-color-component-dark;
+        background-color:$gb-brand-color-component;
+        border-bottom: 1px solid $gb-brand-color-component-dark;
     }
 
     &__logo {

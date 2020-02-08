@@ -11,8 +11,8 @@ type Props = {
 const Icon = (props: Props) => {
   const { type, className } = props;
 
-  const classes = classNames("c-icon", className, {
-    [`c-icon--${type}`]: !_.isEmpty(type)
+  const classes = classNames("gc-icon", className, {
+    [`gc-icon--${type}`]: !_.isEmpty(type)
   });
 
   return <span className={classes} />;

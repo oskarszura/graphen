@@ -2,14 +2,14 @@
 @import "../Page/styles/styles";
 @import "../Footer/styles/styles";
 
-.c-body {
+.gc-body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: $brand-font;
+    font-family: $gb-brand-font;
     font-weight: 100;
     font-size: $font-size-very-large;
-    color: $brand-color-text;
+    color: $gb-brand-color-text;
 
     a {
         cursor: pointer;

@@ -1,19 +1,19 @@
-$c-icon-font-url: './assets/font' !default;
+$gc-icon-font-url: './assets/font' !default;
 
 @font-face {
   font-family: 'graphen-icons';
-  src: url($c-icon-font-url + '/icomoon.eot?9wkth6');
+  src: url($gc-icon-font-url + '/icomoon.eot?9wkth6');
   src:
-    url($c-icon-font-url + '/icomoon.eot?9wkth6#iefix') format('embedded-opentype'),
-    url($c-icon-font-url + '/icomoon.ttf?9wkth6') format('truetype'),
-    url($c-icon-font-url + '/icomoon.woff?9wkth6') format('woff'),
-    url($c-icon-font-url + '/icomoon.svg?9wkth6#icomoon') format('svg');
+    url($gc-icon-font-url + '/icomoon.eot?9wkth6#iefix') format('embedded-opentype'),
+    url($gc-icon-font-url + '/icomoon.ttf?9wkth6') format('truetype'),
+    url($gc-icon-font-url + '/icomoon.woff?9wkth6') format('woff'),
+    url($gc-icon-font-url + '/icomoon.svg?9wkth6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-.c-icon {
+.gc-icon {
     /* stylelint-disable */
     font-family: 'graphen-icons' !important;
     /* stylelint-enable */

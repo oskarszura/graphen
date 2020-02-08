@@ -1,20 +1,20 @@
-$c-scroller-size: 12px;
+$gc-scroller-size: 12px;
 
-.c-scroller {
+.gc-scroller {
   position: relative;
   border-width: 1px;
   border-style: solid;
-  border-color: $brand-color-component-dark;
-  background-color: $brand-color-component;
+  border-color: $gb-brand-color-component-dark;
+  background-color: $gb-brand-color-component;
   border-radius: $radius-small;
-  height: $c-scroller-size;
+  height: $gc-scroller-size;
 
   &__knob {
     position: absolute;
     border-radius: $radius-small;
     background-color: $color-mercury;
-    height: $c-scroller-size;
-    width: $c-scroller-size;
+    height: $gc-scroller-size;
+    width: $gc-scroller-size;
   }
 
   &__drag {
@@ -22,7 +22,7 @@ $c-scroller-size: 12px;
     opacity: 0;
     border-radius: $radius-small;
     background-color: $color-mercury;
-    height: $c-scroller-size;
-    width: $c-scroller-size;
+    height: $gc-scroller-size;
+    width: $gc-scroller-size;
   }
 }

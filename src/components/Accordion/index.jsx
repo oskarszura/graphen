@@ -33,20 +33,20 @@ class Accordion extends React.PureComponent<Props, State> {
     const { title, children, className } = this.props;
     const { isCollapsed } = this.state;
 
-    const accordionClasses = classNames(className, "c-accordion");
-    const contentClasses = classNames("c-accordion__content", {
-      "c-accordion__content--collapsed": isCollapsed
+    const accordionClasses = classNames(className, "gc-accordion");
+    const contentClasses = classNames("gc-accordion__content", {
+      "gc-accordion__content--collapsed": isCollapsed
     });
     const indicator = isCollapsed ? (
-      <i className="c-icon c-icon--circle-right c-icon--medium" />
+      <i className="gc-icon gc-icon--circle-right gc-icon--medium" />
     ) : (
-      <i className="c-icon c-icon--circle-down c-icon--medium" />
+      <i className="gc-icon gc-icon--circle-down gc-icon--medium" />
     );
 
     return (
       <article className={accordionClasses}>
         <header
-          className="c-accordion__title"
+          className="gc-accordion__title"
           onClick={() => {
             this.handleClick();
           }}

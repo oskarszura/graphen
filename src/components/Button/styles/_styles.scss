@@ -1,5 +1,5 @@
-.c-btn {
-    @include c-btn--size(34px);
+.gc-btn {
+    @include cx-btn--size(34px);
     box-sizing: border-box;
     display: inline-block;
     font-weight: normal;
@@ -13,11 +13,11 @@
     vertical-align: middle;
 
     &--medium {
-        @include c-btn--size(34px);
+        @include cx-btn--size(34px);
     }
 
     &--small {
-        @include c-btn--size(20px);
+        @include cx-btn--size(20px);
     }
 
     &--full {
@@ -26,18 +26,18 @@
     }
 
     &--default {
-        @include c-btn--hover($brand-color-component, $brand-color-text);
+        @include cx-btn--hover($gb-brand-color-component, $gb-brand-color-text);
     }
 
     &--accept {
-        @include c-btn--hover($brand-color-success, $color-white);
+        @include cx-btn--hover($gb-brand-color-success, $color-white);
     }
 
     &--edit {
-        @include c-btn--hover($brand-color-info, $color-white);
+        @include cx-btn--hover($gb-brand-color-info, $color-white);
     }
 
     &--remove {
-        @include c-btn--hover($brand-color-danger, $color-white);
+        @include cx-btn--hover($gb-brand-color-danger, $color-white);
     }
 }

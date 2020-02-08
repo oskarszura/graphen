@@ -1,8 +1,8 @@
-@keyframes c-loading {
+@keyframes gc-loading {
 	to { transform: rotate(360deg); }
 }
 
-.c-loader {
+.gc-loader {
     margin: 0 auto;
 	width: 40px;
 	height: 40px;
@@ -12,5 +12,5 @@
 	border-right: 4px solid $color-white;
 	border-bottom: 4px solid $color-boulder;
 	border-left: 4px solid $color-boulder;
-	animation: c-loading 1.2s infinite linear;
+	animation: gc-loading 1.2s infinite linear;
 }

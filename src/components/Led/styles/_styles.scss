@@ -1,12 +1,12 @@
-$c-led-red-center: #f00;
-$c-led-green-center: #0f0;
-$c-led-blue-center: #b5f2e4;
+$gc-led-red-center: #f00;
+$gc-led-green-center: #0f0;
+$gc-led-blue-center: #b5f2e4;
 
-@include c-led-blink (c-led-red-blink, $c-led-red-center, $brand-color-danger, $brand-color-danger, rgba(255, 0, 0, 0.5))
-@include c-led-blink (c-led-green-blink, $c-led-green-center, $brand-color-success, $brand-color-success, rgba(0, 255, 0, 0.5))
-@include c-led-blink (c-led-blue-blink, $c-led-blue-center, $brand-color-info, $brand-color-info, rgba(0, 0, 255, 0.5))
+@include cx-led-blink (gc-led-red-blink, $gc-led-red-center, $gb-brand-color-danger, $gb-brand-color-danger, rgba(255, 0, 0, 0.5))
+@include cx-led-blink (gc-led-green-blink, $gc-led-green-center, $gb-brand-color-success, $gb-brand-color-success, rgba(0, 255, 0, 0.5))
+@include cx-led-blink (gc-led-blue-blink, $gc-led-blue-center, $gb-brand-color-info, $gb-brand-color-info, rgba(0, 0, 255, 0.5))
 
-.c-led {
+.gc-led {
     display: inline-block;
     vertical-align: middle;
     width: 24px;
@@ -14,26 +14,26 @@ $c-led-blue-center: #b5f2e4;
     border-radius: 50%;
 
     &--red {
-        @include c-led($c-led-red-center, $brand-color-danger);
+        @include cx-led($gc-led-red-center, $gb-brand-color-danger);
 
-        &.c-led--blink {
-            animation: c-led-red-blink 0.5s infinite;
+        &.gc-led--blink {
+            animation: gc-led-red-blink 0.5s infinite;
         }
     }
 
     &--green {
-        @include c-led($c-led-green-center, $brand-color-success);
+        @include cx-led($gc-led-green-center, $gb-brand-color-success);
 
-        &.c-led--blink {
-            animation: c-led-green-blink 0.5s infinite;
+        &.gc-led--blink {
+            animation: gc-led-green-blink 0.5s infinite;
         }
     }
 
     &--blue {
-        @include c-led($c-led-blue-center, $brand-color-info);
+        @include cx-led($gc-led-blue-center, $gb-brand-color-info);
 
-        &.c-led--blink {
-            animation: c-led-blue-blink 0.5s infinite;
+        &.gc-led--blink {
+            animation: gc-led-blue-blink 0.5s infinite;
         }
     }
 }

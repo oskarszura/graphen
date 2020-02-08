@@ -1,8 +1,8 @@
-$c-switch-btn-size: 26px;
+$gx-switch-btn-size: 26px;
 
-@mixin c-switch() {
+@mixin gx-switch() {
     $parent-selector: &;
-    border: 1px solid $brand-color-separator;
+    border: 1px solid $gb-brand-color-separator;
     position: relative;
     display: inline-block;
     width: 60px;
@@ -14,16 +14,16 @@ $c-switch-btn-size: 26px;
 
         &:checked {
             & + #{$parent-selector}__slider {
-                background-color: $brand-color-component;
+                background-color: $gb-brand-color-component;
             }
 
             & + #{$parent-selector}__slider::before {
-                transform: translateX($c-switch-btn-size);
+                transform: translateX($gx-switch-btn-size);
             }
         }
 
         &:focus + #{$parent-selector}__slider {
-            box-shadow: 0 0 1px $brand-color-component;
+            box-shadow: 0 0 1px $gb-brand-color-component;
         }
     }
 
@@ -34,15 +34,15 @@ $c-switch-btn-size: 26px;
         right: 0;
         bottom: 0;
         cursor: pointer;
-        background-color: $brand-color-component;
+        background-color: $gb-brand-color-component;
         border-radius: $radius-medium;
         transition: .4s;
 
         &::before {
             position: absolute;
             content: "";
-            height: $c-switch-btn-size;
-            width: $c-switch-btn-size;
+            height: $gx-switch-btn-size;
+            width: $gx-switch-btn-size;
             left: 4px;
             bottom: 4px;
             background-color: white;
@@ -52,7 +52,7 @@ $c-switch-btn-size: 26px;
     }
 }
 
-@mixin c-switch--color($root-selector, $active-color) {
+@mixin gx-switch--color($root-selector, $active-color) {
     $modifier-selector: &;
     @at-root #{$modifier-selector} {
         #{$root-selector}__input {
@@ -62,7 +62,7 @@ $c-switch-btn-size: 26px;
                 }
 
                 & + #{$root-selector}__slider::before {
-                    transform: translateX($c-switch-btn-size);
+                    transform: translateX($gx-switch-btn-size);
                 }
             }
 

@@ -10,8 +10,8 @@ describe("Colors", () => {
   describe("color brand primary", () => {
     it("should have proper styles", () => {
       cy.get(".tst-colors-primary")
-        .should("have.class", "c-sample")
-        .should("have.class", "c-sample c-sample--brand-primary");
+        .should("have.class", "gc-sample")
+        .should("have.class", "gc-sample gc-sample--brand-primary");
     });
 
     it("should have proper properties", () => {
@@ -24,8 +24,8 @@ describe("Colors", () => {
   describe("color brand text", () => {
     it("should have proper styles", () => {
       cy.get(".tst-colors-text")
-        .should("have.class", "c-sample")
-        .should("have.class", "c-sample c-sample--brand-text");
+        .should("have.class", "gc-sample")
+        .should("have.class", "gc-sample gc-sample--brand-text");
     });
 
     it("should have proper properties", () => {
@@ -38,8 +38,8 @@ describe("Colors", () => {
   describe("color brand link", () => {
     it("should have proper styles", () => {
       cy.get(".tst-colors-link")
-        .should("have.class", "c-sample")
-        .should("have.class", "c-sample c-sample--brand-link");
+        .should("have.class", "gc-sample")
+        .should("have.class", "gc-sample gc-sample--brand-link");
     });
 
     it("should have proper properties", () => {
@@ -52,8 +52,8 @@ describe("Colors", () => {
   describe("color brand component", () => {
     it("should have proper styles", () => {
       cy.get(".tst-colors-component")
-        .should("have.class", "c-sample")
-        .should("have.class", "c-sample c-sample--brand-component");
+        .should("have.class", "gc-sample")
+        .should("have.class", "gc-sample gc-sample--brand-component");
     });
 
     it("should have proper properties", () => {
