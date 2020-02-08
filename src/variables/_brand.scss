@@ -1,23 +1,23 @@
 /* Colors */
 
 /* Brand role */
-$brand-bg-color: $color-white;
-$brand-color-primary: $color-persian-green;
-$brand-color-text: $color-mine-shaft;
-$brand-color-link: $color-astral;
+$brand-color-background: $color-white !default;
+$brand-color-primary: $color-persian-green !default;
+$brand-color-text: $color-mine-shaft !default;
+$brand-color-link: $color-astral !default;
 
 /* Structural role */
-$brand-color-separator: $color-mercury;
-$brand-color-component: $color-wild-sand;
-$brand-color-component-dark: $color-mercury;
+$brand-color-separator: $color-mercury !default;
+$brand-color-component: $color-wild-sand !default;
+$brand-color-component-dark: $color-mercury !default;
 
 /* Functional role */
-$brand-color-success: $color-persian-green;
-$brand-color-success-soft: $color-ice-cold;
-$brand-color-info: $color-viking;
-$brand-color-info-soft: $color-link-water;
-$brand-color-danger: $color-roman;
-$brand-color-danger-soft: $color-beauty-bush;
+$brand-color-success: $color-persian-green !default;
+$brand-color-success-soft: $color-ice-cold !default;
+$brand-color-info: $color-viking !default;
+$brand-color-info-soft: $color-link-water !default;
+$brand-color-danger: $color-roman !default;
+$brand-color-danger-soft: $color-beauty-bush !default;
 
 /* Fonts */
-$brand-font: Arial;
+$brand-font: Arial !default;

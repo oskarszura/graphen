@@ -16,5 +16,9 @@ Graphen architecture is driven by:
 2. Import `style.scss` (or particular components) into your project
 3. In order to build font successfully, set `$c-icon-font-url` to point from your project root level (ex. `~graphen/src/assets/font`)
 
+## Customization
+Graphen allows to customize branding variables (palette of colors and font) to fit graphical requirements of the project it's used in.
+In order to customize, checkout `src/variables/_brand.scss` for particular variables that can be overwritten.
+
 ## Others
 * Name of colors are taken from [here](http://chir.ag/projects/name-that-color/)
