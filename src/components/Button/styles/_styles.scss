@@ -26,7 +26,7 @@
     }
 
     &--default {
-        @include cx-btn--hover($gb-brand-color-component, $brand-color-text);
+        @include cx-btn--hover($gb-brand-color-component, $gb-brand-color-text);
     }
 
     &--accept {
@@ -35,6 +35,7 @@
 
     &--edit {
         @include cx-btn--hover($gb-brand-color-info, $color-white);
+    }
 
     &--remove {
         @include cx-btn--hover($gb-brand-color-danger, $color-white);

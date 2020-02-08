@@ -19,11 +19,11 @@ if (appContainer) {
             </li>
             <li className="gc-list__item">
               <div className="tst-colors-text gc-sample gc-sample--brand-text" />{" "}
-              - Brand color text / $brand-color-text
+              - Brand color text / $gb-brand-color-text
             </li>
             <li className="gc-list__item">
               <div className="tst-colors-link gc-sample gc-sample--brand-link" />{" "}
-              - Brand color link / $brand-color-link
+              - Brand color link / $gb-brand-color-link
             </li>
             <li className="gc-list__item">
               <div className="tst-colors-component gc-sample gc-sample--brand-component" />{" "}

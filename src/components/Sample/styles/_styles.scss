@@ -6,11 +6,11 @@
     }
 
     &--brand-text {
-        @include gx-sample--color($brand-color-text);
+        @include gx-sample--color($gb-brand-color-text);
     }
 
     &--brand-link {
-        @include gx-sample--color($brand-color-link);
+        @include gx-sample--color($gb-brand-color-link);
     }
 
     &--brand-component {
