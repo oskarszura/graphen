@@ -34,16 +34,16 @@ if (appContainer) {
               - Brand color component dark / $gb-brand-color-component-dark
             </li>
             <li className="gc-list__item">
-              <div className="gc-sample gc-sample--brand-success" /> - Brand color
-              success / $gb-brand-color-success
+              <div className="gc-sample gc-sample--brand-success" /> - Brand
+              color success / $gb-brand-color-success
             </li>
             <li className="gc-list__item">
               <div className="gc-sample gc-sample--brand-info" /> - Brand color
               info / $gb-brand-color-info
             </li>
             <li className="gc-list__item">
-              <div className="gc-sample gc-sample--brand-danger" /> - Brand color
-              danger / $gb-brand-color-danger
+              <div className="gc-sample gc-sample--brand-danger" /> - Brand
+              color danger / $gb-brand-color-danger
             </li>
           </ul>
         </div>
