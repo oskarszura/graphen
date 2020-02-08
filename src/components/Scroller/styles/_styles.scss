@@ -1,4 +1,4 @@
-$ggc-scroller-size: 12px;
+$gc-scroller-size: 12px;
 
 .gc-scroller {
   position: relative;
@@ -7,14 +7,14 @@ $ggc-scroller-size: 12px;
   border-color: $gb-brand-color-component-dark;
   background-color: $gb-brand-color-component;
   border-radius: $radius-small;
-  height: $ggc-scroller-size;
+  height: $gc-scroller-size;
 
   &__knob {
     position: absolute;
     border-radius: $radius-small;
     background-color: $color-mercury;
-    height: $ggc-scroller-size;
-    width: $ggc-scroller-size;
+    height: $gc-scroller-size;
+    width: $gc-scroller-size;
   }
 
   &__drag {
@@ -22,7 +22,7 @@ $ggc-scroller-size: 12px;
     opacity: 0;
     border-radius: $radius-small;
     background-color: $color-mercury;
-    height: $ggc-scroller-size;
-    width: $ggc-scroller-size;
+    height: $gc-scroller-size;
+    width: $gc-scroller-size;
   }
 }

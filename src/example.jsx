@@ -273,7 +273,7 @@ if (appContainer) {
       <article className="gc-panel gc-panel--separator">
         <header className="gc-panel__title">Card</header>
         <div className="gc-panel__content">
-          <div className="ggc-cards">
+          <div className="gc-cards">
             <div className="gc-card">Card</div>
             <div className="gc-card gc-card--default">Card + default</div>
           </div>

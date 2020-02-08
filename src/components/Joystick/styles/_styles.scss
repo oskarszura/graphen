@@ -1,21 +1,21 @@
-$ggc-joystick-size: 100px;
-$ggc-joystick-knob-color: #bebfc1;
-$ggc-joystick-color: #f2f2f2;
+$gc-joystick-size: 100px;
+$gc-joystick-knob-color: #bebfc1;
+$gc-joystick-color: #f2f2f2;
 
 .gc-joystick {
   position: relative;
-  background-color: $ggc-joystick-color;
-  width: $ggc-joystick-size;
-  height: $ggc-joystick-size;
-  border-radius: $ggc-joystick-size * 0.5;
+  background-color: $gc-joystick-color;
+  width: $gc-joystick-size;
+  height: $gc-joystick-size;
+  border-radius: $gc-joystick-size * 0.5;
   cursor: pointer;
 
   &__knob {
     position: absolute;
-    background-color: $ggc-joystick-knob-color;
-    width: $ggc-joystick-size * 0.5;
-    height: $ggc-joystick-size * 0.5;
-    border-radius: $ggc-joystick-size * 0.25;
+    background-color: $gc-joystick-knob-color;
+    width: $gc-joystick-size * 0.5;
+    height: $gc-joystick-size * 0.5;
+    border-radius: $gc-joystick-size * 0.25;
 
     .gc-joystick--inactive & {
       opacity: 0.2;
@@ -25,8 +25,8 @@ $ggc-joystick-color: #f2f2f2;
   &__drag {
     position: absolute;
     opacity: 0;
-    width: $ggc-joystick-size * 0.5;
-    height: $ggc-joystick-size * 0.5;
-    border-radius: $ggc-joystick-size * 0.25;
+    width: $gc-joystick-size * 0.5;
+    height: $gc-joystick-size * 0.5;
+    border-radius: $gc-joystick-size * 0.25;
   }
 }
