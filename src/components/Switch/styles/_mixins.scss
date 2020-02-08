@@ -2,7 +2,7 @@ $gx-switch-btn-size: 26px;
 
 @mixin gx-switch() {
     $parent-selector: &;
-    border: 1px solid $gb-brand-color-separator;
+    border: 1px solid $gb-color-separator;
     position: relative;
     display: inline-block;
     width: 60px;
@@ -14,7 +14,7 @@ $gx-switch-btn-size: 26px;
 
         &:checked {
             & + #{$parent-selector}__slider {
-                background-color: $gb-brand-color-component;
+                background-color: $gb-color-component;
             }
 
             & + #{$parent-selector}__slider::before {
@@ -23,7 +23,7 @@ $gx-switch-btn-size: 26px;
         }
 
         &:focus + #{$parent-selector}__slider {
-            box-shadow: 0 0 1px $gb-brand-color-component;
+            box-shadow: 0 0 1px $gb-color-component;
         }
     }
 
@@ -34,7 +34,7 @@ $gx-switch-btn-size: 26px;
         right: 0;
         bottom: 0;
         cursor: pointer;
-        background-color: $gb-brand-color-component;
+        background-color: $gb-color-component;
         border-radius: $radius-medium;
         transition: .4s;
 

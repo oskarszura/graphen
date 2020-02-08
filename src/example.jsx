@@ -15,35 +15,35 @@ if (appContainer) {
           <ul className="gc-list">
             <li className="gc-list__item">
               <div className="tst-colors-primary gc-sample gc-sample--brand-primary" />{" "}
-              - Brand color primary / $gb-brand-color-primary
+              - Brand color primary / $gb-color-primary
             </li>
             <li className="gc-list__item">
               <div className="tst-colors-text gc-sample gc-sample--brand-text" />{" "}
-              - Brand color text / $gb-brand-color-text
+              - Brand color text / $gb-color-text
             </li>
             <li className="gc-list__item">
               <div className="tst-colors-link gc-sample gc-sample--brand-link" />{" "}
-              - Brand color link / $gb-brand-color-link
+              - Brand color link / $gb-color-link
             </li>
             <li className="gc-list__item">
               <div className="tst-colors-component gc-sample gc-sample--brand-component" />{" "}
-              - Brand color component / $gb-brand-color-component
+              - Brand color component / $gb-color-component
             </li>
             <li className="gc-list__item">
               <div className="tst-colors-component gc-sample gc-sample--brand-component-dark" />{" "}
-              - Brand color component dark / $gb-brand-color-component-dark
+              - Brand color component dark / $gb-color-component-dark
             </li>
             <li className="gc-list__item">
               <div className="gc-sample gc-sample--brand-success" /> - Brand
-              color success / $gb-brand-color-success
+              color success / $gb-color-success
             </li>
             <li className="gc-list__item">
               <div className="gc-sample gc-sample--brand-info" /> - Brand color
-              info / $gb-brand-color-info
+              info / $gb-color-info
             </li>
             <li className="gc-list__item">
               <div className="gc-sample gc-sample--brand-danger" /> - Brand
-              color danger / $gb-brand-color-danger
+              color danger / $gb-color-danger
             </li>
           </ul>
         </div>
@@ -149,23 +149,23 @@ if (appContainer) {
           <p>
             <button className="gc-btn">Button</button>{" "}
             <button className="gc-btn gc-btn--default">Button + default</button>{" "}
-            <button className="gc-btn gc-btn--accept">Button + accept</button>{" "}
-            <button className="gc-btn gc-btn--edit">Button + edit</button>{" "}
-            <button className="gc-btn gc-btn--remove">Button + remove</button>
+            <button className="gc-btn gc-btn--success">Button + success</button>{" "}
+            <button className="gc-btn gc-btn--info">Button + info</button>{" "}
+            <button className="gc-btn gc-btn--danger">Button + danger</button>
           </p>
           <p>
             <button className="gc-btn gc-btn--small">Button + small</button>{" "}
             <button className="gc-btn gc-btn--small gc-btn--default">
               Button + small + default
             </button>{" "}
-            <button className="gc-btn gc-btn--small gc-btn--accept">
-              Button + small + accept
+            <button className="gc-btn gc-btn--small gc-btn--success">
+              Button + small + success
             </button>{" "}
-            <button className="gc-btn gc-btn--small gc-btn--edit">
-              Button + small + edit
+            <button className="gc-btn gc-btn--small gc-btn--info">
+              Button + small + info
             </button>{" "}
-            <button className="gc-btn gc-btn--small gc-btn--remove">
-              Button + small + remove
+            <button className="gc-btn gc-btn--small gc-btn--danger">
+              Button + small + danger
             </button>
           </p>
           <p>
@@ -177,18 +177,18 @@ if (appContainer) {
             </button>
           </p>
           <p>
-            <button className="gc-btn gc-btn--full gc-btn--accept">
-              Button + full + accept
+            <button className="gc-btn gc-btn--full gc-btn--success">
+              Button + full + success
             </button>
           </p>
           <p>
-            <button className="gc-btn gc-btn--full gc-btn--edit">
-              Button + full + edit
+            <button className="gc-btn gc-btn--full gc-btn--info">
+              Button + full + info
             </button>
           </p>
           <p>
-            <button className="gc-btn gc-btn--full gc-btn--remove">
-              Button + full + remove
+            <button className="gc-btn gc-btn--full gc-btn--danger">
+              Button + full + danger
             </button>
           </p>
         </div>
@@ -286,13 +286,13 @@ if (appContainer) {
             <div className="gc-alert">Alert</div>
           </p>
           <p>
-            <div className="gc-alert gc-alert--danger">Alert + danger</div>
-          </p>
-          <p>
             <div className="gc-alert gc-alert--success">Alert + success</div>
           </p>
           <p>
             <div className="gc-alert gc-alert--info">Alert + info</div>
+          </p>
+          <p>
+            <div className="gc-alert gc-alert--danger">Alert + danger</div>
           </p>
         </div>
       </article>
