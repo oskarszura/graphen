@@ -1,16 +1,16 @@
-.c-switch {
+.gc-switch {
     $root-selector: &;
-    @include c-switch();
+    @include gx-switch();
 
     &--success {
-        @include c-switch--color($root-selector, $brand-color-success);
+        @include gx-switch--color($root-selector, $gb-brand-color-success);
     }
 
     &--info {
-        @include c-switch--color($root-selector, $brand-color-info);
+        @include gx-switch--color($root-selector, $gb-brand-color-info);
     }
 
     &--danger {
-        @include c-switch--color($root-selector, $brand-color-danger);
+        @include gx-switch--color($root-selector, $gb-brand-color-danger);
     }
 }

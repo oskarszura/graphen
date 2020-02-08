@@ -10,7 +10,7 @@ type Props = {
 
 function Link(props: Props) {
   const { link, className, children } = props;
-  const classes = classNames("c-link", className);
+  const classes = classNames("gc-link", className);
 
   return (
     <a href={link} className={classes}>

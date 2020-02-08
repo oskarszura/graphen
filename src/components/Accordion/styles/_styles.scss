@@ -1,14 +1,14 @@
-.c-accordion {
-    @extend .c-panel;
-    @extend .c-panel--separator;
+.gc-accordion {
+    @extend .gc-panel;
+    @extend .gc-panel--separator;
 
     &__title {
-        @extend .c-panel__title;
+        @extend .gc-panel__title;
         cursor: pointer;
     }
 
     &__content {
-        @extend .c-panel__content;
+        @extend .gc-panel__content;
         max-height: 1000px;
         opacity: 1;
         transition: all 1s ease;

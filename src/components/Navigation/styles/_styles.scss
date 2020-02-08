@@ -1,4 +1,4 @@
-.c-navigation {
+.gc-navigation {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@
     &--default {
         color: $brand-color-text;
 
-        .c-navigation__link {
+        .gc-navigation__link {
             &:hover {
                 color: $color-persian-green;
                 text-decoration: none;

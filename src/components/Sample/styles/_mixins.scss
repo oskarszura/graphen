@@ -1,4 +1,4 @@
-@mixin c-sample($size) {
+@mixin gx-sample($size) {
     display: inline-block;
     vertical-align: middle;
     height: $size;
@@ -6,6 +6,6 @@
     border-radius: $size;
 }
 
-@mixin c-sample--color($color) {
+@mixin gx-sample--color($color) {
     background-color: $color;
 }

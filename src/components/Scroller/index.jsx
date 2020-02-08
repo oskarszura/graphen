@@ -73,7 +73,7 @@ class Scroller extends React.PureComponent<Props, State> {
 
     return (
       <div
-        className="c-scroller"
+        className="gc-scroller"
         onDragOver={(event: SyntheticDragEvent<HTMLDivElement>) => {
           event.preventDefault();
           return false;
@@ -83,13 +83,13 @@ class Scroller extends React.PureComponent<Props, State> {
         }}
       >
         <div
-          className="c-scroller__knob"
+          className="gc-scroller__knob"
           style={{
             left: value
           }}
         />
         <div
-          className="c-scroller__drag"
+          className="gc-scroller__drag"
           draggable="true"
           onDrag={(event: SyntheticDragEvent<HTMLDivElement>) => {
             this.onMove(event);

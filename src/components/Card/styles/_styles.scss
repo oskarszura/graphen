@@ -1,8 +1,8 @@
-.c-cards {
+.ggc-cards {
     display: flex;
 }
 
-.c-card {
+.gc-card {
     border-width: 1px;
     border-style: solid;
     border-radius: $radius-medium;
@@ -10,7 +10,7 @@
     margin: 2px;
 
     &--default {
-        background-color: $brand-color-component;
-        border-color: $brand-color-component-dark;
+        background-color: $gb-brand-color-component;
+        border-color: $gb-brand-color-component-dark;
     }
 }
