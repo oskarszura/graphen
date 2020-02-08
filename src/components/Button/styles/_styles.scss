@@ -26,18 +26,18 @@
     }
 
     &--default {
-        @include cx-btn--hover($gb-brand-color-component, $gb-brand-color-text);
+        @include cx-btn--hover($gb-color-component, $gb-color-text);
     }
 
-    &--accept {
-        @include cx-btn--hover($gb-brand-color-success, $color-white);
+    &--success {
+        @include cx-btn--hover($gb-color-success, $color-white);
     }
 
-    &--edit {
-        @include cx-btn--hover($gb-brand-color-info, $color-white);
+    &--info {
+        @include cx-btn--hover($gb-color-info, $color-white);
     }
 
-    &--remove {
-        @include cx-btn--hover($gb-brand-color-danger, $color-white);
+    &--danger {
+        @include cx-btn--hover($gb-color-danger, $color-white);
     }
 }

@@ -1,9 +1,9 @@
 .gc-link {
-    color: $gb-brand-color-link;
+    color: $gb-color-link;
     cursor: pointer;
     text-decoration: none;
 
     &:hover {
-        color: lighten($gb-brand-color-link, 20%);
+        color: lighten($gb-color-link, 20%);
     }
 }

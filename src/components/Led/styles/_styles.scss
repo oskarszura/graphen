@@ -2,9 +2,9 @@ $gc-led-red-center: #f00;
 $gc-led-green-center: #0f0;
 $gc-led-blue-center: #b5f2e4;
 
-@include cx-led-blink (gc-led-red-blink, $gc-led-red-center, $gb-brand-color-danger, $gb-brand-color-danger, rgba(255, 0, 0, 0.5))
-@include cx-led-blink (gc-led-green-blink, $gc-led-green-center, $gb-brand-color-success, $gb-brand-color-success, rgba(0, 255, 0, 0.5))
-@include cx-led-blink (gc-led-blue-blink, $gc-led-blue-center, $gb-brand-color-info, $gb-brand-color-info, rgba(0, 0, 255, 0.5))
+@include cx-led-blink (gc-led-red-blink, $gc-led-red-center, $gb-color-danger, $gb-color-danger, rgba(255, 0, 0, 0.5))
+@include cx-led-blink (gc-led-green-blink, $gc-led-green-center, $gb-color-success, $gb-color-success, rgba(0, 255, 0, 0.5))
+@include cx-led-blink (gc-led-blue-blink, $gc-led-blue-center, $gb-color-info, $gb-color-info, rgba(0, 0, 255, 0.5))
 
 .gc-led {
     display: inline-block;
@@ -14,7 +14,7 @@ $gc-led-blue-center: #b5f2e4;
     border-radius: 50%;
 
     &--red {
-        @include cx-led($gc-led-red-center, $gb-brand-color-danger);
+        @include cx-led($gc-led-red-center, $gb-color-danger);
 
         &.gc-led--blink {
             animation: gc-led-red-blink 0.5s infinite;
@@ -22,7 +22,7 @@ $gc-led-blue-center: #b5f2e4;
     }
 
     &--green {
-        @include cx-led($gc-led-green-center, $gb-brand-color-success);
+        @include cx-led($gc-led-green-center, $gb-color-success);
 
         &.gc-led--blink {
             animation: gc-led-green-blink 0.5s infinite;
@@ -30,7 +30,7 @@ $gc-led-blue-center: #b5f2e4;
     }
 
     &--blue {
-        @include cx-led($gc-led-blue-center, $gb-brand-color-info);
+        @include cx-led($gc-led-blue-center, $gb-color-info);
 
         &.gc-led--blink {
             animation: gc-led-blue-blink 0.5s infinite;

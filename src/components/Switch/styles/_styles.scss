@@ -3,14 +3,14 @@
     @include gx-switch();
 
     &--success {
-        @include gx-switch--color($root-selector, $gb-brand-color-success);
+        @include gx-switch--color($root-selector, $gb-color-success);
     }
 
     &--info {
-        @include gx-switch--color($root-selector, $gb-brand-color-info);
+        @include gx-switch--color($root-selector, $gb-color-info);
     }
 
     &--danger {
-        @include gx-switch--color($root-selector, $gb-brand-color-danger);
+        @include gx-switch--color($root-selector, $gb-color-danger);
     }
 }

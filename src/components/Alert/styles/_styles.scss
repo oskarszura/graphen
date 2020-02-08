@@ -4,20 +4,20 @@
     padding: $spacing-large $spacing-medium;
 
     &--danger {
-        color: $gb-brand-color-danger;
-        border-color: $gb-brand-color-danger;
-        background-color: $gb-brand-color-danger-soft;
+        color: $gb-color-danger;
+        border-color: $gb-color-danger;
+        background-color: $gb-color-danger-soft;
     }
 
     &--success {
-        color: $gb-brand-color-success;
-        border-color: $gb-brand-color-success;
-        background-color: $gb-brand-color-success-soft;
+        color: $gb-color-success;
+        border-color: $gb-color-success;
+        background-color: $gb-color-success-soft;
     }
 
     &--info {
-        color: $gb-brand-color-info;
-        border-color: $gb-brand-color-info;
-        background-color: $gb-brand-color-info-soft;
+        color: $gb-color-info;
+        border-color: $gb-color-info;
+        background-color: $gb-color-info-soft;
     }
 }

@@ -2,8 +2,8 @@
     display: flex;
 
     &--default {
-        background-color:$gb-brand-color-component;
-        border-bottom: 1px solid $gb-brand-color-component-dark;
+        background-color:$gb-color-component;
+        border-bottom: 1px solid $gb-color-component-dark;
     }
 
     &__logo {
