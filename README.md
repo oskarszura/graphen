@@ -8,7 +8,6 @@
 'graphen' is a small library, that keeps reusable blocks of UI and helps making application design consistent across multiple projects.
 
 ## Motivation and principles
-
 Motivation for building graphen is to create a small, reusable and customizable UI library that will follow current best practices in the CSS world and allow to create clean and easily maintainable code.     
 
 Graphen architecture is driven by:
