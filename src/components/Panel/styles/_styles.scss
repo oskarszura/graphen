@@ -1,4 +1,7 @@
 .gc-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: inherit;
 
     &--separator {
@@ -15,6 +18,11 @@
     }
 
     &__content {
+        padding: $spacing-medium;
+        flex-grow: 1;
+    }
+
+    &__footer {
         padding: $spacing-medium;
     }
 }
