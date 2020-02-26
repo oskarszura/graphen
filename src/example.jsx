@@ -276,21 +276,29 @@ if (appContainer) {
           <div className="gc-cards">
             <div className="gc-card">
               <div className="gc-panel">
-                <div className="gc-panel__title">
-                  Card
-                </div>
+                <div className="gc-panel__title">Card</div>
                 <div className="gc-panel__content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div className="gc-panel__footer">
+                  <button className="gc-btn">Button</button>
                 </div>
               </div>
             </div>
             <div className="gc-card gc-card--default">
               <div className="gc-panel">
-                <div className="gc-panel__title">
-                  Card + default
-                </div>
+                <div className="gc-panel__title">Card + default</div>
                 <div className="gc-panel__content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div className="gc-panel__footer">
+                  <button className="gc-btn gc-btn--info">Button + info</button>
                 </div>
               </div>
             </div>
