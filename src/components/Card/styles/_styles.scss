@@ -8,6 +8,7 @@
     border-radius: $radius-medium;
     padding: $spacing-large;
     margin: 2px;
+    flex-grow: 1;
 
     &--default {
         background-color: $gb-color-component;
