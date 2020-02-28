@@ -1,8 +1,6 @@
 .gc-panel {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    background-color: inherit;
 
     &--separator {
         border-bottom: 1px dashed $gb-color-separator;
