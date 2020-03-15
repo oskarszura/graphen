@@ -6,11 +6,13 @@ import {
   Button,
   Dialog,
   Icon,
+  Input,
   Link,
   Loader,
   Scroller,
   Joystick,
-  Accordion
+  Accordion,
+  Tooltip,
 } from "./index";
 import classNames from "classnames";
 
@@ -288,6 +290,15 @@ class ExampleApp extends React.PureComponent<Props, State> {
                   value="Disabled input"
                 />
               </div>
+            </p>
+            <p>
+              <Tooltip type="danger" message="Validation error message">
+                <Input
+                  label="Validated input"
+                  type="text"
+                  validation="danger"
+                />
+              </Tooltip>
             </p>
           </div>
         </article>
