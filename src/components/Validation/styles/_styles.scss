@@ -1,0 +1,7 @@
+.gc-validation {
+    &__message {
+        .gc-validation:hover & {
+            display: block;
+        }
+    }
+}

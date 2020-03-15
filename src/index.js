@@ -8,5 +8,18 @@ import Link from "./components/Link";
 import Loader from "./components/Loader";
 import Scroller from "./components/Scroller";
 import Tooltip from "./components/Tooltip";
+import Validation from "./components/Validation";
 
-export { Accordion, Button, Dialog, Icon, Input, Joystick, Link, Loader, Scroller, Tooltip };
+export {
+  Accordion,
+  Button,
+  Dialog,
+  Icon,
+  Input,
+  Joystick,
+  Link,
+  Loader,
+  Scroller,
+  Tooltip,
+  Validation
+};

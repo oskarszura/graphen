@@ -1,47 +1,41 @@
 $gc-tooltip-arrow-size: 8px;
 
 .gc-tooltip {
-    &__message {
-        display: none;
-        z-index: $zlayer-top;
-        position: absolute;
-        margin-top: $gc-tooltip-arrow-size;
-        padding: $spacing-medium;
-        background-color: $gb-color-component;
-        border-radius: $radius-medium;
+    display: none;
+    z-index: $zlayer-top;
+    position: absolute;
+    margin-top: 3px;
+    padding: $spacing-medium;
+    background-color: $gb-color-component;
+    border-radius: $radius-medium;
 
-        .gc-tooltip:hover & {
-            display: block;
-        }
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: $gc-tooltip-arrow-size;
+        top: -$gc-tooltip-arrow-size;
+        width: 0;
+        height: 0;
+        border-left: $gc-tooltip-arrow-size solid transparent;
+        border-right: $gc-tooltip-arrow-size solid transparent;
+    }
+
+    &--success {
+        color: $gb-color-success;
+        background-color: $gb-color-success-soft;
 
         &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            left: $gc-tooltip-arrow-size;
-            top: -$gc-tooltip-arrow-size;
-            width: 0;
-            height: 0;
-            border-left: $gc-tooltip-arrow-size solid transparent;
-            border-right: $gc-tooltip-arrow-size solid transparent;
+            border-bottom: $gc-tooltip-arrow-size solid $gb-color-success-soft;
         }
+    }
 
-        &--success {
-            color: $gb-color-success;
-            background-color: $gb-color-success-soft;
+    &--danger {
+        color: $gb-color-danger;
+        background-color: $gb-color-danger-soft;
 
-            &::before {
-                border-bottom: $gc-tooltip-arrow-size solid $gb-color-success-soft;
-            }
-        }
-
-        &--danger {
-            color: $gb-color-danger;
-            background-color: $gb-color-danger-soft;
-
-            &::before {
-                border-bottom: $gc-tooltip-arrow-size solid $gb-color-danger-soft;
-            }
+        &::before {
+            border-bottom: $gc-tooltip-arrow-size solid $gb-color-danger-soft;
         }
     }
 }

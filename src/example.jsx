@@ -12,9 +12,8 @@ import {
   Scroller,
   Joystick,
   Accordion,
-  Tooltip,
+  Validation
 } from "./index";
-import classNames from "classnames";
 
 const appContainer = document.querySelector(".js-example");
 
@@ -292,13 +291,13 @@ class ExampleApp extends React.PureComponent<Props, State> {
               </div>
             </p>
             <p>
-              <Tooltip type="danger" message="Validation error message">
+              <Validation type="danger" message="Validation error message">
                 <Input
                   label="Validated input"
                   type="text"
                   validation="danger"
                 />
-              </Tooltip>
+              </Validation>
             </p>
           </div>
         </article>
