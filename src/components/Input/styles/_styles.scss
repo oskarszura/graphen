@@ -28,6 +28,14 @@
         font-size: $font-size-very-large;
         line-height: $font-line-height-normal;
         border: 1px solid $gb-color-component-dark;
+
+        &--success {
+            border-color: $gb-color-success;
+        }
+
+        &--danger {
+            border-color: $gb-color-danger;
+        }
     }
 }
 
