@@ -1,5 +1,9 @@
 .gc-validation {
+    display: inline-block;
+
     &__message {
+        display: none;
+
         .gc-validation:hover & {
             display: block;
         }

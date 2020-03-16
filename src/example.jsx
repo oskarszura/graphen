@@ -12,7 +12,8 @@ import {
   Scroller,
   Joystick,
   Accordion,
-  Validation
+  Validation,
+  Tooltip
 } from "./index";
 
 const appContainer = document.querySelector(".js-example");
@@ -256,6 +257,14 @@ class ExampleApp extends React.PureComponent<Props, State> {
           </div>
         </article>
         <article className="gc-panel gc-panel--separator">
+          <header className="gc-panel__title">Tooltips</header>
+          <div className="gc-panel__content">
+            <p>
+              <Tooltip type="danger">Tooltip danger message</Tooltip>
+            </p>
+          </div>
+        </article>
+        <article className="gc-panel gc-panel--separator">
           <header className="gc-panel__title">Textarea</header>
           <div className="gc-panel__content">
             <textarea className="gc-textarea" />
@@ -291,9 +300,12 @@ class ExampleApp extends React.PureComponent<Props, State> {
               </div>
             </p>
             <p>
+              <Input label="Success input" type="text" validation="success" />
+            </p>
+            <p>
               <Validation type="danger" message="Validation error message">
                 <Input
-                  label="Validated input"
+                  label="Validated input with tooltip"
                   type="text"
                   validation="danger"
                 />
