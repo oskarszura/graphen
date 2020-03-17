@@ -7,19 +7,23 @@ type Props = {
   className?: string,
   children?: React$Element<any>,
   type?: string,
-  message?: string
+  message?: string | null
 };
 
 function Validation(props: Props) {
   const { message, children, className, type } = props;
   const validationClasses = classNames(className, "gc-validation");
 
+  const tooltip = message ? (
+    <Tooltip className="gc-validation__message" type={type}>
+      {message}
+    </Tooltip>
+  ) : null;
+
   return (
     <div className={validationClasses}>
       {children}
-      <Tooltip className="gc-validation__message" type={type}>
-        {message}
-      </Tooltip>
+      {tooltip}
     </div>
   );
 }
