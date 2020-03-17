@@ -7,11 +7,12 @@ type Props = {
   children?: React$Element<any>,
   type?: string,
   label: string,
-  validation?: string
+  validation?: string,
+  onChange?: Event => void
 };
 
 function Input(props: Props) {
-  const { type, label, className, validation } = props;
+  const { type, label, className, validation, onChange } = props;
   const inputClasses = classNames(className, "gc-input");
   const fieldClasses = classNames("gc-input__field", {
     "gc-input__field--success": validation === "success",
@@ -21,7 +22,7 @@ function Input(props: Props) {
   return (
     <div className={inputClasses}>
       <label className="gc-input__label">{label}</label>
-      <input type={type} className={fieldClasses} />
+      <input type={type} className={fieldClasses} onChange={onChange} />
     </div>
   );
 }
