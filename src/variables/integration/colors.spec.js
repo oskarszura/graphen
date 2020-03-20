@@ -17,7 +17,7 @@ describe("Colors", () => {
     it("should have proper properties", () => {
       cy.get(".tst-colors-primary")
         .should("have.css", "background-color")
-        .and("equal", "rgb(0, 175, 135)");
+        .and("equal", "rgb(51, 122, 183)");
     });
   });
 
