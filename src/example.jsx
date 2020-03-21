@@ -188,47 +188,47 @@ class ExampleApp extends React.PureComponent<Props, State> {
           <div className="gc-panel__content">
             <p>
               <Button>Button</Button>{" "}
-              <Button className="gc-btn--default">Button + default</Button>{" "}
-              <Button className="gc-btn--success">Button + success</Button>{" "}
-              <Button className="gc-btn--info">Button + info</Button>{" "}
-              <Button className="gc-btn--danger">Button + danger</Button>
+              <Button className="gc-btn--danger">Button + danger</Button>{" "}
+              <Button className="gc-btn--primary">Button + primary</Button>{" "}
+              <Button className="gc-btn--secondary">Button + secondary</Button>{" "}
+              <Button className="gc-btn--tertiary">Button + tertiary</Button>
             </p>
             <p>
               <Button className="gc-btn--small">Button + small</Button>{" "}
-              <Button className="gc-btn--small gc-btn--default">
-                Button + small + default
-              </Button>{" "}
-              <Button className="gc-btn--small gc-btn--success">
-                Button + small + success
-              </Button>{" "}
-              <Button className="gc-btn--small gc-btn--info">
-                Button + small + info
-              </Button>{" "}
               <Button className="gc-btn--small gc-btn--danger">
                 Button + small + danger
+              </Button>{" "}
+              <Button className="gc-btn--small gc-btn--primary">
+                Button + small + primary
+              </Button>{" "}
+              <Button className="gc-btn--small gc-btn--secondary">
+                Button + small + secondary
+              </Button>{" "}
+              <Button className="gc-btn--small gc-btn--tertiary">
+                Button + small + tertiary
               </Button>
             </p>
             <p>
               <Button className="gc-btn--full">Button + full</Button>
             </p>
             <p>
-              <Button className="gc-btn--full gc-btn--default">
-                Button + full + default
-              </Button>
-            </p>
-            <p>
-              <Button className="gc-btn--full gc-btn--success">
-                Button + full + success
-              </Button>
-            </p>
-            <p>
-              <Button className="gc-btn--full gc-btn--info">
-                Button + full + info
-              </Button>
-            </p>
-            <p>
               <Button className="gc-btn--full gc-btn--danger">
                 Button + full + danger
+              </Button>
+            </p>
+            <p>
+              <Button className="gc-btn--full gc-btn--primary">
+                Button + full + primary
+              </Button>
+            </p>
+            <p>
+              <Button className="gc-btn--full gc-btn--secondary">
+                Button + full + secondary
+              </Button>
+            </p>
+            <p>
+              <Button className="gc-btn--full gc-btn--tertiary">
+                Button + full + tertiary
               </Button>
             </p>
           </div>
@@ -353,7 +353,9 @@ class ExampleApp extends React.PureComponent<Props, State> {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>
                 <div className="gc-panel__footer">
-                  <button className="gc-btn gc-btn--info">Button + info</button>
+                  <button className="gc-btn gc-btn--primary">
+                    Button + primary
+                  </button>
                 </div>
               </div>
             </div>
@@ -409,7 +411,7 @@ class ExampleApp extends React.PureComponent<Props, State> {
           <header className="gc-panel__title">Dialog</header>
           <div className="gc-panel__content">
             <Button
-              className="gc-btn--info"
+              className="gc-btn--primary"
               onClick={() => {
                 this.handleShowDialog();
               }}
@@ -436,7 +438,7 @@ class ExampleApp extends React.PureComponent<Props, State> {
                       onClick={() => {
                         this.handleHideDialog();
                       }}
-                      className="gc-btn--info"
+                      className="gc-btn--primary"
                     >
                       Close
                     </Button>

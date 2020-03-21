@@ -3,15 +3,3 @@
     font-size: ($height / 3 + 2);
     line-height: $height;
 }
-
-@mixin cx-btn--hover($bg-color, $color) {
-    background-color: $bg-color;
-    color: $color;
-
-    &:hover {
-        background-color: darken($bg-color, 10%);
-        color: $color;
-    }
-}
-
-
