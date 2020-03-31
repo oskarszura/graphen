@@ -148,7 +148,7 @@ class ExampleApp extends React.PureComponent<Props, State> {
                   Item 1
                 </Link>
               </li>
-              <li className="gc-navigation__option">
+              <li className="gc-navigation__option gc-navigation__option--active">
                 <Link className="gc-navigation__link" link="/">
                   Item 2
                 </Link>
@@ -353,6 +353,18 @@ class ExampleApp extends React.PureComponent<Props, State> {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>
                 <div className="gc-panel__footer">
+                  <button className="gc-btn gc-btn--primary">
+                    Button + primary
+                  </button>
+                </div>
+              </div>
+              <div className="gc-card gc-card--gradient gc-panel">
+                <div className="gc-panel__title">Card + gradient</div>
+                <div className="gc-panel__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <div className="gc-panel__footer gc-panel__footer--separated">
                   <button className="gc-btn gc-btn--primary">
                     Button + primary
                   </button>

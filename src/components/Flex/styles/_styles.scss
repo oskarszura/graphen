@@ -1,0 +1,24 @@
+.gc-flex {
+    display: flex;
+
+    &__row {
+
+    }
+
+    &__item {
+        flex-grow: 1;
+
+        &--spacing-small {
+            margin-right: $spacing-small;
+        }
+
+        &--spacing-medium {
+            margin-right: $spacing-medium;
+        }
+
+        &--spacing-large {
+            margin-right: $spacing-large;
+        }
+    }
+}
+

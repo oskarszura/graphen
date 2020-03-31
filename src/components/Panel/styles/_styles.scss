@@ -22,5 +22,9 @@
 
     &__footer {
         padding: $spacing-medium;
+
+        &--separated {
+            border-top: 1px solid $gb-color-component-dark;
+        }
     }
 }
