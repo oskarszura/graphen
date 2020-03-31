@@ -1,13 +1,8 @@
-.gc-cards {
-    display: flex;
-}
-
 .gc-card {
     border-width: 1px;
     border-style: solid;
     border-radius: $radius-medium;
     padding: $spacing-large;
-    margin: 2px;
 
     &--default {
         background-color: $gb-color-component-light;
