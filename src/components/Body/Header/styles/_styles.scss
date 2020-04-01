@@ -2,7 +2,7 @@
     display: flex;
 
     &--default {
-        background-color:$gb-color-component;
+        background-color: $gb-color-component-light;
         border-bottom: 1px solid $gb-color-component-dark;
     }
 
@@ -10,7 +10,7 @@
         flex-basis: 10%;
         flex-grow: 1;
         display: block;
-        padding: 1.5 * $spacing-large $spacing-large;
+        padding: 2 * $spacing-large $spacing-large;
     }
 
     &__navigation {

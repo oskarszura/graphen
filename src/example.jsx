@@ -108,6 +108,10 @@ class ExampleApp extends React.PureComponent<Props, State> {
           </div>
         </article>
         <article className="gc-panel gc-panel--separator">
+          <header className="gc-panel__title">Separator</header>
+          <div className="gc-separator" />
+        </article>
+        <article className="gc-panel gc-panel--separator">
           <header className="gc-panel__title">Link</header>
           <div className="gc-panel__content">
             <Link link="http://some-url">Link Name</Link>
@@ -148,7 +152,7 @@ class ExampleApp extends React.PureComponent<Props, State> {
                   Item 1
                 </Link>
               </li>
-              <li className="gc-navigation__option">
+              <li className="gc-navigation__option gc-navigation__option--active">
                 <Link className="gc-navigation__link" link="/">
                   Item 2
                 </Link>
@@ -333,8 +337,8 @@ class ExampleApp extends React.PureComponent<Props, State> {
         <article className="gc-panel gc-panel--separator">
           <header className="gc-panel__title">Card</header>
           <div className="gc-panel__content">
-            <div className="gc-cards">
-              <div className="gc-card gc-panel">
+            <div className="gc-flex gm-spacing-bl">
+              <div className="gc-flex__item gc-card gc-panel">
                 <div className="gc-panel__title">Card</div>
                 <div className="gc-panel__content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -346,13 +350,28 @@ class ExampleApp extends React.PureComponent<Props, State> {
                   <button className="gc-btn">Button</button>
                 </div>
               </div>
-              <div className="gc-card gc-card--default gc-panel">
+            </div>
+            <div className="gc-flex">
+              <div className="gc-flex__item gc-card gc-card--default gc-panel gm-spacing-rl">
                 <div className="gc-panel__title">Card + default</div>
                 <div className="gc-panel__content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>
                 <div className="gc-panel__footer">
+                  <button className="gc-btn gc-btn--primary">
+                    Button + primary
+                  </button>
+                </div>
+              </div>
+              <div className="gc-flex__item gc-card gc-card--gradient gc-panel">
+                <div className="gc-panel__title">Card + gradient</div>
+                <div className="gc-panel__content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <div className="gc-separator" />
+                <div className="gc-panel__footer gc-panel__footer--separated">
                   <button className="gc-btn gc-btn--primary">
                     Button + primary
                   </button>
