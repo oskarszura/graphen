@@ -108,6 +108,10 @@ class ExampleApp extends React.PureComponent<Props, State> {
           </div>
         </article>
         <article className="gc-panel gc-panel--separator">
+          <header className="gc-panel__title">Separator</header>
+          <div className="gc-separator" />
+        </article>
+        <article className="gc-panel gc-panel--separator">
           <header className="gc-panel__title">Link</header>
           <div className="gc-panel__content">
             <Link link="http://some-url">Link Name</Link>
@@ -333,7 +337,7 @@ class ExampleApp extends React.PureComponent<Props, State> {
         <article className="gc-panel gc-panel--separator">
           <header className="gc-panel__title">Card</header>
           <div className="gc-panel__content">
-            <div className="gc-flex gm-spacing-bottom-large">
+            <div className="gc-flex gm-spacing-bl">
               <div className="gc-flex__item gc-card gc-panel">
                 <div className="gc-panel__title">Card</div>
                 <div className="gc-panel__content">
@@ -348,7 +352,7 @@ class ExampleApp extends React.PureComponent<Props, State> {
               </div>
             </div>
             <div className="gc-flex">
-              <div className="gc-flex__item gc-card gc-card--default gc-panel gm-spacing-right-large">
+              <div className="gc-flex__item gc-card gc-card--default gc-panel gm-spacing-rl">
                 <div className="gc-panel__title">Card + default</div>
                 <div className="gc-panel__content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

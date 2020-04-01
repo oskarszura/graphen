@@ -1,7 +1,31 @@
-.gm-spacing-right-large {
+.gm-spacing-rl {
   margin-right: $spacing-large;
 }
 
-.gm-spacing-bottom-large {
+.gm-spacing-rvl {
+  margin-right: $spacing-very-large;
+}
+
+.gm-spacing-bl {
   margin-bottom: $spacing-large;
+}
+
+.gm-spacing-bvl {
+  margin-bottom: $spacing-very-large;
+}
+
+.gm-spacing-ll {
+  margin-left: $spacing-large;
+}
+
+.gm-spacing-lvl {
+  margin-left: $spacing-very-large;
+}
+
+.gm-spacing-tl {
+  margin-top: $spacing-large;
+}
+
+.gm-spacing-tvl {
+  margin-top: $spacing-very-large;
 }
