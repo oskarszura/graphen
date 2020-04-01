@@ -31,7 +31,7 @@ describe("Colors", () => {
     it("should have proper properties", () => {
       cy.get(".tst-colors-text")
         .should("have.css", "background-color")
-        .and("equal", "rgb(51, 51, 51)");
+        .and("equal", "rgb(88, 88, 88)");
     });
   });
 
