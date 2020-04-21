@@ -9,6 +9,7 @@ import Loader from "./components/Loader";
 import Scroller from "./components/Scroller";
 import Tooltip from "./components/Tooltip";
 import Validation from "./components/Validation";
+import Logo from "./components/Logo";
 
 export {
   Accordion,
@@ -21,5 +22,6 @@ export {
   Loader,
   Scroller,
   Tooltip,
-  Validation
+  Validation,
+  Logo
 };

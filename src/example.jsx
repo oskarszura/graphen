@@ -13,7 +13,8 @@ import {
   Joystick,
   Accordion,
   Validation,
-  Tooltip
+  Tooltip,
+  Logo
 } from "./index";
 
 const appContainer = document.querySelector(".js-example");
@@ -86,6 +87,12 @@ class ExampleApp extends React.PureComponent<Props, State> {
                 color danger / $gb-color-danger
               </li>
             </ul>
+          </div>
+        </article>
+        <article className="tst-colors gc-panel gc-panel--separator">
+          <header className="gc-panel__title">Logo</header>
+          <div className="gc-panel__content">
+            <Logo />
           </div>
         </article>
         <article className="gc-panel gc-panel--separator">

@@ -4,3 +4,12 @@ $font-size-large: 12px;
 $font-size-very-large: 14px;
 
 $font-line-height-normal: 1.42857;
+
+$gc-font-url: './assets/font' !default;
+
+@font-face {
+  font-family: 'Inder Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Inder Regular'), url($gc-font-url + '/Inder-Regular.woff') format('woff');
+}
