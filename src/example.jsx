@@ -89,7 +89,7 @@ class ExampleApp extends React.PureComponent<Props, State> {
             </ul>
           </div>
         </article>
-        <article className="tst-colors gc-panel gc-panel--separator">
+        <article className="gc-panel gc-panel--separator">
           <header className="gc-panel__title">Logo</header>
           <div className="gc-panel__content">
             <Logo />
@@ -129,15 +129,71 @@ class ExampleApp extends React.PureComponent<Props, State> {
           <div className="gc-panel__content">
             <header className="gc-header">
               <Link className="gc-header__logo" link="/">
-                Header
+                <Logo />
               </Link>
-              <nav className="gc-header__navigation" />
+              <nav className="gc-header__navigation">
+                <ul className="gc-navigation">
+                  <li className="gc-navigation__option">
+                    <Link className="gc-navigation__link" link="/">
+                      Item 1
+                    </Link>
+                  </li>
+                  <li className="gc-navigation__option gc-navigation__option--active">
+                    <Link className="gc-navigation__link" link="/">
+                      Item 2
+                    </Link>
+                  </li>
+                  <li className="gc-navigation__option">
+                    <Link className="gc-navigation__link" link="/">
+                      Item 3
+                    </Link>
+                  </li>
+                  <li className="gc-navigation__option">
+                    <Link className="gc-navigation__link" link="/">
+                      Item 4
+                    </Link>
+                  </li>
+                  <li className="gc-navigation__option">
+                    <Link className="gc-navigation__link" link="/">
+                      Item 5
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
             </header>
             <header className="gc-header gc-header--default">
               <Link className="gc-header__logo" link="/">
-                Header + default
+                <Logo />
               </Link>
-              <nav className="gc-header__navigation" />
+              <nav className="gc-header__navigation">
+                <ul className="gc-navigation">
+                  <li className="gc-navigation__option">
+                    <Link className="gc-navigation__link" link="/">
+                      Item 1
+                    </Link>
+                  </li>
+                  <li className="gc-navigation__option gc-navigation__option--active">
+                    <Link className="gc-navigation__link" link="/">
+                      Item 2
+                    </Link>
+                  </li>
+                  <li className="gc-navigation__option">
+                    <Link className="gc-navigation__link" link="/">
+                      Item 3
+                    </Link>
+                  </li>
+                  <li className="gc-navigation__option">
+                    <Link className="gc-navigation__link" link="/">
+                      Item 4
+                    </Link>
+                  </li>
+                  <li className="gc-navigation__option">
+                    <Link className="gc-navigation__link" link="/">
+                      Item 5
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
             </header>
           </div>
         </article>

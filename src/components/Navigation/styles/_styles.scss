@@ -15,7 +15,9 @@
 
     &__link {
         display: block;
-        padding: 2 * $spacing-large $spacing-large 2 * $spacing-large - 3px $spacing-large;
+        padding-left: $spacing-large;
+        padding-right: $spacing-large;
+        line-height: 54px;
         font-weight: 600;
     }
 

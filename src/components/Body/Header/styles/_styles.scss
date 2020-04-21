@@ -1,5 +1,8 @@
+$gc-header-height: 53px !default;
+
 .gc-header {
     display: flex;
+    align-items: center;
 
     &--default {
         background-color: $gb-color-component-light;
@@ -10,7 +13,9 @@
         flex-basis: 10%;
         flex-grow: 1;
         display: block;
-        padding: 2 * $spacing-large $spacing-large;
+        padding-left: $spacing-large;
+        padding-right: $spacing-large;
+        line-height: $gc-header-height;
     }
 
     &__navigation {
