@@ -4,6 +4,7 @@
 @import "variables/typography";
 @import "variables/responsiveness";
 @import "variables/brand";
+@import "variables/shadows";
 
 @import "mixins/responsiveness";
 
@@ -27,6 +28,7 @@
 @import "components/Link/styles/styles";
 @import "components/Loader/styles/styles";
 @import "components/Navigation/styles/styles";
+@import "components/Navigation/styles/submenu";
 @import "components/Panel/styles/styles";
 @import "components/Sample/styles/mixins";
 @import "components/Sample/styles/styles";

@@ -11,6 +11,12 @@
             border-color: $gb-color-primary;
             box-shadow: 0px 1px 0px 0px $gb-color-primary;
         }
+
+        &:hover {
+            .gc-navigation__suboption {
+                display: block;
+            }
+        }
     }
 
     &__link {
