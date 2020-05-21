@@ -140,8 +140,18 @@ class ExampleApp extends React.PureComponent<Props, State> {
                   </li>
                   <li className="gc-navigation__option gc-navigation__option--active">
                     <Link className="gc-navigation__link" link="/">
-                      Item 2
+                      Deep Item 2
                     </Link>
+                    <div className="gc-navigation__suboption gc-submenu">
+                      <div className="gc-submenu__content">
+                        <Link className="gc-submenu__item" link="/">
+                          Sub Item 2a
+                        </Link>
+                        <Link className="gc-submenu__item" link="/">
+                          Sub Item 2b
+                        </Link>
+                      </div>
+                    </div>
                   </li>
                   <li className="gc-navigation__option">
                     <Link className="gc-navigation__link" link="/">
@@ -174,8 +184,18 @@ class ExampleApp extends React.PureComponent<Props, State> {
                   </li>
                   <li className="gc-navigation__option gc-navigation__option--active">
                     <Link className="gc-navigation__link" link="/">
-                      Item 2
+                      Deep Item 2
                     </Link>
+                    <div className="gc-navigation__suboption gc-submenu">
+                      <div className="gc-submenu__content">
+                        <Link className="gc-submenu__item" link="/">
+                          Sub Item 2a
+                        </Link>
+                        <Link className="gc-submenu__item" link="/">
+                          Sub Item 2b
+                        </Link>
+                      </div>
+                    </div>
                   </li>
                   <li className="gc-navigation__option">
                     <Link className="gc-navigation__link" link="/">
