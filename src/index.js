@@ -3,6 +3,7 @@ import Button from "./components/Button";
 import Dialog from "./components/Dialog";
 import Icon from "./components/Icon";
 import Input from "./components/Input";
+import Image from "./components/Image";
 import Joystick from "./components/Joystick";
 import Link from "./components/Link";
 import Loader from "./components/Loader";
@@ -23,5 +24,6 @@ export {
   Scroller,
   Tooltip,
   Validation,
-  Logo
+  Logo,
+  Image
 };
