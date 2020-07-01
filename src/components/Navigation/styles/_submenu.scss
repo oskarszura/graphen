@@ -2,6 +2,7 @@
     display: none;
     position: absolute;
     background-color: transparent;
+    z-index: $zlayer-top;
 
     &__content {
         padding: 10px;
