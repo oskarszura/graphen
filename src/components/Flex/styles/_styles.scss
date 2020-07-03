@@ -1,6 +1,10 @@
 .gc-flex {
     display: flex;
 
+    &--wrap {
+        flex-wrap: wrap;
+    }
+
     &__item {
         flex-grow: 1;
     }
