@@ -1,0 +1,44 @@
+.dropdown-menu {
+	padding: 5px;
+	display:relative;
+	}
+.dropdown-btn {
+	 @include cx-btn--size(34px);
+	 margin-bottom: 0px;
+	 position: relative;
+	 background-color: $gb-color-component-dark;
+	 color: black;
+	 border: none;
+	 	&:hover{
+	 		cursor: pointer;
+	 	}	  
+	}
+.dropdown-content {
+	display: block;
+	margin-top: 0px;
+	width: 200px;
+	background-color: $gb-color-component-dark;
+	color: black;
+	text-align: left;
+	margin-left: 0px;
+	}
+.dropdown-content ul {
+	margin-top: 0px;
+	text-align: left;
+	margin-left: 7px;	
+	padding: 3px; 
+	}
+.dropdown-content ul li {
+	padding: 10px 6px;
+	text-decoration: none;
+	list-style: none;
+	}
+.dropdown-content ul li a {
+	padding: 8px;
+		&:visited {
+			color:black;
+		}
+	}
+.dropdown-content-off {
+	display: none;
+	}

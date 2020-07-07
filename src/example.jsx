@@ -15,7 +15,8 @@ import {
   Accordion,
   Validation,
   Tooltip,
-  Logo
+  Logo,
+  Dropdown
 } from "./index";
 
 const appContainer = document.querySelector(".js-example");
@@ -576,6 +577,7 @@ class ExampleApp extends React.PureComponent<Props, State> {
               </Dialog>
             )}
           </div>
+          <Dropdown />
         </article>
       </>
     );
