@@ -577,7 +577,12 @@ class ExampleApp extends React.PureComponent<Props, State> {
               </Dialog>
             )}
           </div>
-          <Dropdown />
+        </article>
+        <article className="gc-panel gc-panel--separator">
+          <header className="gc-panel__title">Dropdown Menu</header>
+          <div className="gc-panel__content">
+            <Dropdown />
+          </div>
         </article>
       </>
     );

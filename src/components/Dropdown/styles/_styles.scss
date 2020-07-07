@@ -1,7 +1,3 @@
-.dropdown-menu {
-	padding: 5px;
-	display:relative;
-	}
 .dropdown-btn {
 	 @include cx-btn--size(34px);
 	 margin-bottom: 0px;
@@ -20,23 +16,21 @@
 	background-color: $gb-color-component-dark;
 	color: black;
 	text-align: left;
-	margin-left: 0px;
-	}
-.dropdown-content ul {
-	margin-top: 0px;
-	text-align: left;
-	margin-left: 7px;	
-	padding: 3px; 
-	}
-.dropdown-content ul li {
-	padding: 10px 6px;
-	text-decoration: none;
-	list-style: none;
-	}
-.dropdown-content ul li a {
-	padding: 8px;
-		&:visited {
-			color:black;
+		ul {
+		margin-top: 0px;
+		margin-left: 7px;	
+		padding: 3px; 
+			li {
+			padding: 10px 6px;
+			text-decoration: none;
+			list-style: none;
+				a {
+				padding: 8px;
+					&:visited {
+						color:black;
+							}
+				}
+			}
 		}
 	}
 .dropdown-content-off {
