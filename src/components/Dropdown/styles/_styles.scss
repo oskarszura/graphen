@@ -1,4 +1,4 @@
-.dropdown-btn {
+.dropdown__btn {
 	 @include cx-btn--size(34px);
 	 margin-bottom: 0px;
 	 position: relative;
@@ -9,7 +9,7 @@
 	 		cursor: pointer;
 	 	}	  
 	}
-.dropdown-content {
+.dropdown__content {
 	display: block;
 	margin-top: 0px;
 	width: 200px;
@@ -33,6 +33,6 @@
 			}
 		}
 	}
-.dropdown-content-off {
+.dropdown__content-off {
 	display: none;
 	}
