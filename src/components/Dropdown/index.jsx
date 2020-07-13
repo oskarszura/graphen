@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-export default function Dropdown() {
-	const [isExpandedn, setIsExpanded] = useState(true);
-  const {label, dropdown, sub-menu} = this.props;
+export default function Dropdown(props) {
+	const [isExpanded, setIsExpanded] = useState(true);
+  const {label, dropdown, submenu} = props;
 	function dropMenu () {
-		setdrop(!isExpanded);
+		setIsExpanded(!isExpanded);
 	}
 	const dropClass = isExpanded ? "dropdown__content-off" : "dropdown__content";
   return (
@@ -15,10 +15,9 @@ export default function Dropdown() {
   		</button>
   		<div className= { dropClass }>
   			<ul>
-  			 <li><a href="#">{sub-menu}</a></li>
-  			 <li><a href="#">{sub-menu}</a></li>
-  			 <li><a href="#">{sub-menu}</a></li>
-  			 <li><a href="#">{sub-menu}</a></li>
+  			 <li><a href="#">{submenu}</a></li>
+  			 <li><a href="#">{submenu}</a></li>
+         <li><a href="#">{submenu}</a></li>
   			</ul>
   		</div>
   	</div>
