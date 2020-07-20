@@ -14,10 +14,10 @@ export default function Dropdown(props) {
         {dropdown}
   		</button>
       {isExpanded && (
-        <div className="dropdown__content">
-          <ul>
+        <div className="dropdown-content">
+          <ul className="dropdown-content__list">
               {items.map(item => (
-        <li><a href="#">{item.value}</a></li>
+        <li className="dropdown-content__item"><a className="dropdown-content__link" href="#">{item.value}</a></li>
         ))}
            </ul>
         </div>

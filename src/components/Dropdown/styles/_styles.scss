@@ -8,31 +8,28 @@
 	 	&:hover{
 	 		cursor: pointer;
 	 	}	  
-	}
-.dropdown__content {
+}
+.dropdown-content {
 	display: block;
 	margin-top: 0px;
 	width: 200px;
 	background-color: $gb-color-component-dark;
 	color: black;
 	text-align: left;
-		ul {
-		margin-top: 0px;
-		margin-left: 7px;	
-		padding: 3px; 
-			li {
-			padding: 10px 6px;
-			text-decoration: none;
-			list-style: none;
-				a {
-				padding: 8px;
-					&:visited {
-						color:black;
-							}
-				}
-			}
+}
+.dropdown-content__list {
+	margin-top: 0px;
+	margin-left: 7px;	
+	padding: 3px; 
+}
+.dropdown-content__item {
+	padding: 10px 6px;
+	text-decoration: none;
+	list-style: none;
+}
+.dropdown-content__link{
+	padding: 8px;
+	&:visited {
+			color:black;
 		}
-	}
-.dropdown__content-off {
-	display: none;
-	}
+}
