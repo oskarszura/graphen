@@ -1,27 +1,36 @@
 import React, { useState, useCallback } from "react";
+const _ = require("lodash");
 
 export default function Dropdown(props) {
 	const [isExpanded, setIsExpanded] = useState(false);
-  const {label, dropdown, items} = props;
+  const [drop, setDrop] = useState("-Select Value-");
+  const {label, button, items} = props;
 	const expandMenu = useCallback(() => {
     setIsExpanded(s => !s);
   }, [setIsExpanded]);
-
+  const selectItem = function (item, event) {
+    setIsExpanded(!isExpanded);
+    setDrop(item.value);
+    //event.preventDefault();
+   // console.log(e.target.value);
+    console.log(item.value)
+};
   return (
   	<div className="dropdown">
-      <label>{items.label}</label><br />
+      <label>{label}</label><br />
   		<button className="dropdown__btn" onClick={ expandMenu }>
-        {dropdown}
+        {drop}
   		</button>
       {isExpanded && (
-        <div className="dropdown-content">
-          <ul className="dropdown-content__list">
-              {items.map(item => (
-        <li className="dropdown-content__item"><a className="dropdown-content__link" href="#">{item.value}</a></li>
-        ))}
+        <div className="dropdown__content">
+          <ul className="dropdown__list">
+              {_.map(items, item =>
+         <li className="dropdown__item" key="dropdown-${label}-${item.value}"><a className="dropdown__link" onClick={() => selectItem(item)}>{item.value}</a></li> 
+        )}
            </ul>
         </div>
             )}
   		  </div>
   	);
+
 }
