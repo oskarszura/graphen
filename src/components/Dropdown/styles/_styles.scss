@@ -8,7 +8,7 @@
 	 position: relative;
 	 background-color: #FFFFFF;
 	 color: $gb-color-text;
-	 border-radius: 3px;
+	 border-radius: $radius-medium;
 	 border: 1px solid #C2C2C2;
 	 	&:hover{
 	 		cursor: pointer;
@@ -16,18 +16,16 @@
 }
 .dropdown__content {
 	display: block;
-	margin-top: 10px;
+	margin-top: $spacing-large;
 	width: 250px;
 	background-color: #FFFFFF;
 	color: $gb-color-text;
 	text-align: center; 
-	border-radius: 4px;
+	border-radius: $radius-medium;
 	border: 1px solid #C2C2C2;
 }
 .dropdown__list {
-	margin-top: 0px;
-	margin-left: 0px;
-	margin-bottom: 0px;
+	margin: 0px;
 	padding: 0px; 
 }
 .dropdown__item {
