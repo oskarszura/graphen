@@ -3,23 +3,20 @@ const _ = require("lodash");
 
 export default function Dropdown(props) {
 	const [isExpanded, setIsExpanded] = useState(false);
-  const [drop, setDrop] = useState("-Select Value-");
-  const {label, button, items} = props;
+  const [selectedItem, setSelectedItem] = useState("-Select Value-");
+  const {label, items} = props;
 	const expandMenu = useCallback(() => {
     setIsExpanded(s => !s);
   }, [setIsExpanded]);
-  const selectItem = function (item, event) {
-    setIsExpanded(!isExpanded);
-    setDrop(item.value);
-    //event.preventDefault();
-   // console.log(e.target.value);
-    console.log(item.value)
-};
+  const selectItem = useCallback((item) => {
+    setIsExpanded(s => !s);
+    setSelectedItem(item.value);
+  }, [setIsExpanded, setSelectedItem]);
   return (
   	<div className="dropdown">
       <label>{label}</label><br />
   		<button className="dropdown__btn" onClick={ expandMenu }>
-        {drop}
+        {selectedItem}
   		</button>
       {isExpanded && (
         <div className="dropdown__content">
