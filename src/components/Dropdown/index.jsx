@@ -1,8 +1,12 @@
 // @flow
 import React, { useState, useCallback } from "react";
 const _ = require("lodash");
+ type Props = {
+  label: string,
+  items: Array<string>
+}
 
-export default function Dropdown(props) {
+export default function Dropdown(props: Props) {
 	const [isExpanded, setIsExpanded] = useState(false);
   const [selectedItem, setSelectedItem] = useState("-Select Value-");
   const {label, items} = props;
