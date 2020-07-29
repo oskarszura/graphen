@@ -1,3 +1,4 @@
+// @flow
 import React, { useState, useCallback } from "react";
 const _ = require("lodash");
 
