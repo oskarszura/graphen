@@ -52,11 +52,12 @@ integration-test:
 lint:
 	$(NPM) run flow
 	$(NPM) run lint
+	$(NPM) run pretty
 	$(NPM) run csslint
 
 .PHONY: fix
 fix:
-	$(NPM) run prettify
+	$(NPM) run pretty:fix
 	$(NPM) run lint:fix
 	$(NPM) run csslint:fix
 
