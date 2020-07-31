@@ -1,6 +1,6 @@
 // @flow
 import React, { useState, useCallback } from "react";
-const _ = require("lodash");
+import * as _ from 'lodash';
  type Props = {
   button: string,
   label: string,
