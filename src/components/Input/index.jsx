@@ -4,7 +4,6 @@ import classNames from "classnames";
 
 type Props = {
   className?: string,
-  children?: React$Element<any>,
   type?: string,
   label: string,
   validation?: string,
@@ -18,11 +17,14 @@ function Input(props: Props) {
     "gc-input__field--success": validation === "success",
     "gc-input__field--danger": validation === "danger"
   });
+  const id = `input-${label}`;
 
   return (
     <div className={inputClasses}>
-      <label className="gc-input__label">{label}</label>
-      <input type={type} className={fieldClasses} onChange={onChange} />
+      <label htmlFor={id} className="gc-input__label">
+        {label}
+      </label>
+      <input id={id} type={type} className={fieldClasses} onChange={onChange} />
     </div>
   );
 }

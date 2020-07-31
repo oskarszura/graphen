@@ -45,7 +45,10 @@ class Accordion extends React.PureComponent<Props, State> {
 
     return (
       <article className={accordionClasses}>
+        {/* eslint-disable jsx-a11y/no-static-element-interactions */}
         <header
+          role="button"
+          tabIndex="0"
           className="gc-accordion__title"
           onClick={() => {
             this.handleClick();
@@ -53,6 +56,7 @@ class Accordion extends React.PureComponent<Props, State> {
         >
           {indicator} {title}
         </header>
+        {/* eslint-enable jsx-a11y/no-static-element-interactions */}
         <div className={contentClasses}>{children}</div>
       </article>
     );

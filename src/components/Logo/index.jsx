@@ -12,11 +12,13 @@ function Logo(props: Props) {
 
   const logoClasses = classNames(className, "gc-logo");
 
+  /* eslint-disable jsx-a11y/no-static-element-interactions */
   return (
     <span onClick={onClick} className={logoClasses}>
       CODA_
     </span>
   );
+  /* eslint-enable jsx-a11y/no-static-element-interactions */
 }
 
 export default Logo;
