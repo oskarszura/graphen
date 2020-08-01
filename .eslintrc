@@ -2,20 +2,19 @@
   "parser": "babel-eslint",
   "plugins": [
     "prettier",
-    "flowtype"
+    "flowtype",
+    "cypress",
+    "react"
   ],
   "extends": [
     "airbnb",
     "prettier",
-    "plugin:flowtype/recommended"
+    "plugin:flowtype/recommended",
+    "plugin:cypress/recommended",
+    "plugin:react/recommended"
   ],
   "globals": {
-    "document": true,
-    "cy": true,
-    "Cypress": true,
-    "before": true,
-    "describe": true,
-    "it": true
+    "document": true
   },
   "rules": {
     "no-underscore-dangle": "off",

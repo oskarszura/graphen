@@ -336,20 +336,39 @@ class ExampleApp extends React.PureComponent<Props, State> {
           <header className="gc-panel__title">Switches</header>
           <div className="gc-panel__content">
             <p>
-              <label className="gc-switch">
-                <input className="gc-switch__input" type="checkbox" />
+              <label htmlFor="switch-1" className="gc-switch">
+                <input
+                  id="switch-1"
+                  className="gc-switch__input"
+                  type="checkbox"
+                />
                 <span className="gc-switch__slider" />
               </label>{" "}
-              <label className="gc-switch gc-switch--success">
-                <input className="gc-switch__input" type="checkbox" />
+              <label
+                htmlFor="switch-2"
+                className="gc-switch gc-switch--success"
+              >
+                <input
+                  id="switch-2"
+                  className="gc-switch__input"
+                  type="checkbox"
+                />
                 <span className="gc-switch__slider" />
               </label>{" "}
-              <label className="gc-switch gc-switch--info">
-                <input className="gc-switch__input" type="checkbox" />
+              <label htmlFor="switch-3" className="gc-switch gc-switch--info">
+                <input
+                  id="switch-3"
+                  className="gc-switch__input"
+                  type="checkbox"
+                />
                 <span className="gc-switch__slider" />
               </label>{" "}
-              <label className="gc-switch gc-switch--danger">
-                <input className="gc-switch__input" type="checkbox" />
+              <label htmlFor="switch-4" className="gc-switch gc-switch--danger">
+                <input
+                  id="switch-4"
+                  className="gc-switch__input"
+                  type="checkbox"
+                />
                 <span className="gc-switch__slider" />
               </label>
             </p>
@@ -390,24 +409,33 @@ class ExampleApp extends React.PureComponent<Props, State> {
           <div className="gc-panel__content">
             <p>
               <div className="gc-input">
-                <label className="gc-input__label">Input</label>
-                <input className="gc-input__field" />
+                <label htmlFor="input-1" className="gc-input__label">
+                  Input
+                </label>
+                <input id="input-1" className="gc-input__field" />
               </div>{" "}
               <div className="gc-input">
-                <label className="gc-input__label">Inline</label>
-                <input className="gc-input__field" />
+                <label htmlFor="input-2" className="gc-input__label">
+                  Inline
+                </label>
+                <input id="input-2" className="gc-input__field" />
               </div>
             </p>
             <p>
               <div className="gc-input gc-input--full">
-                <label className="gc-input__label">Full Input</label>
-                <input className="gc-input__field" />
+                <label htmlFor="input-3" className="gc-input__label">
+                  Full Input
+                </label>
+                <input id="input-3" className="gc-input__field" />
               </div>
             </p>
             <p>
               <div className="gc-input gc-input--full">
-                <label className="gc-input__label">Disabled Input</label>
+                <label htmlFor="input-4" className="gc-input__label">
+                  Disabled Input
+                </label>
                 <input
+                  id="input-4"
                   className="gc-input__field"
                   disabled
                   value="Disabled input"
