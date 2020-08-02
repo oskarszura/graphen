@@ -609,10 +609,14 @@ class ExampleApp extends React.PureComponent<Props, State> {
         <article className="gc-panel gc-panel--separator">
           <header className="gc-panel__title">Dropdown Menu</header>
           <div className="gc-panel__content">
-            <Dropdown button="-Select Value-" label="Dropdown label" items = {[
-            {label:"Color", value:"Red"},
-            {label:"Color", value:"Blue"}
-              ]}/>
+            <Dropdown
+              button="-Select Value-"
+              label="Dropdown label"
+              items={[
+                { label: "Color", value: "Red" },
+                { label: "Color", value: "Blue" }
+              ]}
+            />
           </div>
         </article>
       </>
