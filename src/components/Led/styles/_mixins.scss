@@ -1,13 +1,16 @@
 @mixin cx-led($color-center, $color-border) {
-    background-color: $color-center;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #aaa 0 -1px 9px, $color-border 0 2px 14px;
+  background-color: $color-center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #aaa 0 -1px 9px, $color-border 0 2px 14px;
 }
 
 @mixin cx-led-blink ($name, $color-active, $color-inactive-center, $color-inactive-border, $color-inactive-out) {
-    @keyframes #{$name} {
-        from { background-color: $color-active; }
-        50% { background-color: $color-inactive-center; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset $color-inactive-border 0 -1px 9px, $color-inactive-out 0 2px 0;}
-        to { background-color: $color-active; }
-    }
-}
+  @keyframes #{$name} {
+    from { background-color: $color-active; }
 
+    50% {
+      background-color: $color-inactive-center;
+      box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset $color-inactive-border 0 -1px 9px, $color-inactive-out 0 2px 0;
+    }
+    to { background-color: $color-active; }
+  }
+}

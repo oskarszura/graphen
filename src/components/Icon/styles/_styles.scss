@@ -14,83 +14,83 @@ $gc-icon-font-url: './assets/font' !default;
 }
 
 .gc-icon {
-    /* stylelint-disable */
-    font-family: 'graphen-icons' !important;
-    /* stylelint-enable */
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* stylelint-disable */
+  font-family: 'graphen-icons' !important;
+  /* stylelint-enable */
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-    &--circle-up::before {
-        content: "\ea41";
-    }
+  &--circle-up::before {
+    content: "\ea41";
+  }
 
-    &--circle-right::before {
-        content: "\ea42";
-    }
+  &--circle-right::before {
+    content: "\ea42";
+  }
 
-    &--circle-down::before {
-        content: "\ea43";
-    }
+  &--circle-down::before {
+    content: "\ea43";
+  }
 
-    &--circle-left::before {
-        content: "\ea44";
-    }
+  &--circle-left::before {
+    content: "\ea44";
+  }
 
-    &--fire::before {
-        content: "\e9a9";
-    }
+  &--fire::before {
+    content: "\e9a9";
+  }
 
-    &--man::before {
-        content: "\e9dc";
-    }
+  &--man::before {
+    content: "\e9dc";
+  }
 
-    &--menu::before {
-        content: "\e9bd";
-    }
+  &--menu::before {
+    content: "\e9bd";
+  }
 
-    &--menu2::before {
-        content: "\e9be";
-    }
+  &--menu2::before {
+    content: "\e9be";
+  }
 
-    &--menu3::before {
-        content: "\e9bf";
-    }
+  &--menu3::before {
+    content: "\e9bf";
+  }
 
-    &--menu4::before {
-        content: "\e9c0";
-    }
+  &--menu4::before {
+    content: "\e9c0";
+  }
 
-    &--thermometer-half::before {
-        content: "\e900";
-    }
+  &--thermometer-half::before {
+    content: "\e900";
+  }
 
-    &--radio-checked::before {
-        content: "\ea54";
-    }
+  &--radio-checked::before {
+    content: "\ea54";
+  }
 
-    &--radio-checked2::before {
-        content: "\ea55";
-    }
+  &--radio-checked2::before {
+    content: "\ea55";
+  }
 
-    &--radio-unchecked::before {
-        content: "\ea56";
-    }
+  &--radio-unchecked::before {
+    content: "\ea56";
+  }
 
-    &--small {
-        font-size: 12px;
-    }
+  &--small {
+    font-size: 12px;
+  }
 
-    &--medium {
-        font-size: 16px;
-    }
+  &--medium {
+    font-size: 16px;
+  }
 
-    &--large {
-        font-size: 20px;
-    }
+  &--large {
+    font-size: 20px;
+  }
 }

@@ -1,5 +1,5 @@
 @mixin cx-btn--size($height) {
-    padding: 0px ($height / 3);
-    font-size: ($height / 3 + 2);
-    line-height: $height;
+  padding: 0 ($height / 3);
+  font-size: ($height / 3 + 2);
+  line-height: $height;
 }

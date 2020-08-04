@@ -1,26 +1,28 @@
 .gc-accordion {
-    @extend .gc-panel;
-    @extend .gc-panel--separator;
+  @extend .gc-panel;
+  @extend .gc-panel--separator;
 
-    &__title {
-        @extend .gc-panel__title;
-        cursor: pointer;
+  &__title {
+    @extend .gc-panel__title;
+
+    cursor: pointer;
+  }
+
+  &__content {
+    @extend .gc-panel__content;
+
+    max-height: 1000px;
+    opacity: 1;
+    transition: all 1s ease;
+    transition-property: max-height, opacity, padding;
+
+    &--collapsed {
+      max-height: 0;
+      opacity: 0;
+      padding: 0 $spacing-medium;
+      overflow: hidden;
+      transition: all 1s ease;
+      transition-property: max-height, opacity, padding;
     }
-
-    &__content {
-        @extend .gc-panel__content;
-        max-height: 1000px;
-        opacity: 1;
-        transition: all 1s ease;
-        transition-property: max-height, opacity, padding;
-
-        &--collapsed {
-            max-height: 0px;
-            opacity: 0;
-            padding: 0px $spacing-medium;
-            overflow: hidden;
-            transition: all 1s ease;
-            transition-property: max-height, opacity, padding;
-        }
-    }
+  }
 }

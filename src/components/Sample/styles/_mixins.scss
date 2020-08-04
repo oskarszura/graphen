@@ -1,11 +1,11 @@
 @mixin gx-sample($size) {
-    display: inline-block;
-    vertical-align: middle;
-    height: $size;
-    width: $size;
-    border-radius: $size;
+  display: inline-block;
+  vertical-align: middle;
+  height: $size;
+  width: $size;
+  border-radius: $size;
 }
 
 @mixin gx-sample--color($color) {
-    background-color: $color;
+  background-color: $color;
 }

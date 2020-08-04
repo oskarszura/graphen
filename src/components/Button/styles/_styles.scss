@@ -1,68 +1,69 @@
 .gc-btn {
+  @include cx-btn--size(34px);
+
+  box-sizing: border-box;
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border-radius: $radius-medium;
+  user-select: none;
+  vertical-align: middle;
+
+  &--medium {
     @include cx-btn--size(34px);
-    box-sizing: border-box;
-    display: inline-block;
-    font-weight: normal;
-    text-align: center;
-    touch-action: manipulation;
-    cursor: pointer;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    border-radius: $radius-medium;
-    user-select: none;
-    vertical-align: middle;
+  }
 
-    &--medium {
-        @include cx-btn--size(34px);
+  &--small {
+    @include cx-btn--size(20px);
+  }
+
+  &--full {
+    width: 100%;
+    display: block;
+  }
+
+  &--primary {
+    background-color: $gb-color-primary;
+    color: $color-white;
+
+    &:hover {
+      background-color: darken($gb-color-primary, 10%);
     }
+  }
 
-    &--small {
-        @include cx-btn--size(20px);
+  &--secondary {
+    background: $color-white;
+    color: $gb-color-primary;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $gb-color-primary;
+
+    &:hover {
+      border-color: darken($gb-color-primary, 10%);
+      color: darken($gb-color-primary, 10%);
     }
+  }
 
-    &--full {
-        width: 100%;
-        display: block;
+  &--tertiary {
+    background: $color-white;
+    color: $gb-color-primary;
+    border: none;
+
+    &:hover {
+      color: darken($gb-color-primary, 10%);
     }
+  }
 
-    &--primary {
-        background-color: $gb-color-primary;
-        color: $color-white;
+  &--danger {
+    background-color: $gb-color-danger;
+    color: $color-white;
 
-        &:hover {
-            background-color: darken($gb-color-primary, 10%);
-        }
+    &:hover {
+      background-color: darken($gb-color-danger, 10%);
     }
-
-    &--secondary {
-        background: $color-white;
-        color: $gb-color-primary;
-        border-width: 1px;
-        border-style: solid;
-        border-color: $gb-color-primary;
-
-        &:hover {
-            border-color: darken($gb-color-primary, 10%);
-            color: darken($gb-color-primary, 10%);
-        }
-    }
-
-    &--tertiary {
-        background: $color-white;
-        color: $gb-color-primary;
-        border: none;
-
-        &:hover {
-            color: darken($gb-color-primary, 10%);
-        }
-    }
-
-    &--danger {
-        background-color: $gb-color-danger;
-        color: $color-white;
-
-        &:hover {
-            background-color: darken($gb-color-danger, 10%);
-        }
-    }
+  }
 }

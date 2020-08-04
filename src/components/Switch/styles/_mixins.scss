@@ -1,74 +1,76 @@
 $gx-switch-btn-size: 26px;
 
 @mixin gx-switch() {
-    $parent-selector: &;
-    border: 1px solid $gb-color-separator;
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    border-radius: $radius-medium;
+  $parent-selector: &;
 
-    &__input {
-        display:none;
+  border: 1px solid $gb-color-separator;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  border-radius: $radius-medium;
 
-        &:checked {
-            & + #{$parent-selector}__slider {
-                background-color: $gb-color-component;
-            }
+  &__input {
+    display: none;
 
-            & + #{$parent-selector}__slider::before {
-                transform: translateX($gx-switch-btn-size);
-            }
-        }
-
-        &:focus + #{$parent-selector}__slider {
-            box-shadow: 0 0 1px $gb-color-component;
-        }
-    }
-
-    &__slider {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        cursor: pointer;
+    &:checked {
+      & + #{$parent-selector}__slider {
         background-color: $gb-color-component;
-        border-radius: $radius-medium;
-        transition: .4s;
+      }
 
-        &::before {
-            position: absolute;
-            content: "";
-            height: $gx-switch-btn-size;
-            width: $gx-switch-btn-size;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition: .4s;
-            border-radius: $radius-small;
-        }
+      & + #{$parent-selector}__slider::before {
+        transform: translateX($gx-switch-btn-size);
+      }
     }
+
+    &:focus + #{$parent-selector}__slider {
+      box-shadow: 0 0 1px $gb-color-component;
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: $gb-color-component;
+    border-radius: $radius-medium;
+    transition: 0.4s;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: $gx-switch-btn-size;
+      width: $gx-switch-btn-size;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: $radius-small;
+    }
+  }
 }
 
 @mixin gx-switch--color($root-selector, $active-color) {
-    $modifier-selector: &;
-    @at-root #{$modifier-selector} {
-        #{$root-selector}__input {
-            &:checked {
-                & + #{$root-selector}__slider {
-                    background-color: $active-color;
-                }
+  $modifier-selector: &;
 
-                & + #{$root-selector}__slider::before {
-                    transform: translateX($gx-switch-btn-size);
-                }
-            }
-
-            &:focus + #{$root-selector}__slider {
-                box-shadow: 0 0 1px $active-color;
-            }
+  @at-root #{$modifier-selector} {
+    #{$root-selector}__input {
+      &:checked {
+        & + #{$root-selector}__slider {
+          background-color: $active-color;
         }
+
+        & + #{$root-selector}__slider::before {
+          transform: translateX($gx-switch-btn-size);
+        }
+      }
+
+      &:focus + #{$root-selector}__slider {
+        box-shadow: 0 0 1px $active-color;
+      }
     }
+  }
 }

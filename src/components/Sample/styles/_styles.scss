@@ -1,35 +1,35 @@
- .gc-sample {
-    @include gx-sample(40px);
+.gc-sample {
+  @include gx-sample(40px);
 
-    &--brand-primary {
-        @include gx-sample--color($gb-color-primary);
-    }
+  &--brand-primary {
+    @include gx-sample--color($gb-color-primary);
+  }
 
-    &--brand-text {
-        @include gx-sample--color($gb-color-text);
-    }
+  &--brand-text {
+    @include gx-sample--color($gb-color-text);
+  }
 
-    &--brand-link {
-        @include gx-sample--color($gb-color-link);
-    }
+  &--brand-link {
+    @include gx-sample--color($gb-color-link);
+  }
 
-    &--brand-component {
-        @include gx-sample--color($gb-color-component);
-    }
+  &--brand-component {
+    @include gx-sample--color($gb-color-component);
+  }
 
-    &--brand-component-dark {
-     @include gx-sample--color($gb-color-component-dark);
-    }
+  &--brand-component-dark {
+    @include gx-sample--color($gb-color-component-dark);
+  }
 
-    &--brand-success {
-        @include gx-sample--color($gb-color-success);
-    }
+  &--brand-success {
+    @include gx-sample--color($gb-color-success);
+  }
 
-    &--brand-info {
-     @include gx-sample--color($gb-color-info);
-    }
+  &--brand-info {
+    @include gx-sample--color($gb-color-info);
+  }
 
-    &--brand-danger {
-     @include gx-sample--color($gb-color-danger);
-    }
+  &--brand-danger {
+    @include gx-sample--color($gb-color-danger);
+  }
 }
