@@ -1,23 +1,23 @@
 .gc-alert {
-    border-width: 1px;
-    border-style: solid;
-    padding: $spacing-large $spacing-medium;
+  border-width: 1px;
+  border-style: solid;
+  padding: $spacing-large $spacing-medium;
 
-    &--danger {
-        color: $gb-color-danger;
-        border-color: $gb-color-danger;
-        background-color: $gb-color-danger-soft;
-    }
+  &--danger {
+    color: $gb-color-danger;
+    border-color: $gb-color-danger;
+    background-color: $gb-color-danger-soft;
+  }
 
-    &--success {
-        color: $gb-color-success;
-        border-color: $gb-color-success;
-        background-color: $gb-color-success-soft;
-    }
+  &--success {
+    color: $gb-color-success;
+    border-color: $gb-color-success;
+    background-color: $gb-color-success-soft;
+  }
 
-    &--info {
-        color: $gb-color-info;
-        border-color: $gb-color-info;
-        background-color: $gb-color-info-soft;
-    }
+  &--info {
+    color: $gb-color-info;
+    border-color: $gb-color-info;
+    background-color: $gb-color-info-soft;
+  }
 }

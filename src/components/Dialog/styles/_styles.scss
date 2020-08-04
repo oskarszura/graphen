@@ -1,12 +1,12 @@
 .gc-dialog {
-    z-index: $zlayer-top;
-    position: fixed;
-    background-color: $gb-color-background;
-    border-radius: $radius-medium;
-    border: 1px solid $gb-color-component-dark;
-    padding: $spacing-large;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) !important;
-    box-shadow: $gc-shadow-default;
+  z-index: $zlayer-top;
+  position: fixed;
+  background-color: $gb-color-background;
+  border-radius: $radius-medium;
+  border: 1px solid $gb-color-component-dark;
+  padding: $spacing-large;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  box-shadow: $gc-shadow-default;
 }

@@ -1,26 +1,26 @@
 .gc-panel {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    &--separator {
-        border-bottom: 1px dashed $gb-color-separator;
-    }
+  &--separator {
+    border-bottom: 1px dashed $gb-color-separator;
+  }
 
-    &--bordered {
-        border: 1px solid $gb-color-separator;
-    }
+  &--bordered {
+    border: 1px solid $gb-color-separator;
+  }
 
-    &__title {
-        font-size: 20px;
-        padding: $spacing-medium;
-    }
+  &__title {
+    font-size: 20px;
+    padding: $spacing-medium;
+  }
 
-    &__content {
-        padding: $spacing-medium;
-        flex-grow: 1;
-    }
+  &__content {
+    padding: $spacing-medium;
+    flex-grow: 1;
+  }
 
-    &__footer {
-        padding: $spacing-medium;
-    }
+  &__footer {
+    padding: $spacing-medium;
+  }
 }

@@ -1,9 +1,9 @@
 .gc-validation {
-    &__message {
-        display: none;
+  &__message {
+    display: none;
 
-        .gc-validation:hover & {
-            display: block;
-        }
+    .gc-validation:hover & {
+      display: block;
     }
+  }
 }

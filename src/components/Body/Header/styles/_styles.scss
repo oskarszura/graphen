@@ -1,25 +1,25 @@
 $gc-header-height: 53px !default;
 
 .gc-header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    &--default {
-        background-color: $gb-color-component-light;
-        border-bottom: 1px solid $gb-color-component-dark;
-    }
+  &--default {
+    background-color: $gb-color-component-light;
+    border-bottom: 1px solid $gb-color-component-dark;
+  }
 
-    &__logo {
-        flex-basis: 10%;
-        flex-grow: 1;
-        display: block;
-        padding-left: $spacing-large;
-        padding-right: $spacing-large;
-        line-height: $gc-header-height;
-    }
+  &__logo {
+    flex-basis: 10%;
+    flex-grow: 1;
+    display: block;
+    padding-left: $spacing-large;
+    padding-right: $spacing-large;
+    line-height: $gc-header-height;
+  }
 
-    &__navigation {
-        flex-basis: 90%;
-        flex-grow: 9;
-    }
+  &__navigation {
+    flex-basis: 90%;
+    flex-grow: 9;
+  }
 }
