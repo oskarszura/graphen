@@ -24,7 +24,9 @@ export default function Dropdown(props: Props) {
   );
   return (
     <div className="dropdown">
-      <label className="dropdown__label" htmlFor="dropdown__label">{label}</label>
+      <label className="dropdown__label" htmlFor="dropdown__label">
+        {label}
+      </label>
       <br />
       <button className="dropdown__btn" onClick={expandMenu}>
         {selectedItem}
