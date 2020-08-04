@@ -1,16 +1,17 @@
 .gc-switch {
-    $root-selector: &;
-    @include gx-switch();
+  $root-selector: &;
 
-    &--success {
-        @include gx-switch--color($root-selector, $gb-color-success);
-    }
+  @include gx-switch();
 
-    &--info {
-        @include gx-switch--color($root-selector, $gb-color-info);
-    }
+  &--success {
+    @include gx-switch--color($root-selector, $gb-color-success);
+  }
 
-    &--danger {
-        @include gx-switch--color($root-selector, $gb-color-danger);
-    }
+  &--info {
+    @include gx-switch--color($root-selector, $gb-color-info);
+  }
+
+  &--danger {
+    @include gx-switch--color($root-selector, $gb-color-danger);
+  }
 }

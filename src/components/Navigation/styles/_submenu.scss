@@ -1,23 +1,23 @@
 .gc-submenu {
-    display: none;
-    position: absolute;
-    background-color: transparent;
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  z-index: $zlayer-top;
+
+  &__content {
+    padding: 10px;
+    border-radius: $radius-medium;
+    border-top: 2px solid $gb-color-primary;
+    margin-top: 7px;
+    box-shadow: $gc-shadow-default;
     z-index: $zlayer-top;
+    background-color: $color-white;
+  }
 
-    &__content {
-        padding: 10px;
-        border-radius: $radius-medium;
-        border-top: 2px solid $gb-color-primary;
-        margin-top: 7px;
-        box-shadow: $gc-shadow-default;
-        z-index: $zlayer-top;
-        background-color: $color-white;
-    }
-
-    &__item {
-        display: block;
-        padding-left: $spacing-large;
-        padding-right: $spacing-large;
-        line-height: $font-line-height-large;
-    }
+  &__item {
+    display: block;
+    padding-left: $spacing-large;
+    padding-right: $spacing-large;
+    line-height: $font-line-height-large;
+  }
 }

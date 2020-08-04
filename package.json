@@ -1,6 +1,6 @@
 {
   "name": "graphen",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "description": "Graphen is a small library, that keeps reusable blocks of UI and helps making application design consistent across multiple projects.",
   "main": "dist/scripts.js",
   "files": [
@@ -15,8 +15,8 @@
     "build:example": "webpack --mode=production --config webpack.example.config.js",
     "lint": "eslint --ext .js,.jsx .",
     "lint:fix": "eslint --fix .",
-    "csslint": "stylelint ./src/**/*.scss",
-    "csslint:fix": "stylelint ./src/**/*.scss --fix",
+    "csslint": "stylelint \"./**/*.scss\" --config .stylelintrc",
+    "csslint:fix": "stylelint \"./**/*.scss\" --fix --config .stylelintrc",
     "flow": "flow",
     "pretty": "prettier \"./src/**/*.{js,jsx}\" \"./example-server/**/*.{js,jsx}\" --list-different",
     "pretty:fix": "prettier --write \"./src/**/*.{js,jsx}\" \"./example-server/**/*.{js,jsx}\"",

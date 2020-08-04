@@ -3,20 +3,21 @@
 @import "../Footer/styles/styles";
 
 .gc-body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    font-family: $gb-font;
-    font-weight: 100;
-    font-size: $font-size-very-large;
-    color: $gb-color-text;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  font-family: $gb-font;
+  font-weight: 100;
+  font-size: $font-size-very-large;
+  color: $gb-color-text;
 
-    a {
-        cursor: pointer;
-        text-decoration: none;
-    }
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
 
-    &--default {
-        background-color: $color-white;
-    }
+  &--default {
+    background-color: $color-white;
+  }
 }
