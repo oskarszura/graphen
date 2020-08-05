@@ -17,8 +17,8 @@ function Link({
   skin = constants.SKINS.primary
 }: Props) {
   const classes = classNames("gc-link", className, {
-    "gc-link__primary": skin === constants.SKINS.primary,
-    "gc-link__default": skin === constants.SKINS.default
+    "gc-link--primary": skin === constants.SKINS.primary,
+    "gc-link--default": skin === constants.SKINS.default
   });
 
   return (
