@@ -5,7 +5,7 @@ import classNames from "classnames";
 type Props = {
   className?: string,
   title: string,
-  children?: React$Element<any>,
+  children?: React.DOM,
   isCollapsed?: boolean
 };
 
