@@ -1,16 +1,25 @@
 // @flow
 import React from "react";
 import classNames from "classnames";
+import * as constants from "src/variables/constants";
 
 type Props = {
   link: string,
   className?: string,
-  children?: React$Element<any>
+  children?: React.DOM,
+  skin?: constants.Skin
 };
 
-function Link(props: Props) {
-  const { link, className, children } = props;
-  const classes = classNames("gc-link", className);
+function Link({
+  link,
+  className,
+  children,
+  skin = constants.SKINS.primary
+}: Props) {
+  const classes = classNames("gc-link", className, {
+    "gc-link__primary": skin === constants.SKINS.primary,
+    "gc-link__default": skin === constants.SKINS.default
+  });
 
   return (
     <a href={link} className={classes}>
