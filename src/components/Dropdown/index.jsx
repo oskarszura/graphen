@@ -18,10 +18,11 @@ export default function Dropdown(props: Props) {
   const selectItem = useCallback(
     item => {
       setIsExpanded(s => !s);
-      setSelectedItem(item.value);
+      setSelectedItem(item.label);
     },
     [setIsExpanded, setSelectedItem]
   );
+
   return (
     <div className="dropdown">
       <label className="dropdown__label" htmlFor="dropdown__label">
@@ -34,16 +35,18 @@ export default function Dropdown(props: Props) {
       {isExpanded && (
         <div className="dropdown__content">
           <ul className="dropdown__list">
+            {/* eslint-disable jsx-a11y/no-static-element-interactions */}
             {_.map(items, item => (
               <li
                 className="dropdown__item"
-                key={`dropdown-${label}-${item.value}`}
+                key={`dropdown-${label}-${item.label}`}
               >
                 <a className="dropdown__link" onClick={() => selectItem(item)}>
-                  {item.value}
+                  {item.label}
                 </a>
               </li>
             ))}
+            {/* eslint-enable jsx-a11y/no-static-element-interactions */}
           </ul>
         </div>
       )}

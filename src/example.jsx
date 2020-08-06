@@ -613,8 +613,8 @@ class ExampleApp extends React.PureComponent<Props, State> {
               button="-Select Value-"
               label="Dropdown label"
               items={[
-                { label: "Color", value: "Red" },
-                { label: "Color", value: "Blue" }
+                { label: "Red", value: "red" },
+                { label: "Blue", value: "blue" }
               ]}
             />
           </div>
