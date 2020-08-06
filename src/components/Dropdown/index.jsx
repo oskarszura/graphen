@@ -5,7 +5,7 @@ import * as _ from "lodash";
 type Props = {
   button: string,
   label: string,
-  items: Array<string>
+  items: Array<Object>
 };
 
 export default function Dropdown(props: Props) {

@@ -16,7 +16,8 @@ import {
   Validation,
   Tooltip,
   Logo,
-  Dropdown
+  Dropdown,
+  constants
 } from "./index";
 
 const appContainer = document.querySelector(".js-example");
@@ -123,7 +124,10 @@ class ExampleApp extends React.PureComponent<Props, State> {
         <article className="gc-panel gc-panel--separator">
           <header className="gc-panel__title">Link</header>
           <div className="gc-panel__content">
-            <Link link="http://some-url">Link Name</Link>
+            <Link link="http://some-url">Primary Link</Link> ,{" "}
+            <Link link="http://some-url" skin={constants.SKINS.default}>
+              Default Link
+            </Link>
           </div>
         </article>
         <article className="gc-panel gc-panel--separator">

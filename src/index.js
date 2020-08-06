@@ -1,3 +1,4 @@
+// @flow
 import Accordion from "./components/Accordion";
 import Button from "./components/Button";
 import Dialog from "./components/Dialog";
@@ -12,6 +13,7 @@ import Tooltip from "./components/Tooltip";
 import Validation from "./components/Validation";
 import Logo from "./components/Logo";
 import Dropdown from "./components/Dropdown";
+import * as constants from "./variables/constants";
 
 export {
   Accordion,
@@ -27,5 +29,6 @@ export {
   Validation,
   Logo,
   Image,
-  Dropdown
+  Dropdown,
+  constants
 };
