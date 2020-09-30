@@ -614,7 +614,7 @@ class ExampleApp extends React.PureComponent<Props, State> {
           <header className="gc-panel__title">Dropdown Menu</header>
           <div className="gc-panel__content">
             <Dropdown
-              button="-Select Value-"
+              initValue="-Select Value-"
               label="Dropdown label"
               items={[
                 { label: "Red", value: "red" },

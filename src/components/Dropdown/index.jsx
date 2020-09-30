@@ -3,21 +3,21 @@ import React, { useState, useCallback } from "react";
 import * as _ from "lodash";
 
 type Props = {
-  button: string,
+  initValue: string,
   label: string,
   items: Array<Object>
 };
 
 export default function Dropdown(props: Props) {
-  const { button, label, items } = props;
+  const { initValue, label, items } = props;
   const [isExpanded, setIsExpanded] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(button);
+  const [selectedItem, setSelectedItem] = useState(initValue);
   const expandMenu = useCallback(() => {
     setIsExpanded(s => !s);
   }, [setIsExpanded]);
   const selectItem = useCallback(
     item => {
-      setIsExpanded(s => !s);
+      setIsExpanded(false);
       setSelectedItem(item.label);
     },
     [setIsExpanded, setSelectedItem]
