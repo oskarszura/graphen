@@ -13,7 +13,7 @@ export default function Dropdown(props: Props) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [selectedItem, setSelectedItem] = useState(initValue);
   const expandMenu = useCallback(() => {
-    setIsExpanded(s => !s);
+    setIsExpanded(isShown => !isShown);
   }, [setIsExpanded]);
   const selectItem = useCallback(
     item => {
@@ -28,7 +28,6 @@ export default function Dropdown(props: Props) {
       <label className="dropdown__label" htmlFor="dropdown__label">
         {label}
       </label>
-      <br />
       <button className="dropdown__btn" onClick={expandMenu}>
         {selectedItem}
       </button>
