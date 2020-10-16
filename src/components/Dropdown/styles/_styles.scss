@@ -1,3 +1,8 @@
+.dropdown__label:after {
+  content:"\a";
+  white-space: pre;
+}
+
 .dropdown__btn {
   text-align: center;
   font-size: inherit;
