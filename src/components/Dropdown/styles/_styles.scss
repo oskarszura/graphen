@@ -1,6 +1,7 @@
 .dropdown__btn {
-  display:block;
-  clear:both;
+  display: block;
+  clear: both;
+  box-sizing: border-box;
   text-align: center;
   font-size: inherit;
   padding: $spacing-large;
@@ -18,14 +19,16 @@
 }
 
 .dropdown__content {
+  
   display: block;
   margin-top: $spacing-large;
-  width: 250px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 250px !important;
   background-color: $color-white;
   color: $gb-color-text;
   text-align: center;
-  border-radius: $radius-medium;
-  border: 1px solid $color-silver;
+  
 }
 
 .dropdown__list {
@@ -34,15 +37,16 @@
 }
 
 .dropdown__item {
+  
   padding: $spacing-large;
   text-decoration: none;
   list-style: none;
-  border-bottom: 1px solid;
-  border-bottom-color: $color-mercury;
+  border-radius: $radius-medium;
+  border: 1px solid $color-silver;
 }
 
 .dropdown__link {
-  padding: $spacing-medium;
+  //padding: $spacing-medium;
 
   &:visited {
     color: $gb-color-text;
