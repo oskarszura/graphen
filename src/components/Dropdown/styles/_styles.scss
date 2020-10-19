@@ -1,3 +1,7 @@
+.dropdown__menu {
+  position: relative;
+}
+
 .dropdown__btn {
   display: block;
   clear: both;
@@ -19,16 +23,15 @@
 }
 
 .dropdown__content {
-  
+  position: relative;
   display: block;
   margin-top: $spacing-large;
   margin-left: 0px;
   margin-right: 0px;
-  width: 250px !important;
+  width: 250px;
   background-color: $color-white;
   color: $gb-color-text;
-  text-align: center;
-  
+  text-align: center; 
 }
 
 .dropdown__list {
@@ -37,17 +40,18 @@
 }
 
 .dropdown__item {
-  
   padding: $spacing-large;
   text-decoration: none;
   list-style: none;
   border-radius: $radius-medium;
   border: 1px solid $color-silver;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .dropdown__link {
-  //padding: $spacing-medium;
-
   &:visited {
     color: $gb-color-text;
   }
