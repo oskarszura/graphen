@@ -5,7 +5,7 @@ import * as _ from "lodash";
 type Props = {
   initValue: string,
   label: string,
-  items: Array<{ value: string, label: string }>
+  items: $ReadOnlyArray<{value: string, label: string}>
 };
 
 export default function Dropdown(props: Props) {
