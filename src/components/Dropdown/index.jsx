@@ -15,13 +15,25 @@ export default function Dropdown(props: Props) {
   const expandMenu = useCallback(() => {
     setIsExpanded(isShown => !isShown);
   }, [setIsExpanded]);
+ /* const selectItem = useCallback(
+    item => {
+      console.log(item);
+      setIsExpanded(false);
+      setSelectedItem(_.find(items, function(o) {console.log(o.value); console.log(item.value); if (o.value == item.value) { return item.label;}  })
+        );
+      console.log(selectedItem);
+      console.log(item.label);
+    },
+    [setIsExpanded, setSelectedItem]
+  ); */
   const selectItem = useCallback(
     item => {
       setIsExpanded(false);
-      setSelectedItem(item.label);
+      let result = _.find(items, function(o) { return o.value === item.value });
+      setSelectedItem(result.label) 
     },
     [setIsExpanded, setSelectedItem]
-  );
+    );
 
   return (
     <div className="dropdown">
