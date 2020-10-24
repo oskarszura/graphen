@@ -3,7 +3,7 @@ import React, { useState, useCallback } from "react";
 import * as _ from "lodash";
 
 type Props = {
-  initValue: string,
+  initValue: $ReadOnly<{value: string, label: string}>,
   label: string,
   items: $ReadOnlyArray<{value: string, label: string}>
 };
@@ -30,7 +30,7 @@ export default function Dropdown(props: Props) {
     item => {
       setIsExpanded(false);
       let result = _.find(items, function(o) { return o.value === item.value });
-      setSelectedItem(result.label) 
+      setSelectedItem(result) 
     },
     [setIsExpanded, setSelectedItem]
     );
@@ -42,7 +42,7 @@ export default function Dropdown(props: Props) {
       </label>
       <div className="dropdown__menu">
         <button className="dropdown__btn" onClick={expandMenu}>
-          {selectedItem}
+          {selectedItem.label}
         </button>
         {isExpanded && (
           <div className="dropdown__content">
