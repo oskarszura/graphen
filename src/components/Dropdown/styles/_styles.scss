@@ -16,6 +16,7 @@
   color: $gb-color-text;
   border-radius: $radius-medium;
   border: 1px solid $color-silver;
+  box-shadow: $gc-shadow-default;
 
   &:hover {
     cursor: pointer;
@@ -31,7 +32,8 @@
   width: 250px;
   background-color: $color-white;
   color: $gb-color-text;
-  text-align: center; 
+  text-align: center;
+  box-shadow: $gc-shadow-default;
 }
 
 .dropdown__list {
