@@ -1,10 +1,17 @@
-.dropdown__menu {
+.gc-dropdown {
+&__label {
+    color: $color-boulder;
+    font-size: $font-size-very-large;
+    font-weight: bold;
+    padding-left: $spacing-small;
+}
+
+&__menu {
   position: relative;
 }
 
-.dropdown__btn {
+&__btn {
   display: block;
-  clear: both;
   box-sizing: border-box;
   text-align: center;
   font-size: inherit;
@@ -24,7 +31,7 @@
   }
 }
 
-.dropdown__content {
+&__content {
   position: relative;
   display: block;
   margin-top: $spacing-large;
@@ -37,12 +44,12 @@
   box-shadow: $gc-shadow-default;
 }
 
-.dropdown__list {
+&__list {
   margin: 0;
   padding: 0;
 }
 
-.dropdown__item {
+&__item {
   padding: $spacing-large;
   text-decoration: none;
   list-style: none;
@@ -54,8 +61,9 @@
   }
 }
 
-.dropdown__link {
+&__link {
   &:visited {
     color: $gb-color-text;
   }
+}
 }

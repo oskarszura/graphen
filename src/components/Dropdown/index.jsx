@@ -18,35 +18,31 @@ export default function Dropdown(props: Props) {
   const selectItem = useCallback(
     item => {
       setIsExpanded(false);
-      setSelectedItem(
-        _.find(items, function(o) {
-          return o.value === item.value;
-        })
-      );
+      setSelectedItem(_.find(items, i => i.value === item.value));
     },
     [setIsExpanded, setSelectedItem]
   );
 
   return (
-    <div className="dropdown">
-      <label className="dropdown__label" htmlFor="dropdown__label">
+    <div className="gc-dropdown">
+      <label className="gc-dropdown__label" htmlFor="gc-dropdown__label">
         {label}
       </label>
-      <div className="dropdown__menu">
-        <button className="dropdown__btn" onClick={expandMenu}>
+      <div className="gc-dropdown__menu">
+        <button className="gc-dropdown__btn" onClick={expandMenu}>
           {selectedItem.label}
         </button>
         {isExpanded && (
-          <div className="dropdown__content">
-            <ul className="dropdown__list">
+          <div className="gc-dropdown__content">
+            <ul className="gc-dropdown__list">
               {/* eslint-disable jsx-a11y/no-static-element-interactions */}
               {_.map(items, item => (
                 <li
-                  className="dropdown__item"
+                  className="gc-dropdown__item"
                   key={`dropdown-${label}-${item.label}`}
                   onClick={() => selectItem(item)}
                 >
-                  <a className="dropdown__link">{item.label}</a>
+                  <a className="gc-dropdown__link">{item.label}</a>
                 </li>
               ))}
               {/* eslint-enable jsx-a11y/no-static-element-interactions */}
