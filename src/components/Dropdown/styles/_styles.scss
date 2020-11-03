@@ -1,69 +1,69 @@
 .gc-dropdown {
-&__label {
+  &__label {
     color: $color-boulder;
     font-size: $font-size-very-large;
     font-weight: bold;
     padding-left: $spacing-small;
-}
-
-&__menu {
-  position: relative;
-}
-
-&__btn {
-  display: block;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: inherit;
-  padding: $spacing-large;
-  width: 250px;
-  margin-top: 5px;
-  margin-bottom: 0;
-  position: relative;
-  background-color: $color-white;
-  color: $gb-color-text;
-  border-radius: $radius-medium;
-  border: 1px solid $color-silver;
-  box-shadow: $gc-shadow-default;
-
-  &:hover {
-    cursor: pointer;
   }
-}
 
-&__content {
-  position: relative;
-  display: block;
-  margin-top: $spacing-large;
-  margin-left: 0;
-  margin-right: 0;
-  width: 250px;
-  background-color: $color-white;
-  color: $gb-color-text;
-  text-align: center;
-  box-shadow: $gc-shadow-default;
-}
-
-&__list {
-  margin: 0;
-  padding: 0;
-}
-
-&__item {
-  padding: $spacing-large;
-  text-decoration: none;
-  list-style: none;
-  border-radius: $radius-medium;
-  border: 1px solid $color-silver;
-
-  &:hover {
-    cursor: pointer;
+  &__menu {
+    position: relative;
   }
-}
 
-&__link {
-  &:visited {
+  &__btn {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: inherit;
+    padding: $spacing-large;
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    position: relative;
+    background-color: $color-white;
     color: $gb-color-text;
+    border-radius: $radius-medium;
+    border: 1px solid $color-silver;
+    box-shadow: $gc-shadow-default;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
-}
+
+  &__content {
+    position: relative;
+    display: block;
+    margin-top: $spacing-large;
+    margin-left: 0;
+    margin-right: 0;
+    width: 250px;
+    background-color: $color-white;
+    color: $gb-color-text;
+    text-align: center;
+    box-shadow: $gc-shadow-default;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    padding: $spacing-large;
+    text-decoration: none;
+    list-style: none;
+    border-radius: $radius-medium;
+    border: 1px solid $color-silver;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__link {
+    &:visited {
+      color: $gb-color-text;
+    }
+  }
 }
