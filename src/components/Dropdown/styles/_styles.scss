@@ -40,7 +40,7 @@
     background-color: $color-white;
     color: $gb-color-text;
     text-align: left;
-    
+    box-shadow: $gc-shadow-default;
   }
 
   &__list {
@@ -54,7 +54,7 @@
     list-style: none;
     border: 1px solid $color-silver;
     border-top: none;
-    //box-shadow: $gc-shadow-default;
+    
     &--first {
       padding: $spacing-large;
     text-decoration: none;
@@ -62,6 +62,9 @@
     border: 1px solid $color-silver;
     border-top: none;
       border-top: 1px solid $color-silver;
+      &:hover {
+      cursor: pointer;
+    }
     }
     &:hover {
       cursor: pointer;
