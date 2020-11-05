@@ -56,6 +56,11 @@
     border-top: none;
     //box-shadow: $gc-shadow-default;
     &--first {
+      padding: $spacing-large;
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid $color-silver;
+    border-top: none;
       border-top: 1px solid $color-silver;
     }
     &:hover {

@@ -36,7 +36,15 @@ export default function Dropdown(props: Props) {
           <div className="gc-dropdown__content">
             <ul className="gc-dropdown__list">
               {/* eslint-disable jsx-a11y/no-static-element-interactions */}
-              {_.map(items, item => (
+              {_.map(items, item => {
+                if (item == items[0]) {return (<li
+                  className="gc-dropdown__item--first"
+                  key={`dropdown-${label}-${item.label}`}
+                  onClick={() => selectItem(item)}
+                >
+                  <a className="gc-dropdown__link">{item.label}</a>
+                </li>)}
+              else { return(
                 <li
                   className="gc-dropdown__item"
                   key={`dropdown-${label}-${item.label}`}
@@ -44,7 +52,8 @@ export default function Dropdown(props: Props) {
                 >
                   <a className="gc-dropdown__link">{item.label}</a>
                 </li>
-              ))}
+              )}
+              })}
               {/* eslint-enable jsx-a11y/no-static-element-interactions */}
             </ul>
           </div>
