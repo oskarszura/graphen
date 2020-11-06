@@ -54,18 +54,13 @@
     list-style: none;
     border: 1px solid $color-silver;
     border-top: none;
-    
+
     &--first {
-      padding: $spacing-large;
-    text-decoration: none;
-    list-style: none;
-    border: 1px solid $color-silver;
-    border-top: none;
+      @extend .gc-dropdown__item;
+
       border-top: 1px solid $color-silver;
-      &:hover {
-      cursor: pointer;
     }
-    }
+
     &:hover {
       cursor: pointer;
     }
