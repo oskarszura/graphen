@@ -12,7 +12,7 @@
 
   &__btn {
     display: block;
-    box-sizing: border-box;
+    //box-sizing: border-box;
     text-align: left;
     font-size: inherit;
     padding: $spacing-large;
@@ -23,6 +23,7 @@
     background-color: $color-white;
     color: $gb-color-text;
     border: 1px solid $color-silver;
+    border-radius: $radius-medium;
     box-shadow: $gc-shadow-default;
 
     &:hover {
@@ -41,6 +42,9 @@
     color: $gb-color-text;
     text-align: left;
     box-shadow: $gc-shadow-default;
+    border-radius: $radius-medium;
+    border: 1px solid $color-silver;
+    box-sizing: border-box;
   }
 
   &__list {
@@ -52,13 +56,12 @@
     padding: $spacing-large;
     text-decoration: none;
     list-style: none;
-    border: 1px solid $color-silver;
-    border-top: none;
+    border-top: 1px solid $color-silver;
 
     &--first {
       @extend .gc-dropdown__item;
 
-      border-top: 1px solid $color-silver;
+      border-top: none;
     }
 
     &:hover {
