@@ -41,7 +41,7 @@ export default function Dropdown(props: Props) {
                 return (
                   <li
                     className={classNames("gc-dropdown__item", {
-                      "gc-dropdown__item--first": item == items[0]
+                      "gc-dropdown__item--first": item === items[0]
                     })}
                     key={`dropdown-${label}-${item.label}`}
                     onClick={() => selectItem(item)}
