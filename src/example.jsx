@@ -16,6 +16,7 @@ import {
   Validation,
   Tooltip,
   Logo,
+  Dropdown,
   constants
 } from "./index";
 
@@ -607,6 +608,19 @@ class ExampleApp extends React.PureComponent<Props, State> {
                 </article>
               </Dialog>
             )}
+          </div>
+        </article>
+        <article className="gc-panel gc-panel--separator">
+          <header className="gc-panel__title">Dropdown Menu</header>
+          <div className="gc-panel__content">
+            <Dropdown
+              initValue={{ label: "-Select Value-", value: "selectValue" }}
+              label="Dropdown label"
+              items={[
+                { label: "Red", value: "red" },
+                { label: "Blue", value: "blue" }
+              ]}
+            />
           </div>
         </article>
       </>

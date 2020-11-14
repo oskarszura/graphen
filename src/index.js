@@ -12,6 +12,7 @@ import Scroller from "./components/Scroller";
 import Tooltip from "./components/Tooltip";
 import Validation from "./components/Validation";
 import Logo from "./components/Logo";
+import Dropdown from "./components/Dropdown";
 import * as constants from "./variables/constants";
 
 export {
@@ -28,5 +29,6 @@ export {
   Validation,
   Logo,
   Image,
+  Dropdown,
   constants
 };
