@@ -1,20 +1,19 @@
-describe("test dropdown menu", () => {
-  it("should open dropdown menu", () => {
+describe("dropdown menu", () => {
+  it("should open dropdown and pick a value", () => {
     cy.visit("localhost:3000");
-    cy.get(".gc-dropdown");
-    cy.get(".gc-dropdown__btn").click();
-  });
-  it("should choose value red", () => {
-    cy.get(".gc-dropdown__item")
+    cy.get("[data-cy=dropdown-button]")
+      .click()
+      .get("[data-cy=dropdown-item]")
       .contains("Red")
-      .click();
-    cy.get(".gc-dropdown__btn").contains("Red");
-  });
-  it("should reopen and choose value blue", () => {
-    cy.get(".gc-dropdown__btn").click();
-    cy.get(".gc-dropdown__item")
+      .click()
+      .get("[data-cy=dropdown-button]")
+      .should("contain", "Red")
+      .get("[data-cy=dropdown-button]")
+      .click()
+      .get("[data-cy=dropdown-item]")
       .contains("Blue")
-      .click();
-    cy.get(".gc-dropdown__btn").contains("Blue");
+      .click()
+      .get("[data-cy=dropdown-button]")
+      .should("contain", "Blue");
   });
 });
