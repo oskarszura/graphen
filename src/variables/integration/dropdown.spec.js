@@ -7,8 +7,9 @@ describe("dropdown menu", () => {
       .contains("Red")
       .click()
       .get("[data-cy=dropdown-button]")
-      .should("contain", "Red")
-      .get("[data-cy=dropdown-button]")
+      .should("contain", "Red");
+
+    cy.get("[data-cy=dropdown-button]")
       .click()
       .get("[data-cy=dropdown-item]")
       .contains("Blue")
