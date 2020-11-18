@@ -30,7 +30,11 @@ export default function Dropdown(props: Props) {
         {label}
       </label>
       <div className="gc-dropdown__menu">
-        <button className="gc-dropdown__btn" onClick={expandMenu}>
+        <button
+          className="gc-dropdown__btn"
+          data-cy="dropdown-button"
+          onClick={expandMenu}
+        >
           {selectedItem.label}
         </button>
         {isExpanded && (
@@ -43,6 +47,7 @@ export default function Dropdown(props: Props) {
                 });
                 return (
                   <li
+                    data-cy="dropdown-item"
                     className={dropdownItemClasses}
                     key={`dropdown-${label}-${item.label}`}
                     onClick={() => selectItem(item)}
