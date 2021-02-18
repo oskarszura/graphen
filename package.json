@@ -2,7 +2,7 @@
   "name": "graphen",
   "version": "1.9.2",
   "description": "Graphen is a small library, that keeps reusable blocks of UI and helps making application design consistent across multiple projects.",
-  "main": "dist/scripts.js",
+  "main": "src/index.js",
   "files": [
     "dist/**/*",
     "src/**/*",
@@ -27,8 +27,8 @@
   "peerDependencies": {
     "classnames": "^2.2.6",
     "lodash": "^4.17.20",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
     "classnames": "^2.2.6",
@@ -36,8 +36,8 @@
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "lodash": "^4.17.20",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.5",
