@@ -21,7 +21,7 @@ export default function Dropdown(props: Props) {
       setIsExpanded(false);
       setSelectedItem(_.find(items, i => i.value === item.value));
     },
-    [setIsExpanded, setSelectedItem]
+    [setIsExpanded, setSelectedItem, items]
   );
 
   return (
