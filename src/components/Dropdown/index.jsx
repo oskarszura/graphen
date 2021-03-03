@@ -7,7 +7,7 @@ type Props = {
   initValue: $ReadOnly<{ value: string, label: string }>,
   label: string,
   items: $ReadOnlyArray<{ value: string, label: string }>,
-  onChange?: () => void
+  onChange: string => void
 };
 
 export default function Dropdown(props: Props) {
