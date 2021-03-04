@@ -620,7 +620,7 @@ class ExampleApp extends React.PureComponent<Props, State> {
                 { label: "Red", value: "red" },
                 { label: "Blue", value: "blue" }
               ]}
-              onChange={_.noop()}
+              onChange={_.noop}
             />
           </div>
         </article>

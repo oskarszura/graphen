@@ -7,7 +7,7 @@ type Props = {
   initValue: $ReadOnly<{ value: string, label: string }>,
   label: string,
   items: $ReadOnlyArray<{ value: string, label: string }>,
-  onChange: () => void
+  onChange: string => void
 };
 
 export default function Dropdown(props: Props) {
@@ -19,7 +19,7 @@ export default function Dropdown(props: Props) {
   }, [setIsExpanded]);
   const selectItem = useCallback(
     item => {
-      //onChange(item.value);
+      onChange(item.value);
       setIsExpanded(false);
       setSelectedItem(_.find(items, i => i.value === item.value));
     },
