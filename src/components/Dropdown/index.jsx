@@ -6,11 +6,12 @@ import classNames from "classnames";
 type Props = {
   initValue: $ReadOnly<{ value: string, label: string }>,
   label: string,
-  items: $ReadOnlyArray<{ value: string, label: string }>
+  items: $ReadOnlyArray<{ value: string, label: string }>,
+  onChange: string => void
 };
 
 export default function Dropdown(props: Props) {
-  const { initValue, label, items } = props;
+  const { initValue, label, items, onChange } = props;
   const [isExpanded, setIsExpanded] = useState(false);
   const [selectedItem, setSelectedItem] = useState(initValue);
   const expandMenu = useCallback(() => {
@@ -18,6 +19,7 @@ export default function Dropdown(props: Props) {
   }, [setIsExpanded]);
   const selectItem = useCallback(
     item => {
+      onChange(item.value);
       setIsExpanded(false);
       setSelectedItem(_.find(items, i => i.value === item.value));
     },
